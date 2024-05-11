@@ -1,0 +1,1 @@
+-I"D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include" -isystem "D:/qt/6.7.0/llvm-mingw_64/include/QtCore" -isystem "D:/qt/6.7.0/llvm-mingw_64/include" -isystem "D:/qt/6.7.0/llvm-mingw_64/mkspecs/win32-clang-g++" -isystem "D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets" -isystem "D:/qt/6.7.0/llvm-mingw_64/include/QtGui"

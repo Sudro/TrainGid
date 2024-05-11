@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen",
+	"CMAKE_BINARY_DIR" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/qt/projects/TrainGid",
+	"CMAKE_SOURCE_DIR" : "D:/qt/projects/TrainGid",
+	"INCLUDE_DIR" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include",
+	"INPUTS" : [],
+	"LOCK_FILE" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/CMakeFiles/TrainGid_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "D:/qt/6.7.0/llvm-mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/CMakeFiles/TrainGid_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/qt/projects/TrainGid/resources.qrc",
+	"VERBOSITY" : 0
+}
