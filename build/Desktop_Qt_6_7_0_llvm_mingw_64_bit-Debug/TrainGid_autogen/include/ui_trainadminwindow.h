@@ -12,8 +12,10 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,6 +34,7 @@ public:
     QPushButton *pushButton_9;
     QPushButton *pushButton_10;
     QPushButton *pushButton_11;
+    QTableView *tableView;
 
     void setupUi(QWidget *TrainAdminWindow)
     {
@@ -122,6 +125,11 @@ public:
         icon9.addFile(QString::fromUtf8(":/removeAdminButton.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_11->setIcon(icon9);
         pushButton_11->setIconSize(QSize(221, 82));
+        tableView = new QTableView(TrainAdminWindow);
+        tableView->setObjectName("tableView");
+        tableView->setGeometry(QRect(48, 115, 890, 280));
+        tableView->setStyleSheet(QString::fromUtf8("border: 3px solid #6E93FC; border-radius: 5px; background-color: white; "));
+        tableView->setShowGrid(true);
 
         retranslateUi(TrainAdminWindow);
 

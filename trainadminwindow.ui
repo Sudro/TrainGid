@@ -289,6 +289,22 @@
     </size>
    </property>
   </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>115</y>
+     <width>890</width>
+     <height>280</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 3px solid #6E93FC; border-radius: 5px; background-color: white; </string>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="resources.qrc"/>

@@ -12,8 +12,10 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,6 +31,7 @@ public:
     QPushButton *pushButton_6;
     QPushButton *pushButton_7;
     QPushButton *pushButton_5;
+    QTableView *tableView;
 
     void setupUi(QWidget *TariffUserWindow)
     {
@@ -95,6 +98,11 @@ public:
         icon6.addFile(QString::fromUtf8(":/trainButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_5->setIcon(icon6);
         pushButton_5->setIconSize(QSize(106, 37));
+        tableView = new QTableView(TariffUserWindow);
+        tableView->setObjectName("tableView");
+        tableView->setGeometry(QRect(48, 115, 890, 449));
+        tableView->setStyleSheet(QString::fromUtf8("border: 3px solid #6E93FC; border-radius: 5px; background-color: white; "));
+        tableView->setShowGrid(true);
 
         retranslateUi(TariffUserWindow);
 

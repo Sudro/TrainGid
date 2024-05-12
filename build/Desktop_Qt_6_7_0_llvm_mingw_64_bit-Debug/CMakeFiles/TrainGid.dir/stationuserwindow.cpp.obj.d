@@ -951,13 +951,32 @@ CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qlocale.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qheaderview.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemview.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qitemselectionmodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyleoption.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractspinbox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qslider.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyle.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabbar.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qiodevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qurl.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtableview.h

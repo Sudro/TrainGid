@@ -12,8 +12,10 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,6 +31,7 @@ public:
     QPushButton *pushButton_7;
     QPushButton *pushButton_4;
     QPushButton *pushButton_2;
+    QTableView *tableView;
 
     void setupUi(QWidget *RouteWindow)
     {
@@ -95,6 +98,11 @@ public:
         icon6.addFile(QString::fromUtf8(":/closeIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_2->setIcon(icon6);
         pushButton_2->setIconSize(QSize(17, 17));
+        tableView = new QTableView(RouteWindow);
+        tableView->setObjectName("tableView");
+        tableView->setGeometry(QRect(48, 115, 890, 449));
+        tableView->setStyleSheet(QString::fromUtf8("border: 3px solid #6E93FC; border-radius: 5px; background-color: white; "));
+        tableView->setShowGrid(true);
 
         retranslateUi(RouteWindow);
 
