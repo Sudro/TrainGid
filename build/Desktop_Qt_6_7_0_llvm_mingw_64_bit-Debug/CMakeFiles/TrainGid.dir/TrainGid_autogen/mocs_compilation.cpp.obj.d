@@ -1,9 +1,9 @@
 CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/mocs_compilation.cpp \
-  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_mainwindow.cpp \
-  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../mainwindow.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_choicewindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../choicewindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qwidget.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qglobal.h \
@@ -470,7 +470,6 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgetsexports.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qwidget.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qobjectdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qnamespace.h \
@@ -937,5 +936,13 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qtmochelpers.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_mainwindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../mainwindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qtmochelpers.h
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainadminwindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainadminwindow.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainuserwindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainuserwindow.h

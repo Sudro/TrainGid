@@ -939,6 +939,7 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/./ui_mainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreapplication.h \
@@ -952,9 +953,14 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qlocale.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMenuBar \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmenubar.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmenu.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QStatusBar \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstatusbar.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qiodevice.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qurl.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget

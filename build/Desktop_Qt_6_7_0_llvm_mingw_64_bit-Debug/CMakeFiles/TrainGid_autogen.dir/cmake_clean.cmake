@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TrainGid_autogen"
+  "TrainGid_autogen/include/ui_choicewindow.h"
   "TrainGid_autogen/include/ui_mainwindow.h"
+  "TrainGid_autogen/include/ui_trainadminwindow.h"
+  "TrainGid_autogen/include/ui_trainuserwindow.h"
   "TrainGid_autogen/mocs_compilation.cpp"
 )
 

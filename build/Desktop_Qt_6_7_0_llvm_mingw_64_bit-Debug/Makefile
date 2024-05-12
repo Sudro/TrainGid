@@ -234,6 +234,30 @@ TrainGid_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.s
 .PHONY : TrainGid_autogen/mocs_compilation.cpp.s
 
+choicewindow.obj: choicewindow.cpp.obj
+.PHONY : choicewindow.obj
+
+# target to build an object file
+choicewindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/choicewindow.cpp.obj
+.PHONY : choicewindow.cpp.obj
+
+choicewindow.i: choicewindow.cpp.i
+.PHONY : choicewindow.i
+
+# target to preprocess a source file
+choicewindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/choicewindow.cpp.i
+.PHONY : choicewindow.cpp.i
+
+choicewindow.s: choicewindow.cpp.s
+.PHONY : choicewindow.s
+
+# target to generate assembly for a file
+choicewindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/choicewindow.cpp.s
+.PHONY : choicewindow.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -282,6 +306,54 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+trainadminwindow.obj: trainadminwindow.cpp.obj
+.PHONY : trainadminwindow.obj
+
+# target to build an object file
+trainadminwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj
+.PHONY : trainadminwindow.cpp.obj
+
+trainadminwindow.i: trainadminwindow.cpp.i
+.PHONY : trainadminwindow.i
+
+# target to preprocess a source file
+trainadminwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainadminwindow.cpp.i
+.PHONY : trainadminwindow.cpp.i
+
+trainadminwindow.s: trainadminwindow.cpp.s
+.PHONY : trainadminwindow.s
+
+# target to generate assembly for a file
+trainadminwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainadminwindow.cpp.s
+.PHONY : trainadminwindow.cpp.s
+
+trainuserwindow.obj: trainuserwindow.cpp.obj
+.PHONY : trainuserwindow.obj
+
+# target to build an object file
+trainuserwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj
+.PHONY : trainuserwindow.cpp.obj
+
+trainuserwindow.i: trainuserwindow.cpp.i
+.PHONY : trainuserwindow.i
+
+# target to preprocess a source file
+trainuserwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainuserwindow.cpp.i
+.PHONY : trainuserwindow.cpp.i
+
+trainuserwindow.s: trainuserwindow.cpp.s
+.PHONY : trainuserwindow.s
+
+# target to generate assembly for a file
+trainuserwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainuserwindow.cpp.s
+.PHONY : trainuserwindow.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -302,12 +374,21 @@ help:
 	@echo ... TrainGid_autogen/mocs_compilation.obj
 	@echo ... TrainGid_autogen/mocs_compilation.i
 	@echo ... TrainGid_autogen/mocs_compilation.s
+	@echo ... choicewindow.obj
+	@echo ... choicewindow.i
+	@echo ... choicewindow.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... trainadminwindow.obj
+	@echo ... trainadminwindow.i
+	@echo ... trainadminwindow.s
+	@echo ... trainuserwindow.obj
+	@echo ... trainuserwindow.i
+	@echo ... trainuserwindow.s
 .PHONY : help
 
 

@@ -10,8 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj.d"
   "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/mocs_compilation.cpp" "CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj.d"
+  "D:/qt/projects/TrainGid/choicewindow.cpp" "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/main.cpp" "CMakeFiles/TrainGid.dir/main.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/main.cpp.obj.d"
   "D:/qt/projects/TrainGid/mainwindow.cpp" "CMakeFiles/TrainGid.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/mainwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/trainadminwindow.cpp" "CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/trainuserwindow.cpp" "CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

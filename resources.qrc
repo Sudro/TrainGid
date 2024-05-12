@@ -1,3 +1,25 @@
 <RCC>
-    <qresource prefix="/"/>
+    <qresource prefix="/">
+        <file>mainFrame.png</file>
+        <file>mainButtonFrame.png</file>
+        <file>closeIcon.png</file>
+        <file>swapIcon.png</file>
+        <file>homeButton.png</file>
+        <file>trainButton.png</file>
+        <file>routeButton.png</file>
+        <file>stationsButton.png</file>
+        <file>tariffsButton.png</file>
+        <file>choiceFrame.png</file>
+        <file>userButton.png</file>
+        <file>adminButton.png</file>
+        <file>trainFrame.png</file>
+        <file>homeButton2.png</file>
+        <file>trainButton2.png</file>
+        <file>routeButton2.png</file>
+        <file>stationsButton2.png</file>
+        <file>tariffsButton2.png</file>
+        <file>appendAdminButton.png</file>
+        <file>changeAdminButton.png</file>
+        <file>removeAdminButton.png</file>
+    </qresource>
 </RCC>
