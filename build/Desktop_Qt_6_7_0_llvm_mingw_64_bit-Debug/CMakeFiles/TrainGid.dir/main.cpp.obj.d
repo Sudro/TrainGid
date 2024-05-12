@@ -938,10 +938,6 @@ CMakeFiles/TrainGid.dir/main.cpp.obj: D:/qt/projects/TrainGid/main.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qt/projects/TrainGid/choicewindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
-  D:/qt/projects/TrainGid/tariffuserwindow.h \
-  D:/qt/projects/TrainGid/stationuserwindow.h \
-  D:/qt/projects/TrainGid/routeuserwindow.h \
-  D:/qt/projects/TrainGid/trainuserwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreapplication.h \

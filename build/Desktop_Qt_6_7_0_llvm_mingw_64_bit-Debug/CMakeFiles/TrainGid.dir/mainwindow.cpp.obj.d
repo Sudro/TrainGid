@@ -939,10 +939,6 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qt/projects/TrainGid/choicewindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
-  D:/qt/projects/TrainGid/tariffuserwindow.h \
-  D:/qt/projects/TrainGid/stationuserwindow.h \
-  D:/qt/projects/TrainGid/routeuserwindow.h \
-  D:/qt/projects/TrainGid/trainuserwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/./ui_mainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
@@ -969,6 +965,10 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/qt/projects/TrainGid/tariffuserwindow.h \
+  D:/qt/projects/TrainGid/stationuserwindow.h \
+  D:/qt/projects/TrainGid/routeuserwindow.h \
+  D:/qt/projects/TrainGid/trainuserwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \

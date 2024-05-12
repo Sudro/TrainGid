@@ -904,8 +904,4 @@ D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_
   D:/qt/Tools/llvm-mingw1706_64/include/sdks/_mingw_ddk.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdarg.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
-  D:/qt/projects/TrainGid/choicewindow.h \
-  D:/qt/projects/TrainGid/routeuserwindow.h \
-  D:/qt/projects/TrainGid/stationuserwindow.h \
-  D:/qt/projects/TrainGid/tariffuserwindow.h \
-  D:/qt/projects/TrainGid/trainuserwindow.h
+  D:/qt/projects/TrainGid/choicewindow.h

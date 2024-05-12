@@ -3,10 +3,6 @@
 
 #include <QMainWindow>
 #include "choicewindow.h" // Включаем заголовочный файл ChoiceWindow
-#include "tariffuserwindow.h" // Включаем заголовочный файл для TariffUserWindow
-#include "stationuserwindow.h" // Включаем заголовочный файл для StationUserwindow
-#include "routeuserwindow.h" // Включаем заголовочный файл для RouteUserwindow
-#include "trainuserwindow.h" // Включаем заголовочный файл для TrainUserwindow
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
