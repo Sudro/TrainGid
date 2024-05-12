@@ -21,5 +21,8 @@
         <file>appendAdminButton.png</file>
         <file>changeAdminButton.png</file>
         <file>removeAdminButton.png</file>
+        <file>routeFrame.png</file>
+        <file>stationFrame.png</file>
+        <file>tariffFrame.png</file>
     </qresource>
 </RCC>

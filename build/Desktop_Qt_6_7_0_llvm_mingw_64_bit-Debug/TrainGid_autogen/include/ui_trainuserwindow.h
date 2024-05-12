@@ -41,7 +41,7 @@ public:
         label->setPixmap(QPixmap(QString::fromUtf8(":/trainFrame.png")));
         pushButton_8 = new QPushButton(TrainUserWindow);
         pushButton_8->setObjectName("pushButton_8");
-        pushButton_8->setGeometry(QRect(322, 20, 106, 37));
+        pushButton_8->setGeometry(QRect(322, 22, 106, 37));
         pushButton_8->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/tariffsButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -49,7 +49,7 @@ public:
         pushButton_8->setIconSize(QSize(106, 37));
         pushButton_6 = new QPushButton(TrainUserWindow);
         pushButton_6->setObjectName("pushButton_6");
-        pushButton_6->setGeometry(QRect(561, 20, 132, 37));
+        pushButton_6->setGeometry(QRect(561, 22, 132, 37));
         pushButton_6->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon1;
         icon1.addFile(QString::fromUtf8(":/routeButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -57,7 +57,7 @@ public:
         pushButton_6->setIconSize(QSize(132, 37));
         pushButton_4 = new QPushButton(TrainUserWindow);
         pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(816, 20, 101, 37));
+        pushButton_4->setGeometry(QRect(816, 22, 101, 37));
         pushButton_4->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon2;
         icon2.addFile(QString::fromUtf8(":/homeButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -65,7 +65,7 @@ public:
         pushButton_4->setIconSize(QSize(101, 37));
         pushButton_5 = new QPushButton(TrainUserWindow);
         pushButton_5->setObjectName("pushButton_5");
-        pushButton_5->setGeometry(QRect(701, 20, 106, 37));
+        pushButton_5->setGeometry(QRect(701, 22, 106, 37));
         pushButton_5->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon3;
         icon3.addFile(QString::fromUtf8(":/trainButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -73,7 +73,7 @@ public:
         pushButton_5->setIconSize(QSize(106, 37));
         pushButton_2 = new QPushButton(TrainUserWindow);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(955, 14, 17, 17));
+        pushButton_2->setGeometry(QRect(958, 14, 17, 17));
         pushButton_2->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon4;
         icon4.addFile(QString::fromUtf8(":/closeIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -81,7 +81,7 @@ public:
         pushButton_2->setIconSize(QSize(17, 17));
         pushButton_3 = new QPushButton(TrainUserWindow);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(931, 14, 17, 17));
+        pushButton_3->setGeometry(QRect(934, 14, 17, 17));
         pushButton_3->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon5;
         icon5.addFile(QString::fromUtf8(":/swapIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -89,7 +89,7 @@ public:
         pushButton_3->setIconSize(QSize(17, 17));
         pushButton_7 = new QPushButton(TrainUserWindow);
         pushButton_7->setObjectName("pushButton_7");
-        pushButton_7->setGeometry(QRect(438, 20, 116, 37));
+        pushButton_7->setGeometry(QRect(438, 22, 116, 37));
         pushButton_7->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon6;
         icon6.addFile(QString::fromUtf8(":/stationsButton2.png"), QSize(), QIcon::Normal, QIcon::Off);

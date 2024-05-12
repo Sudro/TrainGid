@@ -306,6 +306,150 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+routeadminwindow.obj: routeadminwindow.cpp.obj
+.PHONY : routeadminwindow.obj
+
+# target to build an object file
+routeadminwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj
+.PHONY : routeadminwindow.cpp.obj
+
+routeadminwindow.i: routeadminwindow.cpp.i
+.PHONY : routeadminwindow.i
+
+# target to preprocess a source file
+routeadminwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/routeadminwindow.cpp.i
+.PHONY : routeadminwindow.cpp.i
+
+routeadminwindow.s: routeadminwindow.cpp.s
+.PHONY : routeadminwindow.s
+
+# target to generate assembly for a file
+routeadminwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/routeadminwindow.cpp.s
+.PHONY : routeadminwindow.cpp.s
+
+routeuserwindow.obj: routeuserwindow.cpp.obj
+.PHONY : routeuserwindow.obj
+
+# target to build an object file
+routeuserwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/routeuserwindow.cpp.obj
+.PHONY : routeuserwindow.cpp.obj
+
+routeuserwindow.i: routeuserwindow.cpp.i
+.PHONY : routeuserwindow.i
+
+# target to preprocess a source file
+routeuserwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/routeuserwindow.cpp.i
+.PHONY : routeuserwindow.cpp.i
+
+routeuserwindow.s: routeuserwindow.cpp.s
+.PHONY : routeuserwindow.s
+
+# target to generate assembly for a file
+routeuserwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/routeuserwindow.cpp.s
+.PHONY : routeuserwindow.cpp.s
+
+stationadminwindow.obj: stationadminwindow.cpp.obj
+.PHONY : stationadminwindow.obj
+
+# target to build an object file
+stationadminwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj
+.PHONY : stationadminwindow.cpp.obj
+
+stationadminwindow.i: stationadminwindow.cpp.i
+.PHONY : stationadminwindow.i
+
+# target to preprocess a source file
+stationadminwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/stationadminwindow.cpp.i
+.PHONY : stationadminwindow.cpp.i
+
+stationadminwindow.s: stationadminwindow.cpp.s
+.PHONY : stationadminwindow.s
+
+# target to generate assembly for a file
+stationadminwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/stationadminwindow.cpp.s
+.PHONY : stationadminwindow.cpp.s
+
+stationuserwindow.obj: stationuserwindow.cpp.obj
+.PHONY : stationuserwindow.obj
+
+# target to build an object file
+stationuserwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj
+.PHONY : stationuserwindow.cpp.obj
+
+stationuserwindow.i: stationuserwindow.cpp.i
+.PHONY : stationuserwindow.i
+
+# target to preprocess a source file
+stationuserwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/stationuserwindow.cpp.i
+.PHONY : stationuserwindow.cpp.i
+
+stationuserwindow.s: stationuserwindow.cpp.s
+.PHONY : stationuserwindow.s
+
+# target to generate assembly for a file
+stationuserwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/stationuserwindow.cpp.s
+.PHONY : stationuserwindow.cpp.s
+
+tariffadminwindow.obj: tariffadminwindow.cpp.obj
+.PHONY : tariffadminwindow.obj
+
+# target to build an object file
+tariffadminwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj
+.PHONY : tariffadminwindow.cpp.obj
+
+tariffadminwindow.i: tariffadminwindow.cpp.i
+.PHONY : tariffadminwindow.i
+
+# target to preprocess a source file
+tariffadminwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.i
+.PHONY : tariffadminwindow.cpp.i
+
+tariffadminwindow.s: tariffadminwindow.cpp.s
+.PHONY : tariffadminwindow.s
+
+# target to generate assembly for a file
+tariffadminwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.s
+.PHONY : tariffadminwindow.cpp.s
+
+tariffuserwindow.obj: tariffuserwindow.cpp.obj
+.PHONY : tariffuserwindow.obj
+
+# target to build an object file
+tariffuserwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj
+.PHONY : tariffuserwindow.cpp.obj
+
+tariffuserwindow.i: tariffuserwindow.cpp.i
+.PHONY : tariffuserwindow.i
+
+# target to preprocess a source file
+tariffuserwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.i
+.PHONY : tariffuserwindow.cpp.i
+
+tariffuserwindow.s: tariffuserwindow.cpp.s
+.PHONY : tariffuserwindow.s
+
+# target to generate assembly for a file
+tariffuserwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.s
+.PHONY : tariffuserwindow.cpp.s
+
 trainadminwindow.obj: trainadminwindow.cpp.obj
 .PHONY : trainadminwindow.obj
 
@@ -383,6 +527,24 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... routeadminwindow.obj
+	@echo ... routeadminwindow.i
+	@echo ... routeadminwindow.s
+	@echo ... routeuserwindow.obj
+	@echo ... routeuserwindow.i
+	@echo ... routeuserwindow.s
+	@echo ... stationadminwindow.obj
+	@echo ... stationadminwindow.i
+	@echo ... stationadminwindow.s
+	@echo ... stationuserwindow.obj
+	@echo ... stationuserwindow.i
+	@echo ... stationuserwindow.s
+	@echo ... tariffadminwindow.obj
+	@echo ... tariffadminwindow.i
+	@echo ... tariffadminwindow.s
+	@echo ... tariffuserwindow.obj
+	@echo ... tariffuserwindow.i
+	@echo ... tariffuserwindow.s
 	@echo ... trainadminwindow.obj
 	@echo ... trainadminwindow.i
 	@echo ... trainadminwindow.s

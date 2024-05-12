@@ -311,6 +311,42 @@
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/routeadminwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_routeadminwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/routeuserwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_routeuserwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/stationadminwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_stationadminwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/stationuserwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_stationuserwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/tariffadminwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_tariffadminwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/tariffuserwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_tariffuserwindow.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/trainadminwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_trainadminwindow.cpp",
@@ -395,6 +431,12 @@
 		[ "D:/qt/projects/TrainGid/choicewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/main.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/mainwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/routeadminwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/routeuserwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/stationadminwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/stationuserwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/tariffadminwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/tariffuserwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainadminwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainuserwindow.cpp", "MU", null ]
 	],

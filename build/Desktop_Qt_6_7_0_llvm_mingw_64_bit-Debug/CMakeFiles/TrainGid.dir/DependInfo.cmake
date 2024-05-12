@@ -13,6 +13,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/qt/projects/TrainGid/choicewindow.cpp" "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/main.cpp" "CMakeFiles/TrainGid.dir/main.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/main.cpp.obj.d"
   "D:/qt/projects/TrainGid/mainwindow.cpp" "CMakeFiles/TrainGid.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/mainwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/routeadminwindow.cpp" "CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/routeuserwindow.cpp" "CMakeFiles/TrainGid.dir/routeuserwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/routeuserwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/stationadminwindow.cpp" "CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/stationuserwindow.cpp" "CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/tariffadminwindow.cpp" "CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/tariffuserwindow.cpp" "CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/trainadminwindow.cpp" "CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/trainuserwindow.cpp" "CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj.d"
   )
