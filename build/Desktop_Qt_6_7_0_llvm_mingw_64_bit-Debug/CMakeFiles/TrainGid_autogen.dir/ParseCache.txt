@@ -1049,6 +1049,7 @@ D:/qt/projects/TrainGid/mainwindow.h
  mdp:D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow
+ mdp:D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget
  mdp:D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h
  mdp:D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h
@@ -1810,7 +1811,12 @@ D:/qt/projects/TrainGid/mainwindow.h
  mdp:D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdarg.h
  mdp:D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h
  mdp:D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/moc_predefs.h
+ mdp:D:/qt/projects/TrainGid/choicewindow.h
  mdp:D:/qt/projects/TrainGid/mainwindow.h
+ mdp:D:/qt/projects/TrainGid/routeuserwindow.h
+ mdp:D:/qt/projects/TrainGid/stationuserwindow.h
+ mdp:D:/qt/projects/TrainGid/tariffuserwindow.h
+ mdp:D:/qt/projects/TrainGid/trainuserwindow.h
 D:/qt/projects/TrainGid/routeadminwindow.cpp
  uic:ui_routeadminwindow.h
 D:/qt/projects/TrainGid/trainuserwindow.h

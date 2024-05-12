@@ -111,37 +111,11 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>790</x>
-      <y>19</y>
-      <width>126</width>
-      <height>37</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 20px; </string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="resources.qrc">
-      <normaloff>:/homeButton.png</normaloff>:/homeButton.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>126</width>
-      <height>37</height>
-     </size>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>19</y>
+      <x>789</x>
+      <y>22</y>
       <width>126</width>
       <height>37</height>
      </rect>
@@ -166,8 +140,8 @@
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>482</x>
-      <y>19</y>
+      <x>639</x>
+      <y>22</y>
       <width>134</width>
       <height>37</height>
      </rect>
@@ -192,8 +166,8 @@
    <widget class="QPushButton" name="pushButton_7">
     <property name="geometry">
      <rect>
-      <x>332</x>
-      <y>19</y>
+      <x>497</x>
+      <y>22</y>
       <width>126</width>
       <height>37</height>
      </rect>
@@ -218,8 +192,8 @@
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
-      <x>182</x>
-      <y>19</y>
+      <x>355</x>
+      <y>22</y>
       <width>126</width>
       <height>37</height>
      </rect>

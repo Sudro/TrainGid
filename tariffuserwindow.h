@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::TariffUserWindow *ui;
+
 };
 
 #endif // TARIFFUSERWINDOW_H

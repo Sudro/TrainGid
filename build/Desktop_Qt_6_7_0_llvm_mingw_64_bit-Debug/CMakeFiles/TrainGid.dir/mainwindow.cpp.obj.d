@@ -937,6 +937,12 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
+  D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
+  D:/qt/projects/TrainGid/tariffuserwindow.h \
+  D:/qt/projects/TrainGid/stationuserwindow.h \
+  D:/qt/projects/TrainGid/routeuserwindow.h \
+  D:/qt/projects/TrainGid/trainuserwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/./ui_mainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
@@ -963,4 +969,18 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h
