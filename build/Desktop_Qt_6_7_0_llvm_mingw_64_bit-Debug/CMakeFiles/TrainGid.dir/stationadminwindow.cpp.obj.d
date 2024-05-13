@@ -979,4 +979,26 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtableview.h
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtableview.h \
+  D:/qt/projects/TrainGid/tariffadminwindow.h \
+  D:/qt/projects/TrainGid/routeadminwindow.h \
+  D:/qt/projects/TrainGid/trainadminwindow.h \
+  D:/qt/projects/TrainGid/mainwindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h

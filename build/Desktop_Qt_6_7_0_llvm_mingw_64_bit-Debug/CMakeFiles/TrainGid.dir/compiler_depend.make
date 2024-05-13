@@ -3884,6 +3884,11 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: D:/qt/projects/TrainGid/mainwindow.c
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routeadminwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
@@ -4016,11 +4021,15 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcolor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfont.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontmetrics.h \
@@ -4028,6 +4037,7 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qicon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qimage.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qkeysequence.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpaintdevice.h \
@@ -4035,21 +4045,27 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixelformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpolygon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
@@ -4063,6 +4079,7 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qheaderview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -4863,7 +4880,12 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_routeadminwindow.h \
-  D:/qt/projects/TrainGid/routeadminwindow.h
+  D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/projects/TrainGid/mainwindow.h \
+  D:/qt/projects/TrainGid/routeadminwindow.h \
+  D:/qt/projects/TrainGid/stationadminwindow.h \
+  D:/qt/projects/TrainGid/tariffadminwindow.h \
+  D:/qt/projects/TrainGid/trainadminwindow.h
 
 CMakeFiles/TrainGid.dir/routeuserwindow.cpp.obj: D:/qt/projects/TrainGid/routeuserwindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
@@ -5870,6 +5892,11 @@ CMakeFiles/TrainGid.dir/routeuserwindow.cpp.obj: D:/qt/projects/TrainGid/routeus
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stationadminwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
@@ -6002,11 +6029,15 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcolor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfont.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontmetrics.h \
@@ -6014,6 +6045,7 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qicon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qimage.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qkeysequence.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpaintdevice.h \
@@ -6021,21 +6053,27 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixelformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpolygon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
@@ -6049,6 +6087,7 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qheaderview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -6849,7 +6888,12 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_stationadminwindow.h \
-  D:/qt/projects/TrainGid/stationadminwindow.h
+  D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/projects/TrainGid/mainwindow.h \
+  D:/qt/projects/TrainGid/routeadminwindow.h \
+  D:/qt/projects/TrainGid/stationadminwindow.h \
+  D:/qt/projects/TrainGid/tariffadminwindow.h \
+  D:/qt/projects/TrainGid/trainadminwindow.h
 
 CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj: D:/qt/projects/TrainGid/stationuserwindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
@@ -7856,6 +7900,11 @@ CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj: D:/qt/projects/TrainGid/stati
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tariffadminwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
@@ -7988,11 +8037,15 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcolor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfont.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontmetrics.h \
@@ -8000,6 +8053,7 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qicon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qimage.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qkeysequence.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpaintdevice.h \
@@ -8007,21 +8061,27 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixelformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpolygon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
@@ -8035,6 +8095,7 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qheaderview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -8835,7 +8896,12 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_tariffadminwindow.h \
-  D:/qt/projects/TrainGid/tariffadminwindow.h
+  D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/projects/TrainGid/mainwindow.h \
+  D:/qt/projects/TrainGid/routeadminwindow.h \
+  D:/qt/projects/TrainGid/stationadminwindow.h \
+  D:/qt/projects/TrainGid/tariffadminwindow.h \
+  D:/qt/projects/TrainGid/trainadminwindow.h
 
 CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj: D:/qt/projects/TrainGid/tariffuserwindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
@@ -9842,6 +9908,11 @@ CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj: D:/qt/projects/TrainGid/tariff
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/trainadminwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
@@ -9974,11 +10045,15 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcolor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfont.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontmetrics.h \
@@ -9986,6 +10061,7 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qicon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qimage.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qkeysequence.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpaintdevice.h \
@@ -9993,21 +10069,27 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixelformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpolygon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
@@ -10021,6 +10103,7 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qheaderview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -10821,6 +10904,11 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_trainadminwindow.h \
+  D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/projects/TrainGid/mainwindow.h \
+  D:/qt/projects/TrainGid/routeadminwindow.h \
+  D:/qt/projects/TrainGid/stationadminwindow.h \
+  D:/qt/projects/TrainGid/tariffadminwindow.h \
   D:/qt/projects/TrainGid/trainadminwindow.h
 
 CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj: D:/qt/projects/TrainGid/trainuserwindow.cpp \
