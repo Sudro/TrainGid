@@ -1,0 +1,3 @@
+D:\qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\MyExecutable.dir/objects.a
+D:\qt\Tools\llvm-mingw1706_64\bin\llvm-ar.exe qc CMakeFiles\MyExecutable.dir/objects.a @CMakeFiles\MyExecutable.dir\objects1.rsp
+D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe -DQT_QML_DEBUG -g -Wl,--whole-archive CMakeFiles\MyExecutable.dir/objects.a -Wl,--no-whole-archive -o MyExecutable.exe -Wl,--out-implib,libMyExecutable.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyExecutable.dir\linkLibs.rsp

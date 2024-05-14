@@ -11090,12 +11090,26 @@ CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj: D:/qt/projects/TrainGid/trainus
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqltablemodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QVBoxLayout \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -11104,10 +11118,17 @@ CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj: D:/qt/projects/TrainGid/trainus
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractslider.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractspinbox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qboxlayout.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qheaderview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayout.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -11986,6 +12007,8 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qconfig.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydatapointer.h:
 
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqltablemodel.h:
+
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__atomic/memory_order.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qmetacontainer.h:
@@ -12187,6 +12210,8 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qmath.h:
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qrect.h:
 
 D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/for_each.h:
 
@@ -12401,6 +12426,8 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/partial_sort.h:
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qtmochelpers.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_max_element.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgetsglobal.h:
 
@@ -12930,6 +12957,8 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_includes.h:
 
 D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdarg.h:
 
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h:
+
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_inplace_merge.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_is_heap.h:
@@ -12997,6 +13026,8 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_mismatch.h:
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_default_constructible.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_next_permutation.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayoutitem.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_partial_sort_copy.h:
 
@@ -13298,6 +13329,8 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__concepts/constructible.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__memory/allocator_traits.h:
 
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qboxlayout.h:
+
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__concepts/convertible_to.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__concepts/copyable.h:
@@ -13593,6 +13626,8 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__ranges/subrange.h:
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__string/char_traits.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/iosfwd:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__string/constexpr_c_functions.h:
 
@@ -13991,5 +14026,33 @@ TrainGid_autogen/include/ui_tariffadminwindow.h:
 D:/qt/projects/TrainGid/tariffuserwindow.cpp:
 
 TrainGid_autogen/include/ui_tariffuserwindow.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QVBoxLayout:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayout.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h:
 
 TrainGid_autogen/include/ui_trainuserwindow.h:

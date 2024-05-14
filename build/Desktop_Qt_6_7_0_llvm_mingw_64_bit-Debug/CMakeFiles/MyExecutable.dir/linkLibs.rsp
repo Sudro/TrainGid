@@ -1,0 +1,1 @@
+ "D:/qt/6.7.0/llvm-mingw_64/lib/libQt6Widgets.a" "D:/qt/6.7.0/llvm-mingw_64/lib/libQt6Gui.a" "D:/qt/6.7.0/llvm-mingw_64/lib/libQt6Sql.a" -ld3d11 -ldxgi -ldxguid -ld3d12 "D:/qt/6.7.0/llvm-mingw_64/lib/libQt6Core.a" -pthread -lmpr -luserenv -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
