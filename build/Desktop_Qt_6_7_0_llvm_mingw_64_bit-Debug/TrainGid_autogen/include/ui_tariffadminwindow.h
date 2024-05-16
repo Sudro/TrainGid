@@ -119,7 +119,44 @@ public:
         tableView = new QTableView(TariffAdminWindow);
         tableView->setObjectName("tableView");
         tableView->setGeometry(QRect(48, 115, 890, 280));
-        tableView->setStyleSheet(QString::fromUtf8("border: 3px solid #6E93FC; border-radius: 5px; background-color: white; "));
+        tableView->setStyleSheet(QString::fromUtf8("QTableView {\n"
+"    border: 3px solid #6E93FC;\n"
+"    border-radius: 5px;\n"
+"    gridline-color: #6D55FF;\n"
+"    background-color: white;	\n"
+"}\n"
+"\n"
+"QTableView::item {\n"
+"    background-color: white;\n"
+"    font-family: Karla; /* \320\243\321\201\321\202\320\260\320\275\320\276\320\262\320\272\320\260 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
+"    font-size: 15pt; /* \320\243\321\201\321\202\320\260\320\275\320\276\320\262\320\272\320\260 \321\200\320\260\320\267\320\274\320\265\321\200\320\260 \321\210\321\200\320\270\321\204\321\202\320\260 */\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QTableView::item:selected {\n"
+"    background-color: #6D55FF;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QTableView::item:focus {\n"
+"    background-color: #6D55FF;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: #6D55FF;\n"
+"    color: white;\n"
+"    font-family: Karla;\n"
+"    font-size: 14pt;\n"
+"}\n"
+"QHeaderView::section:horizontal {\n"
+"    border: none; /* \321\203\320\261"
+                        "\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
+"}\n"
+"\n"
+"QHeaderView::section:vertical {\n"
+"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
+"}"));
         tableView->setShowGrid(true);
 
         retranslateUi(TariffAdminWindow);

@@ -29,5 +29,8 @@
         <file>routeButton2New.png</file>
         <file>trainButton2New.png</file>
         <file>homeButton2_New.png</file>
+        <file>closeIcon2.png</file>
+        <file>swapIcon2.png</file>
+        <file>mainButtonFrame2.png</file>
     </qresource>
 </RCC>

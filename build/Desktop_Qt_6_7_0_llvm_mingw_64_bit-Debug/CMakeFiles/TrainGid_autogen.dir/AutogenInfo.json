@@ -335,6 +335,12 @@
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/databasemanager.h",
+			"MU",
+			"EWIEGA46WW/moc_databasemanager.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -461,6 +467,7 @@
 	"SOURCES" : 
 	[
 		[ "D:/qt/projects/TrainGid/choicewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/databasemanager.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/main.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/mainwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/routeadminwindow.cpp", "MU", null ],

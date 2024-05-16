@@ -70,9 +70,11 @@ include CMakeFiles/TrainGid.dir/flags.make
 
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/resources.qrc
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/TrainGid_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/mainButtonFrame2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffsButton2New.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/adminButton.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/closeIcon2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/routeButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/mainFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffsButton2.png
@@ -80,6 +82,7 @@ TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/homeButto
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/routeFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationsButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationsButton2New.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/swapIcon2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/swapIcon.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainButton2New.png
@@ -283,11 +286,26 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.s"
 	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\tariffadminwindow.cpp -o CMakeFiles\TrainGid.dir\tariffadminwindow.cpp.s
 
+CMakeFiles/TrainGid.dir/databasemanager.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/databasemanager.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/databasemanager.cpp.obj: D:/qt/projects/TrainGid/databasemanager.cpp
+CMakeFiles/TrainGid.dir/databasemanager.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TrainGid.dir/databasemanager.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/databasemanager.cpp.obj -MF CMakeFiles\TrainGid.dir\databasemanager.cpp.obj.d -o CMakeFiles\TrainGid.dir\databasemanager.cpp.obj -c D:\qt\projects\TrainGid\databasemanager.cpp
+
+CMakeFiles/TrainGid.dir/databasemanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/databasemanager.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\databasemanager.cpp > CMakeFiles\TrainGid.dir\databasemanager.cpp.i
+
+CMakeFiles/TrainGid.dir/databasemanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/databasemanager.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\databasemanager.cpp -o CMakeFiles\TrainGid.dir\databasemanager.cpp.s
+
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\TrainGid.dir\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\TrainGid.dir\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp
 
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -312,6 +330,7 @@ TrainGid_OBJECTS = \
 "CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj" \
 "CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj" \
 "CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/databasemanager.cpp.obj" \
 "CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target TrainGid
@@ -329,6 +348,7 @@ TrainGid.exe: CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/databasemanager.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/build.make
 TrainGid.exe: D:/qt/6.7.0/llvm-mingw_64/lib/libQt6Widgets.a
@@ -339,7 +359,7 @@ TrainGid.exe: D:/qt/6.7.0/llvm-mingw_64/lib/libQt6EntryPoint.a
 TrainGid.exe: CMakeFiles/TrainGid.dir/linkLibs.rsp
 TrainGid.exe: CMakeFiles/TrainGid.dir/objects1.rsp
 TrainGid.exe: CMakeFiles/TrainGid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable TrainGid.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable TrainGid.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TrainGid.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

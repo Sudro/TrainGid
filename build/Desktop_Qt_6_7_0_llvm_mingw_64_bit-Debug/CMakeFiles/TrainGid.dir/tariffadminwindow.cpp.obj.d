@@ -987,6 +987,7 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
@@ -1001,4 +1002,27 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqltablemodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QVBoxLayout \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qboxlayout.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayout.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayoutitem.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h \
+  D:/qt/projects/TrainGid/DatabaseManager.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug

@@ -5,6 +5,13 @@
 #include "trainuserwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
+#include <QSqlTableModel>
+#include <QMessageBox>
+#include <QVBoxLayout>
+#include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
 
 StationUserWindow::StationUserWindow(QWidget *parent)
     : QWidget(parent)
@@ -12,8 +19,31 @@ StationUserWindow::StationUserWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->tableView->verticalHeader()->hide();
+    ui->tableView->verticalHeader()->setVisible(false);
+
     // Устанавливаем флаг Qt::FramelessWindowHint
     setWindowFlags(Qt::FramelessWindowHint);
+
+    // Получаем экземпляр DatabaseManager и открываем базу данных
+    DatabaseManager& dbManager = DatabaseManager::instance();
+    if (dbManager.openDatabase())
+    {
+        // Создаем модель для отображения данных
+        QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
+        model->setTable("stations");
+        model->select();
+
+        // Устанавливаем режим растягивания столбцов
+        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+        // Устанавливаем модель в tableView
+        ui->tableView->setModel(model);
+    }
+    else
+    {
+        qDebug() << "Failed to open database";
+    }
 }
 
 StationUserWindow::~StationUserWindow()

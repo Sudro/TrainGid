@@ -987,6 +987,7 @@ CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
@@ -1022,4 +1023,6 @@ CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qboxlayout.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayout.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayoutitem.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h \
+  D:/qt/projects/TrainGid/DatabaseManager.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug

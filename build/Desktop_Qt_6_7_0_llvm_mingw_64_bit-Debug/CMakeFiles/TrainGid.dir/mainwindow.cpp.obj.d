@@ -939,13 +939,17 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qt/projects/TrainGid/choicewindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/./ui_mainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreapplication.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qdeadlinetimer.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qelapsedtimer.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qeventloop.h \
@@ -962,9 +966,6 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qiodevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qurl.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/projects/TrainGid/tariffuserwindow.h \
   D:/qt/projects/TrainGid/stationuserwindow.h \
   D:/qt/projects/TrainGid/routeuserwindow.h \

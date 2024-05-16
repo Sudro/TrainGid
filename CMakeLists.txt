@@ -36,6 +36,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         stationadminwindow.h stationadminwindow.cpp stationadminwindow.ui
         tariffuserwindow.h tariffuserwindow.cpp tariffuserwindow.ui
         tariffadminwindow.h tariffadminwindow.cpp tariffadminwindow.ui
+        databasemanager.h databasemanager.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TrainGid APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include "choicewindow.h" // Включаем заголовочный файл ChoiceWindow
+#include <QEvent>
+#include <QPushButton>
+#include <QIcon>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,9 +22,7 @@ public:
     ~MainWindow();
 
 protected:
-    void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;
-    void mouseReleaseEvent(QMouseEvent *event) override;
+    bool eventFilter(QObject *obj, QEvent *event) override;
 
 private slots:
     void on_pushButton_clicked();
@@ -38,9 +39,15 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
+
 private:
     Ui::MainWindow *ui;
     ChoiceWindow *choiceWindow; // Добавьте указатель на ChoiceWindow
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
+
+    void updateButtonIcon(QPushButton *button, const QString &iconPath);
 };
 #endif // MAINWINDOW_H

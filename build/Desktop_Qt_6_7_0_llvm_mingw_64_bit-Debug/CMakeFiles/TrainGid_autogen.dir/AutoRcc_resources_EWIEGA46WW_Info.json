@@ -7,9 +7,11 @@
 	"INCLUDE_DIR" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include",
 	"INPUTS" : 
 	[
+		"D:/qt/projects/TrainGid/mainButtonFrame2.png",
 		"D:/qt/projects/TrainGid/stationFrame.png",
 		"D:/qt/projects/TrainGid/tariffsButton2New.png",
 		"D:/qt/projects/TrainGid/adminButton.png",
+		"D:/qt/projects/TrainGid/closeIcon2.png",
 		"D:/qt/projects/TrainGid/routeButton2.png",
 		"D:/qt/projects/TrainGid/mainFrame.png",
 		"D:/qt/projects/TrainGid/tariffsButton2.png",
@@ -17,6 +19,7 @@
 		"D:/qt/projects/TrainGid/routeFrame.png",
 		"D:/qt/projects/TrainGid/stationsButton.png",
 		"D:/qt/projects/TrainGid/stationsButton2New.png",
+		"D:/qt/projects/TrainGid/swapIcon2.png",
 		"D:/qt/projects/TrainGid/swapIcon.png",
 		"D:/qt/projects/TrainGid/tariffFrame.png",
 		"D:/qt/projects/TrainGid/trainButton2New.png",

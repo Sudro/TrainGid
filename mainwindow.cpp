@@ -28,12 +28,71 @@ MainWindow::MainWindow(QWidget *parent)
     // Добавляем обработчик для кнопки pushButton_3
     //connect(ui->pushButton_3, &QPushButton::clicked, this, &MainWindow::on_pushButton_3_clicked);
 
+    // Устанавливаем фильтр событий для кнопок
+    ui->pushButton->installEventFilter(this);
+    ui->pushButton_2->installEventFilter(this);
+    ui->pushButton_3->installEventFilter(this);
+    ui->pushButton_5->installEventFilter(this);
+    ui->pushButton_6->installEventFilter(this);
+    ui->pushButton_7->installEventFilter(this);
+    ui->pushButton_8->installEventFilter(this);
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
     delete choiceWindow; // Освобождаем память, выделенную под ChoiceWindow
+}
+
+bool MainWindow::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::Enter || event->type() == QEvent::Leave) {
+        QPushButton *button = qobject_cast<QPushButton*>(obj);
+        if (button) {
+            if (event->type() == QEvent::Enter) {
+                if (button == ui->pushButton_2) {
+                    updateButtonIcon(button, ":/closeIcon2.png");
+                } else if (button == ui->pushButton_3) {
+                    updateButtonIcon(button, ":/swapIcon2.png");
+                } else if (button == ui->pushButton_5) {
+                    updateButtonIcon(button, ":/trainButton2New.png");
+                } else if (button == ui->pushButton_6) {
+                    updateButtonIcon(button, ":/routeButton2New.png");
+                } else if (button == ui->pushButton_7) {
+                    updateButtonIcon(button, ":/stationsButton2New.png");
+                } else if (button == ui->pushButton_8) {
+                    updateButtonIcon(button, ":/tariffsButton2New.png");
+                } else if (button == ui->pushButton) {
+                    updateButtonIcon(button, ":/mainButtonFrame2.png");
+                }
+            } else if (event->type() == QEvent::Leave) {
+                // Здесь можно вернуть исходную иконку кнопки
+                if (button == ui->pushButton_2) {
+                    updateButtonIcon(button, ":/closeIcon.png");
+                } else if (button == ui->pushButton_3) {
+                    updateButtonIcon(button, ":/swapIcon.png");
+                } else if (button == ui->pushButton_5) {
+                    updateButtonIcon(button, ":/trainButton.png");
+                } else if (button == ui->pushButton_6) {
+                    updateButtonIcon(button, ":/routeButton.png");
+                } else if (button == ui->pushButton_7) {
+                    updateButtonIcon(button, ":/stationsButton.png");
+                } else if (button == ui->pushButton_8) {
+                    updateButtonIcon(button, ":/tariffsButton.png");
+                } else if (button == ui->pushButton) {
+                    updateButtonIcon(button, ":/mainButtonFrame.png");
+                }
+            }
+        }
+        return true;
+    }
+    return QMainWindow::eventFilter(obj, event);
+}
+
+void MainWindow::updateButtonIcon(QPushButton *button, const QString &iconPath)
+{
+    button->setIcon(QIcon(iconPath));
 }
 
 // Определяем слот для открытия окна ChoiceWindow
