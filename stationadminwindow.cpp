@@ -44,6 +44,14 @@ StationAdminWIndow::StationAdminWIndow(QWidget *parent)
     {
         qDebug() << "Failed to open database";
     }
+
+    // Устанавливаем фильтр событий для кнопок
+    ui->pushButton_2->installEventFilter(this);
+    ui->pushButton_3->installEventFilter(this);
+    ui->pushButton_4->installEventFilter(this);
+    ui->pushButton_5->installEventFilter(this);
+    ui->pushButton_6->installEventFilter(this);
+    ui->pushButton_8->installEventFilter(this);
 }
 
 StationAdminWIndow::~StationAdminWIndow()
@@ -130,5 +138,49 @@ void StationAdminWIndow::on_pushButton_6_clicked()
     routeAdminWindow->show();
     // Закрываем текущее окно (StationAdminWIndow)
     this->close();
+}
+
+bool StationAdminWIndow::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::Enter || event->type() == QEvent::Leave) {
+        QPushButton *button = qobject_cast<QPushButton*>(obj);
+        if (event->type() == QEvent::Enter) {
+            if (button == ui->pushButton_2) {
+                updateButtonIcon(button, ":/closeIcon2.png");
+            } else if (button == ui->pushButton_3) {
+                updateButtonIcon(button, ":/swapIcon2.png");
+            } else if (button == ui->pushButton_4) {
+                updateButtonIcon(button, ":/homeButton4.png");
+            } else if (button == ui->pushButton_5) {
+                updateButtonIcon(button, ":/trainButton3.png");
+            } else if (button == ui->pushButton_6) {
+                updateButtonIcon(button, ":/routeButton3.png");
+            } else if (button == ui->pushButton_8) {
+                updateButtonIcon(button, ":/tariffsButton3.png");
+            }
+        } else if (event->type() == QEvent::Leave) {
+            // Здесь можно вернуть исходную иконку кнопки
+            if (button == ui->pushButton_2) {
+                updateButtonIcon(button, ":/closeIcon.png");
+            } else if (button == ui->pushButton_3) {
+                updateButtonIcon(button, ":/swapIcon.png");
+            } else if (button == ui->pushButton_4) {
+                updateButtonIcon(button, ":/homeButton2_New.png");
+            } else if (button == ui->pushButton_5) {
+                updateButtonIcon(button, ":/trainButton2New.png");
+            } else if (button == ui->pushButton_6) {
+                updateButtonIcon(button, ":/routeButton2New.png");
+            } else if (button == ui->pushButton_8) {
+                updateButtonIcon(button, ":/tariffsButton2New.png");
+            }
+        }
+        return true;
+    }
+    return QWidget::eventFilter(obj, event);
+}
+
+void StationAdminWIndow::updateButtonIcon(QPushButton *button, const QString &iconPath)
+{
+    button->setIcon(QIcon(iconPath));
 }
 

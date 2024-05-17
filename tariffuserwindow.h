@@ -2,6 +2,9 @@
 #define TARIFFUSERWINDOW_H
 
 #include <QWidget>
+#include <QEvent>
+#include <QPushButton>
+#include <QIcon>
 
 namespace Ui {
 class TariffUserWindow;
@@ -16,9 +19,7 @@ public:
     ~TariffUserWindow();
 
 protected:
-    void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;
-    void mouseReleaseEvent(QMouseEvent *event) override;
+    bool eventFilter(QObject *obj, QEvent *event) override;
 
 private slots:
     void on_pushButton_4_clicked();
@@ -33,10 +34,16 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
+
 private:
     Ui::TariffUserWindow *ui;
 
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
+
+    void updateButtonIcon(QPushButton *button, const QString &iconPath);
 
 };
 

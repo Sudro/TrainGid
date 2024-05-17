@@ -970,6 +970,7 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: TrainGid_auto
   TrainGid_autogen/EWIEGA46WW/moc_trainuserwindow.cpp
 
 CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: D:/qt/projects/TrainGid/choicewindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \

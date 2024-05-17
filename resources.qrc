@@ -32,5 +32,13 @@
         <file>closeIcon2.png</file>
         <file>swapIcon2.png</file>
         <file>mainButtonFrame2.png</file>
+        <file>adminButton2.png</file>
+        <file>userButton2.png</file>
+        <file>homeButton3.png</file>
+        <file>homeButton4.png</file>
+        <file>routeButton3.png</file>
+        <file>stationsButton3.png</file>
+        <file>tariffsButton3.png</file>
+        <file>trainButton3.png</file>
     </qresource>
 </RCC>
