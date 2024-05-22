@@ -10,8 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj.d"
   "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/mocs_compilation.cpp" "CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj.d"
+  "D:/qt/projects/TrainGid/addwindow.cpp" "CMakeFiles/TrainGid.dir/addwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/addwindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/changewindow.cpp" "CMakeFiles/TrainGid.dir/changewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/changewindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/choicewindow.cpp" "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/databasemanager.cpp" "CMakeFiles/TrainGid.dir/databasemanager.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/databasemanager.cpp.obj.d"
+  "D:/qt/projects/TrainGid/deletewindow.cpp" "CMakeFiles/TrainGid.dir/deletewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/deletewindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/main.cpp" "CMakeFiles/TrainGid.dir/main.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/main.cpp.obj.d"
   "D:/qt/projects/TrainGid/mainwindow.cpp" "CMakeFiles/TrainGid.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/mainwindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/routeadminwindow.cpp" "CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj.d"

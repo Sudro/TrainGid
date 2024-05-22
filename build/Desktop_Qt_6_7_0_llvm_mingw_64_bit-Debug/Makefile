@@ -234,6 +234,54 @@ TrainGid_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.s
 .PHONY : TrainGid_autogen/mocs_compilation.cpp.s
 
+addwindow.obj: addwindow.cpp.obj
+.PHONY : addwindow.obj
+
+# target to build an object file
+addwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/addwindow.cpp.obj
+.PHONY : addwindow.cpp.obj
+
+addwindow.i: addwindow.cpp.i
+.PHONY : addwindow.i
+
+# target to preprocess a source file
+addwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/addwindow.cpp.i
+.PHONY : addwindow.cpp.i
+
+addwindow.s: addwindow.cpp.s
+.PHONY : addwindow.s
+
+# target to generate assembly for a file
+addwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/addwindow.cpp.s
+.PHONY : addwindow.cpp.s
+
+changewindow.obj: changewindow.cpp.obj
+.PHONY : changewindow.obj
+
+# target to build an object file
+changewindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/changewindow.cpp.obj
+.PHONY : changewindow.cpp.obj
+
+changewindow.i: changewindow.cpp.i
+.PHONY : changewindow.i
+
+# target to preprocess a source file
+changewindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/changewindow.cpp.i
+.PHONY : changewindow.cpp.i
+
+changewindow.s: changewindow.cpp.s
+.PHONY : changewindow.s
+
+# target to generate assembly for a file
+changewindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/changewindow.cpp.s
+.PHONY : changewindow.cpp.s
+
 choicewindow.obj: choicewindow.cpp.obj
 .PHONY : choicewindow.obj
 
@@ -281,6 +329,30 @@ databasemanager.s: databasemanager.cpp.s
 databasemanager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/databasemanager.cpp.s
 .PHONY : databasemanager.cpp.s
+
+deletewindow.obj: deletewindow.cpp.obj
+.PHONY : deletewindow.obj
+
+# target to build an object file
+deletewindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/deletewindow.cpp.obj
+.PHONY : deletewindow.cpp.obj
+
+deletewindow.i: deletewindow.cpp.i
+.PHONY : deletewindow.i
+
+# target to preprocess a source file
+deletewindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/deletewindow.cpp.i
+.PHONY : deletewindow.cpp.i
+
+deletewindow.s: deletewindow.cpp.s
+.PHONY : deletewindow.s
+
+# target to generate assembly for a file
+deletewindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/deletewindow.cpp.s
+.PHONY : deletewindow.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -542,12 +614,21 @@ help:
 	@echo ... TrainGid_autogen/mocs_compilation.obj
 	@echo ... TrainGid_autogen/mocs_compilation.i
 	@echo ... TrainGid_autogen/mocs_compilation.s
+	@echo ... addwindow.obj
+	@echo ... addwindow.i
+	@echo ... addwindow.s
+	@echo ... changewindow.obj
+	@echo ... changewindow.i
+	@echo ... changewindow.s
 	@echo ... choicewindow.obj
 	@echo ... choicewindow.i
 	@echo ... choicewindow.s
 	@echo ... databasemanager.obj
 	@echo ... databasemanager.i
 	@echo ... databasemanager.s
+	@echo ... deletewindow.obj
+	@echo ... deletewindow.i
+	@echo ... deletewindow.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

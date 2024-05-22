@@ -329,6 +329,18 @@
 	"HEADERS" : 
 	[
 		[
+			"D:/qt/projects/TrainGid/addwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_addwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/changewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_changewindow.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/choicewindow.h",
 			"MU",
 			"EWIEGA46WW/moc_choicewindow.cpp",
@@ -338,6 +350,12 @@
 			"D:/qt/projects/TrainGid/databasemanager.h",
 			"MU",
 			"EWIEGA46WW/moc_databasemanager.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/deletewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_deletewindow.cpp",
 			null
 		],
 		[
@@ -466,8 +484,11 @@
 	"SETTINGS_FILE" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/CMakeFiles/TrainGid_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "D:/qt/projects/TrainGid/addwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/changewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/choicewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/databasemanager.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/deletewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/main.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/mainwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/routeadminwindow.cpp", "MU", null ],

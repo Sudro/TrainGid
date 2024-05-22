@@ -1,7 +1,7 @@
 CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/mocs_compilation.cpp \
-  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_choicewindow.cpp \
-  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../choicewindow.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_addwindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../addwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qwidget.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -936,13 +936,19 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qtmochelpers.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_changewindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../changewindow.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_choicewindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../choicewindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qtmochelpers.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_deletewindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../deletewindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_mainwindow.cpp \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../mainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \

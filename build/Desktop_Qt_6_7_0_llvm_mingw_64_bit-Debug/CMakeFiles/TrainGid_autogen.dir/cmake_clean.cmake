@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TrainGid_autogen"
+  "TrainGid_autogen/include/ui_addwindow.h"
+  "TrainGid_autogen/include/ui_changewindow.h"
   "TrainGid_autogen/include/ui_choicewindow.h"
+  "TrainGid_autogen/include/ui_deletewindow.h"
   "TrainGid_autogen/include/ui_mainwindow.h"
   "TrainGid_autogen/include/ui_routeadminwindow.h"
   "TrainGid_autogen/include/ui_routeuserwindow.h"
