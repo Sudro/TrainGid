@@ -73,8 +73,10 @@ TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/TrainGid_autogen.dir/A
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/mainButtonFrame2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffsButton2New.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/DownArrow.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/adminButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/closeIcon2.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/changeWindow.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/routeButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/mainFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffsButton2.png
@@ -85,6 +87,7 @@ TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationsB
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationsButton2New.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/routeButton3.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/homeButton4.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/deleteWindow.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/swapIcon2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/swapIcon.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffFrame.png
@@ -92,10 +95,14 @@ TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainButt
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/routeButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/adminButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainButton3.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/connectTrainStationButton.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/DownArrow2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/mainButtonFrame.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/DeleteConnectWindow.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationsButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/userButton.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/addConnectWindow.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/routeButton2New.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/appendAdminButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/removeAdminButton.png
@@ -104,12 +111,14 @@ TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/userButto
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffsButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/homeButton2_New.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/changeAdminButton.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/addWindow.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/homeButton3.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationsButton3.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/homeButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/closeIcon.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainButton.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/removeAdminNewButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/6.7.0/llvm-mingw_64/./bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources.qrc"
 	D:\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/CMakeFiles/TrainGid_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug
@@ -309,56 +318,221 @@ CMakeFiles/TrainGid.dir/databasemanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/databasemanager.cpp.s"
 	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\databasemanager.cpp -o CMakeFiles\TrainGid.dir\databasemanager.cpp.s
 
-CMakeFiles/TrainGid.dir/addwindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
-CMakeFiles/TrainGid.dir/addwindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
-CMakeFiles/TrainGid.dir/addwindow.cpp.obj: D:/qt/projects/TrainGid/addwindow.cpp
-CMakeFiles/TrainGid.dir/addwindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TrainGid.dir/addwindow.cpp.obj"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/addwindow.cpp.obj -MF CMakeFiles\TrainGid.dir\addwindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\addwindow.cpp.obj -c D:\qt\projects\TrainGid\addwindow.cpp
+CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainaddwindow.cpp
+CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj -MF CMakeFiles\TrainGid.dir\trainaddwindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\trainaddwindow.cpp.obj -c D:\qt\projects\TrainGid\trainaddwindow.cpp
 
-CMakeFiles/TrainGid.dir/addwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/addwindow.cpp.i"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\addwindow.cpp > CMakeFiles\TrainGid.dir\addwindow.cpp.i
+CMakeFiles/TrainGid.dir/trainaddwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/trainaddwindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\trainaddwindow.cpp > CMakeFiles\TrainGid.dir\trainaddwindow.cpp.i
 
-CMakeFiles/TrainGid.dir/addwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/addwindow.cpp.s"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\addwindow.cpp -o CMakeFiles\TrainGid.dir\addwindow.cpp.s
+CMakeFiles/TrainGid.dir/trainaddwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/trainaddwindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\trainaddwindow.cpp -o CMakeFiles\TrainGid.dir\trainaddwindow.cpp.s
 
-CMakeFiles/TrainGid.dir/changewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
-CMakeFiles/TrainGid.dir/changewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
-CMakeFiles/TrainGid.dir/changewindow.cpp.obj: D:/qt/projects/TrainGid/changewindow.cpp
-CMakeFiles/TrainGid.dir/changewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/TrainGid.dir/changewindow.cpp.obj"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/changewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\changewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\changewindow.cpp.obj -c D:\qt\projects\TrainGid\changewindow.cpp
+CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/trainchangewindow.cpp
+CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\trainchangewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\trainchangewindow.cpp.obj -c D:\qt\projects\TrainGid\trainchangewindow.cpp
 
-CMakeFiles/TrainGid.dir/changewindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/changewindow.cpp.i"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\changewindow.cpp > CMakeFiles\TrainGid.dir\changewindow.cpp.i
+CMakeFiles/TrainGid.dir/trainchangewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/trainchangewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\trainchangewindow.cpp > CMakeFiles\TrainGid.dir\trainchangewindow.cpp.i
 
-CMakeFiles/TrainGid.dir/changewindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/changewindow.cpp.s"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\changewindow.cpp -o CMakeFiles\TrainGid.dir\changewindow.cpp.s
+CMakeFiles/TrainGid.dir/trainchangewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/trainchangewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\trainchangewindow.cpp -o CMakeFiles\TrainGid.dir\trainchangewindow.cpp.s
 
-CMakeFiles/TrainGid.dir/deletewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
-CMakeFiles/TrainGid.dir/deletewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
-CMakeFiles/TrainGid.dir/deletewindow.cpp.obj: D:/qt/projects/TrainGid/deletewindow.cpp
-CMakeFiles/TrainGid.dir/deletewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/TrainGid.dir/deletewindow.cpp.obj"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/deletewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\deletewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\deletewindow.cpp.obj -c D:\qt\projects\TrainGid\deletewindow.cpp
+CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: D:/qt/projects/TrainGid/traindeletewindow.cpp
+CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\traindeletewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\traindeletewindow.cpp.obj -c D:\qt\projects\TrainGid\traindeletewindow.cpp
 
-CMakeFiles/TrainGid.dir/deletewindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/deletewindow.cpp.i"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\deletewindow.cpp > CMakeFiles\TrainGid.dir\deletewindow.cpp.i
+CMakeFiles/TrainGid.dir/traindeletewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/traindeletewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\traindeletewindow.cpp > CMakeFiles\TrainGid.dir\traindeletewindow.cpp.i
 
-CMakeFiles/TrainGid.dir/deletewindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/deletewindow.cpp.s"
-	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\deletewindow.cpp -o CMakeFiles\TrainGid.dir\deletewindow.cpp.s
+CMakeFiles/TrainGid.dir/traindeletewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/traindeletewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\traindeletewindow.cpp -o CMakeFiles\TrainGid.dir\traindeletewindow.cpp.s
+
+CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeaddwindow.cpp
+CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj -MF CMakeFiles\TrainGid.dir\routeaddwindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\routeaddwindow.cpp.obj -c D:\qt\projects\TrainGid\routeaddwindow.cpp
+
+CMakeFiles/TrainGid.dir/routeaddwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/routeaddwindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\routeaddwindow.cpp > CMakeFiles\TrainGid.dir\routeaddwindow.cpp.i
+
+CMakeFiles/TrainGid.dir/routeaddwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/routeaddwindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\routeaddwindow.cpp -o CMakeFiles\TrainGid.dir\routeaddwindow.cpp.s
+
+CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj: D:/qt/projects/TrainGid/routechangewindow.cpp
+CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\routechangewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\routechangewindow.cpp.obj -c D:\qt\projects\TrainGid\routechangewindow.cpp
+
+CMakeFiles/TrainGid.dir/routechangewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/routechangewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\routechangewindow.cpp > CMakeFiles\TrainGid.dir\routechangewindow.cpp.i
+
+CMakeFiles/TrainGid.dir/routechangewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/routechangewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\routechangewindow.cpp -o CMakeFiles\TrainGid.dir\routechangewindow.cpp.s
+
+CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj: D:/qt/projects/TrainGid/routedeletewindow.cpp
+CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\routedeletewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\routedeletewindow.cpp.obj -c D:\qt\projects\TrainGid\routedeletewindow.cpp
+
+CMakeFiles/TrainGid.dir/routedeletewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/routedeletewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\routedeletewindow.cpp > CMakeFiles\TrainGid.dir\routedeletewindow.cpp.i
+
+CMakeFiles/TrainGid.dir/routedeletewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/routedeletewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\routedeletewindow.cpp -o CMakeFiles\TrainGid.dir\routedeletewindow.cpp.s
+
+CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj: D:/qt/projects/TrainGid/stationaddwindow.cpp
+CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj -MF CMakeFiles\TrainGid.dir\stationaddwindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\stationaddwindow.cpp.obj -c D:\qt\projects\TrainGid\stationaddwindow.cpp
+
+CMakeFiles/TrainGid.dir/stationaddwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/stationaddwindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\stationaddwindow.cpp > CMakeFiles\TrainGid.dir\stationaddwindow.cpp.i
+
+CMakeFiles/TrainGid.dir/stationaddwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/stationaddwindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\stationaddwindow.cpp -o CMakeFiles\TrainGid.dir\stationaddwindow.cpp.s
+
+CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj: D:/qt/projects/TrainGid/stationchangewindow.cpp
+CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\stationchangewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\stationchangewindow.cpp.obj -c D:\qt\projects\TrainGid\stationchangewindow.cpp
+
+CMakeFiles/TrainGid.dir/stationchangewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/stationchangewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\stationchangewindow.cpp > CMakeFiles\TrainGid.dir\stationchangewindow.cpp.i
+
+CMakeFiles/TrainGid.dir/stationchangewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/stationchangewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\stationchangewindow.cpp -o CMakeFiles\TrainGid.dir\stationchangewindow.cpp.s
+
+CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj: D:/qt/projects/TrainGid/stationdeletewindow.cpp
+CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\stationdeletewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\stationdeletewindow.cpp.obj -c D:\qt\projects\TrainGid\stationdeletewindow.cpp
+
+CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\stationdeletewindow.cpp > CMakeFiles\TrainGid.dir\stationdeletewindow.cpp.i
+
+CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\stationdeletewindow.cpp -o CMakeFiles\TrainGid.dir\stationdeletewindow.cpp.s
+
+CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: D:/qt/projects/TrainGid/tariffaddwindow.cpp
+CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj -MF CMakeFiles\TrainGid.dir\tariffaddwindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\tariffaddwindow.cpp.obj -c D:\qt\projects\TrainGid\tariffaddwindow.cpp
+
+CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\tariffaddwindow.cpp > CMakeFiles\TrainGid.dir\tariffaddwindow.cpp.i
+
+CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\tariffaddwindow.cpp -o CMakeFiles\TrainGid.dir\tariffaddwindow.cpp.s
+
+CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj: D:/qt/projects/TrainGid/tariffchangewindow.cpp
+CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\tariffchangewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\tariffchangewindow.cpp.obj -c D:\qt\projects\TrainGid\tariffchangewindow.cpp
+
+CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\tariffchangewindow.cpp > CMakeFiles\TrainGid.dir\tariffchangewindow.cpp.i
+
+CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\tariffchangewindow.cpp -o CMakeFiles\TrainGid.dir\tariffchangewindow.cpp.s
+
+CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj: D:/qt/projects/TrainGid/tariffdeletewindow.cpp
+CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\tariffdeletewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\tariffdeletewindow.cpp.obj -c D:\qt\projects\TrainGid\tariffdeletewindow.cpp
+
+CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\tariffdeletewindow.cpp > CMakeFiles\TrainGid.dir\tariffdeletewindow.cpp.i
+
+CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\tariffdeletewindow.cpp -o CMakeFiles\TrainGid.dir\tariffdeletewindow.cpp.s
+
+CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj: D:/qt/projects/TrainGid/trainstationconnectwindow.cpp
+CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj -MF CMakeFiles\TrainGid.dir\trainstationconnectwindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\trainstationconnectwindow.cpp.obj -c D:\qt\projects\TrainGid\trainstationconnectwindow.cpp
+
+CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\trainstationconnectwindow.cpp > CMakeFiles\TrainGid.dir\trainstationconnectwindow.cpp.i
+
+CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\trainstationconnectwindow.cpp -o CMakeFiles\TrainGid.dir\trainstationconnectwindow.cpp.s
+
+CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj: D:/qt/projects/TrainGid/trainstationdeletewindow.cpp
+CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj -MF CMakeFiles\TrainGid.dir\trainstationdeletewindow.cpp.obj.d -o CMakeFiles\TrainGid.dir\trainstationdeletewindow.cpp.obj -c D:\qt\projects\TrainGid\trainstationdeletewindow.cpp
+
+CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\trainstationdeletewindow.cpp > CMakeFiles\TrainGid.dir\trainstationdeletewindow.cpp.i
+
+CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\trainstationdeletewindow.cpp -o CMakeFiles\TrainGid.dir\trainstationdeletewindow.cpp.s
 
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\TrainGid.dir\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\TrainGid.dir\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp
 
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -384,9 +558,20 @@ TrainGid_OBJECTS = \
 "CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj" \
 "CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj" \
 "CMakeFiles/TrainGid.dir/databasemanager.cpp.obj" \
-"CMakeFiles/TrainGid.dir/addwindow.cpp.obj" \
-"CMakeFiles/TrainGid.dir/changewindow.cpp.obj" \
-"CMakeFiles/TrainGid.dir/deletewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj" \
 "CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target TrainGid
@@ -405,9 +590,20 @@ TrainGid.exe: CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/databasemanager.cpp.obj
-TrainGid.exe: CMakeFiles/TrainGid.dir/addwindow.cpp.obj
-TrainGid.exe: CMakeFiles/TrainGid.dir/changewindow.cpp.obj
-TrainGid.exe: CMakeFiles/TrainGid.dir/deletewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/routechangewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/routedeletewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/stationdeletewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/build.make
 TrainGid.exe: D:/qt/6.7.0/llvm-mingw_64/lib/libQt6Widgets.a
@@ -418,7 +614,7 @@ TrainGid.exe: D:/qt/6.7.0/llvm-mingw_64/lib/libQt6EntryPoint.a
 TrainGid.exe: CMakeFiles/TrainGid.dir/linkLibs.rsp
 TrainGid.exe: CMakeFiles/TrainGid.dir/objects1.rsp
 TrainGid.exe: CMakeFiles/TrainGid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable TrainGid.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable TrainGid.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TrainGid.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

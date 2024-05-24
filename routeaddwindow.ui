@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RouteAddWindow</class>
+ <widget class="QWidget" name="RouteAddWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>982</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>982</width>
+     <height>628</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/addWindow.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>206</y>
+     <width>895</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 3px solid #4DB8FF;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+}
+
+QHeaderView::section {
+    background-color: #6D55FF;
+    color: white;
+    font-family: Karla;
+    font-size: 14pt;
+}
+QHeaderView::section:horizontal {
+    border: none; /* убираем горизонтальные линии разделителя */
+}
+
+QHeaderView::section:vertical {
+    border: none; /* убираем вертикальные линии разделителя */
+}
+
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>371</x>
+     <y>476</y>
+     <width>240</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px; </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/appendAdminButton.png</normaloff>:/appendAdminButton.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>240</width>
+     <height>82</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>297</y>
+     <width>895</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 3px solid #4DB8FF;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+}
+
+QHeaderView::section {
+    background-color: #6D55FF;
+    color: white;
+    font-family: Karla;
+    font-size: 14pt;
+}
+QHeaderView::section:horizontal {
+    border: none; /* убираем горизонтальные линии разделителя */
+}
+
+QHeaderView::section:vertical {
+    border: none; /* убираем вертикальные линии разделителя */
+}
+
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>958</x>
+     <y>14</y>
+     <width>17</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px; </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/closeIcon.png</normaloff>:/closeIcon.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>17</width>
+     <height>17</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>934</x>
+     <y>14</y>
+     <width>17</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px; </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/swapIcon.png</normaloff>:/swapIcon.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>17</width>
+     <height>17</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>115</y>
+     <width>895</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 3px solid #4DB8FF;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+}
+
+QHeaderView::section {
+    background-color: #6D55FF;
+    color: white;
+    font-family: Karla;
+    font-size: 14pt;
+}
+QHeaderView::section:horizontal {
+    border: none; /* убираем горизонтальные линии разделителя */
+}
+
+QHeaderView::section:vertical {
+    border: none; /* убираем вертикальные линии разделителя */
+}
+
+</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

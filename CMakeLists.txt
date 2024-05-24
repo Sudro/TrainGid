@@ -37,9 +37,23 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         tariffuserwindow.h tariffuserwindow.cpp tariffuserwindow.ui
         tariffadminwindow.h tariffadminwindow.cpp tariffadminwindow.ui
         databasemanager.h databasemanager.cpp
-        addwindow.h addwindow.cpp addwindow.ui
-        changewindow.h changewindow.cpp changewindow.ui
-        deletewindow.h deletewindow.cpp deletewindow.ui
+        trainaddwindow.h trainaddwindow.cpp trainaddwindow.ui
+        trainchangewindow.h trainchangewindow.cpp trainchangewindow.ui
+        traindeletewindow.h traindeletewindow.cpp traindeletewindow.ui
+        routeaddwindow.h routeaddwindow.cpp routeaddwindow.ui
+        routechangewindow.h routechangewindow.cpp routechangewindow.ui
+        routedeletewindow.h routedeletewindow.cpp routedeletewindow.ui
+        stationaddwindow.h stationaddwindow.cpp stationaddwindow.ui
+        stationchangewindow.h stationchangewindow.cpp stationchangewindow.ui
+        stationdeletewindow.h stationdeletewindow.cpp stationdeletewindow.ui
+        tariffaddwindow.h tariffaddwindow.cpp tariffaddwindow.ui
+        tariffchangewindow.h tariffchangewindow.cpp tariffchangewindow.ui
+        tariffdeletewindow.h tariffdeletewindow.cpp tariffdeletewindow.ui
+        trainstationconnectwindow.h trainstationconnectwindow.cpp trainstationconnectwindow.ui
+        trainstationdeletewindow.h trainstationdeletewindow.cpp trainstationdeletewindow.ui
+
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TrainGid APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

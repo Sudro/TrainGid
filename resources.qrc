@@ -40,5 +40,14 @@
         <file>stationsButton3.png</file>
         <file>tariffsButton3.png</file>
         <file>trainButton3.png</file>
+        <file>addWindow.png</file>
+        <file>changeWindow.png</file>
+        <file>deleteWindow.png</file>
+        <file>addConnectWindow.png</file>
+        <file>connectTrainStationButton.png</file>
+        <file>DownArrow.png</file>
+        <file>DeleteConnectWindow.png</file>
+        <file>removeAdminNewButton.png</file>
+        <file>DownArrow2.png</file>
     </qresource>
 </RCC>

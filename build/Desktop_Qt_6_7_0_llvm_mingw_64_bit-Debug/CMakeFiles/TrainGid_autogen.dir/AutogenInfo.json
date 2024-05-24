@@ -329,18 +329,6 @@
 	"HEADERS" : 
 	[
 		[
-			"D:/qt/projects/TrainGid/addwindow.h",
-			"MU",
-			"EWIEGA46WW/moc_addwindow.cpp",
-			null
-		],
-		[
-			"D:/qt/projects/TrainGid/changewindow.h",
-			"MU",
-			"EWIEGA46WW/moc_changewindow.cpp",
-			null
-		],
-		[
 			"D:/qt/projects/TrainGid/choicewindow.h",
 			"MU",
 			"EWIEGA46WW/moc_choicewindow.cpp",
@@ -353,15 +341,15 @@
 			null
 		],
 		[
-			"D:/qt/projects/TrainGid/deletewindow.h",
-			"MU",
-			"EWIEGA46WW/moc_deletewindow.cpp",
-			null
-		],
-		[
 			"D:/qt/projects/TrainGid/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/routeaddwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_routeaddwindow.cpp",
 			null
 		],
 		[
@@ -371,9 +359,27 @@
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/routechangewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_routechangewindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/routedeletewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_routedeletewindow.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/routeuserwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_routeuserwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/stationaddwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_stationaddwindow.cpp",
 			null
 		],
 		[
@@ -383,9 +389,27 @@
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/stationchangewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_stationchangewindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/stationdeletewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_stationdeletewindow.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/stationuserwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_stationuserwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/tariffaddwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_tariffaddwindow.cpp",
 			null
 		],
 		[
@@ -395,15 +419,57 @@
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/tariffchangewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_tariffchangewindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/tariffdeletewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_tariffdeletewindow.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/tariffuserwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_tariffuserwindow.cpp",
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/trainaddwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_trainaddwindow.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/trainadminwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_trainadminwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/trainchangewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_trainchangewindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/traindeletewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_traindeletewindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/trainstationconnectwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_trainstationconnectwindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/trainstationdeletewindow.h",
+			"MU",
+			"EWIEGA46WW/moc_trainstationdeletewindow.cpp",
 			null
 		],
 		[
@@ -484,20 +550,31 @@
 	"SETTINGS_FILE" : "D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/CMakeFiles/TrainGid_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "D:/qt/projects/TrainGid/addwindow.cpp", "MU", null ],
-		[ "D:/qt/projects/TrainGid/changewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/choicewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/databasemanager.cpp", "MU", null ],
-		[ "D:/qt/projects/TrainGid/deletewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/main.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/mainwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/routeaddwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/routeadminwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/routechangewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/routedeletewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/routeuserwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/stationaddwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/stationadminwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/stationchangewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/stationdeletewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/stationuserwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/tariffaddwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/tariffadminwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/tariffchangewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/tariffdeletewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/tariffuserwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/trainaddwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainadminwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/trainchangewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/traindeletewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/trainstationconnectwindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/trainstationdeletewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainuserwindow.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

@@ -231,7 +231,10 @@ QHeaderView::section:horizontal {
 
 QHeaderView::section:vertical {
     border: none; /* убираем вертикальные линии разделителя */
-}</string>
+}
+
+
+</string>
    </property>
    <property name="showGrid">
     <bool>true</bool>
