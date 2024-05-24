@@ -49,5 +49,9 @@
         <file>DeleteConnectWindow.png</file>
         <file>removeAdminNewButton.png</file>
         <file>DownArrow2.png</file>
+        <file>appendAdminButton2.png</file>
+        <file>changeAdminButton2.png</file>
+        <file>removeAdminNewButton2.png</file>
+        <file>appendAdminButton_1.png</file>
     </qresource>
 </RCC>

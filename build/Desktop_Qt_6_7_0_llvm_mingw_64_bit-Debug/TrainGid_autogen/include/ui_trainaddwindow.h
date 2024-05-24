@@ -58,28 +58,20 @@ public:
         lineEdit = new QLineEdit(TrainAddWindow);
         lineEdit->setObjectName("lineEdit");
         lineEdit->setGeometry(QRect(43, 115, 895, 66));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Karla")});
+        font.setPointSize(16);
+        lineEdit->setFont(font);
         lineEdit->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    border: 3px solid #4DB8FF;\n"
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
 "}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
 ""));
         lineEdit_2 = new QLineEdit(TrainAddWindow);
         lineEdit_2->setObjectName("lineEdit_2");
@@ -89,24 +81,11 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         lineEdit_3 = new QLineEdit(TrainAddWindow);
         lineEdit_3->setObjectName("lineEdit_3");
         lineEdit_3->setGeometry(QRect(43, 297, 895, 66));
@@ -115,22 +94,11 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
 "}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
 "\n"
 ""));
         pushButton_9 = new QPushButton(TrainAddWindow);

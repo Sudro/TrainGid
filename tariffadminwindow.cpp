@@ -52,6 +52,9 @@ TariffAdminWindow::TariffAdminWindow(QWidget *parent)
     ui->pushButton_5->installEventFilter(this);
     ui->pushButton_6->installEventFilter(this);
     ui->pushButton_7->installEventFilter(this);
+    ui->pushButton_9->installEventFilter(this);
+    ui->pushButton_10->installEventFilter(this);
+    ui->pushButton_11->installEventFilter(this);
 }
 
 TariffAdminWindow::~TariffAdminWindow()
@@ -160,6 +163,12 @@ bool TariffAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/routeButton3.png");
                 } else if (button == ui->pushButton_7) {
                     updateButtonIcon(button, ":/stationsButton3.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton2.png");
+                } else if (button == ui->pushButton_10) {
+                    updateButtonIcon(button, ":/changeAdminButton2.png");
+                } else if (button == ui->pushButton_11) {
+                    updateButtonIcon(button, ":/removeAdminNewButton2.png");
                 }
             } else if (event->type() == QEvent::Leave) {
                 // Здесь можно вернуть исходную иконку кнопки
@@ -175,6 +184,12 @@ bool TariffAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/routeButton2New.png");
                 } else if (button == ui->pushButton_7) {
                     updateButtonIcon(button, ":/stationsButton2New.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton_1.png");
+                } else if (button == ui->pushButton_10) {
+                    updateButtonIcon(button, ":/changeAdminButton.png");
+                } else if (button == ui->pushButton_11) {
+                    updateButtonIcon(button, ":/removeAdminNewButton.png");
                 }
             }
         }

@@ -94,15 +94,15 @@ public:
         pushButton_3->setIconSize(QSize(17, 17));
         pushButton_11 = new QPushButton(RouteAdminWindow);
         pushButton_11->setObjectName("pushButton_11");
-        pushButton_11->setGeometry(QRect(643, 419, 221, 82));
+        pushButton_11->setGeometry(QRect(635, 419, 240, 82));
         pushButton_11->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/removeAdminButton.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QString::fromUtf8(":/removeAdminNewButton.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_11->setIcon(icon6);
-        pushButton_11->setIconSize(QSize(221, 82));
+        pushButton_11->setIconSize(QSize(240, 82));
         pushButton_10 = new QPushButton(RouteAdminWindow);
         pushButton_10->setObjectName("pushButton_10");
-        pushButton_10->setGeometry(QRect(381, 419, 240, 82));
+        pushButton_10->setGeometry(QRect(373, 419, 240, 82));
         pushButton_10->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon7;
         icon7.addFile(QString::fromUtf8(":/changeAdminButton.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -110,19 +110,19 @@ public:
         pushButton_10->setIconSize(QSize(240, 82));
         pushButton_9 = new QPushButton(RouteAdminWindow);
         pushButton_9->setObjectName("pushButton_9");
-        pushButton_9->setGeometry(QRect(119, 419, 240, 82));
+        pushButton_9->setGeometry(QRect(111, 419, 240, 82));
         pushButton_9->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon8;
-        icon8.addFile(QString::fromUtf8(":/appendAdminButton.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QString::fromUtf8(":/appendAdminButton_1.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_9->setIcon(icon8);
         pushButton_9->setIconSize(QSize(240, 82));
         tableView = new QTableView(RouteAdminWindow);
         tableView->setObjectName("tableView");
         tableView->setGeometry(QRect(48, 115, 890, 280));
         tableView->setStyleSheet(QString::fromUtf8("QTableView {\n"
-"    border: 3px solid #6E93FC;\n"
+"    border: 3px solid  #6E93FC; /* #6D55FF */\n"
 "    border-radius: 5px;\n"
-"    gridline-color: #6D55FF;\n"
+"    gridline-color:  #6E93FC; /* #6D55FF */\n"
 "    background-color: white;	\n"
 "}\n"
 "\n"
@@ -134,24 +134,24 @@ public:
 "}\n"
 "\n"
 "QTableView::item:selected {\n"
-"    background-color: #6D55FF;\n"
+"    background-color: #6E93FC; /* #6D55FF */\n"
 "    color: white;\n"
 "}\n"
 "\n"
 "QTableView::item:focus {\n"
-"    background-color: #6D55FF;\n"
+"    background-color:  #6E93FC; /* #6D55FF */\n"
 "    color: white;\n"
 "}\n"
 "\n"
 "QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
+"    background-color:  #6E93FC; /* #6D55FF */\n"
 "    color: white;\n"
 "    font-family: Karla;\n"
 "    font-size: 14pt;\n"
 "}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261"
-                        "\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
+""
+                        "QHeaderView::section:horizontal {\n"
+"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
 "}\n"
 "\n"
 "QHeaderView::section:vertical {\n"

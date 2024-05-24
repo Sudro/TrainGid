@@ -3,6 +3,7 @@
 #include "tariffadminwindow.h"
 #include "stationadminwindow.h"
 #include "routeadminwindow.h" // Включаем заголовочный файл для RouteUserwindow
+#include "trainaddwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -52,6 +53,9 @@ TrainAdminWindow::TrainAdminWindow(QWidget *parent)
     ui->pushButton_6->installEventFilter(this);
     ui->pushButton_7->installEventFilter(this);
     ui->pushButton_8->installEventFilter(this);
+    ui->pushButton_9->installEventFilter(this);
+    ui->pushButton_10->installEventFilter(this);
+    ui->pushButton_11->installEventFilter(this);
 }
 
 TrainAdminWindow::~TrainAdminWindow()
@@ -159,6 +163,12 @@ bool TrainAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton3.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton3.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton2.png");
+                } else if (button == ui->pushButton_10) {
+                    updateButtonIcon(button, ":/changeAdminButton2.png");
+                } else if (button == ui->pushButton_11) {
+                    updateButtonIcon(button, ":/removeAdminNewButton2.png");
                 }
             } else if (event->type() == QEvent::Leave) {
                 // Здесь можно вернуть исходную иконку кнопки
@@ -174,6 +184,12 @@ bool TrainAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton2New.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton2New.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton_1.png");
+                } else if (button == ui->pushButton_10) {
+                    updateButtonIcon(button, ":/changeAdminButton.png");
+                } else if (button == ui->pushButton_11) {
+                    updateButtonIcon(button, ":/removeAdminNewButton.png");
                 }
             }
         }
@@ -186,3 +202,20 @@ void TrainAdminWindow::updateButtonIcon(QPushButton *button, const QString &icon
 {
     button->setIcon(QIcon(iconPath));
 }
+
+void TrainAdminWindow::on_pushButton_9_clicked()
+{
+    // Создаем экземпляр окна TrainAddWindow
+    TrainAddWindow *trainAddWindow = new TrainAddWindow();
+    // Показываем окно TrainAddWindow
+    trainAddWindow->show();
+    // Закрываем текущее окно (TrainAdminWindow)
+    this->close();
+}
+
+
+void TrainAdminWindow::on_pushButton_10_clicked()
+{
+
+}
+

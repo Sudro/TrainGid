@@ -15,6 +15,11 @@ public:
     explicit TrainAddWindow(QWidget *parent = nullptr);
     ~TrainAddWindow();
 
+private slots:
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_9_clicked();
+
 private:
     Ui::TrainAddWindow *ui;
 };
