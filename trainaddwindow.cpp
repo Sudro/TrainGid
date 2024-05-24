@@ -5,12 +5,20 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QVariant>
+#include <QMouseEvent>
 
 TrainAddWindow::TrainAddWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::TrainAddWindow)
 {
     ui->setupUi(this);
+
+    // Устанавливаем флаг Qt::FramelessWindowHint
+    setWindowFlags(Qt::FramelessWindowHint);
+
+    ui->pushButton_2->installEventFilter(this);
+    ui->pushButton_3->installEventFilter(this);
+    ui->pushButton_9->installEventFilter(this);
 
     ui->lineEdit->setPlaceholderText("Введите номер поезда");
     ui->lineEdit_2->setPlaceholderText("Введите название поезда");
@@ -20,6 +28,66 @@ TrainAddWindow::TrainAddWindow(QWidget *parent)
 TrainAddWindow::~TrainAddWindow()
 {
     delete ui;
+}
+
+bool TrainAddWindow::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::Enter || event->type() == QEvent::Leave) {
+        QPushButton *button = qobject_cast<QPushButton*>(obj);
+        if (button) {
+            if (event->type() == QEvent::Enter) {
+                if (button == ui->pushButton_2) {
+                    updateButtonIcon(button, ":/closeIcon2.png");
+                } else if (button == ui->pushButton_3) {
+                    updateButtonIcon(button, ":/swapIcon2.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton2.png");
+                }
+            } else if (event->type() == QEvent::Leave) {
+                // Здесь можно вернуть исходную иконку кнопки
+                if (button == ui->pushButton_2) {
+                    updateButtonIcon(button, ":/closeIcon.png");
+                } else if (button == ui->pushButton_3) {
+                    updateButtonIcon(button, ":/swapIcon.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton_1.png");
+                }
+            }
+        }
+        return true;
+    }
+    return QWidget::eventFilter(obj, event);
+}
+
+
+void TrainAddWindow::updateButtonIcon(QPushButton *button, const QString &iconPath)
+{
+    button->setIcon(QIcon(iconPath));
+}
+
+void TrainAddWindow::mousePressEvent(QMouseEvent *event)
+{
+    // Запоминаем текущие координаты курсора
+    m_lastPoint = event->globalPos();
+}
+
+// Обработчик перемещения мыши
+void TrainAddWindow::mouseMoveEvent(QMouseEvent *event)
+{
+    // Вычисляем разницу между текущим положением курсора и предыдущим положением
+    QPoint delta = event->globalPos() - m_lastPoint;
+
+    // Перемещаем окно на это расстояние
+    move(x() + delta.x(), y() + delta.y());
+
+    // Обновляем предыдущее положение курсора
+    m_lastPoint = event->globalPos();
+}
+
+// Обработчик отпускания кнопки мыши
+void TrainAddWindow::mouseReleaseEvent(QMouseEvent *event)
+{
+    // Ничего не делаем
 }
 
 // Определяем слот для закрытия текущего окна
@@ -67,3 +135,11 @@ void TrainAddWindow::on_pushButton_9_clicked()
         }
     }
 }
+
+// Определяем слот для сворачивания текущего окна
+void TrainAddWindow::on_pushButton_3_clicked()
+{
+    // Сворачиваем текущее окно (TrainAddWindow)
+    this->showMinimized();
+}
+

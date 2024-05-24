@@ -4,6 +4,7 @@
 #include "stationadminwindow.h"
 #include "routeadminwindow.h" // Включаем заголовочный файл для RouteUserwindow
 #include "trainaddwindow.h"
+#include "trainchangewindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -22,6 +23,8 @@ TrainAdminWindow::TrainAdminWindow(QWidget *parent)
 
     ui->tableView->verticalHeader()->hide();
     ui->tableView->verticalHeader()->setVisible(false);
+    ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection); // Разрешает выбор только одной строки за раз
+    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows); // Указывает, что при выборе должны выделяться строки
 
     // Устанавливаем флаг Qt::FramelessWindowHint
     setWindowFlags(Qt::FramelessWindowHint);
@@ -56,6 +59,12 @@ TrainAdminWindow::TrainAdminWindow(QWidget *parent)
     ui->pushButton_9->installEventFilter(this);
     ui->pushButton_10->installEventFilter(this);
     ui->pushButton_11->installEventFilter(this);
+
+    // Соединение сигнала о выборе элемента с методом открытия окна изменения
+    //connect(ui->tableView->selectionModel(), &QItemSelectionModel::selectionChanged, this, &TrainAdminWindow::on_pushButton_10_clicked);
+
+    ui->pushButton_10->disconnect(); // Отключаем все сигналы, связанные с этой кнопкой
+    connect(ui->pushButton_10, &QPushButton::clicked, this, &TrainAdminWindow::on_pushButton_10_clicked);
 }
 
 TrainAdminWindow::~TrainAdminWindow()
@@ -213,9 +222,37 @@ void TrainAdminWindow::on_pushButton_9_clicked()
     this->close();
 }
 
-
-void TrainAdminWindow::on_pushButton_10_clicked()
-{
-
+void TrainAdminWindow::updateModel() {
+    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+    if (model) {
+        model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+    }
 }
+
+void TrainAdminWindow::on_pushButton_10_clicked() {
+
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбран ни один поезд!");
+        return;
+    }
+
+    int row = selected.first().row();
+    int trainId = ui->tableView->model()->data(ui->tableView->model()->index(row, 0)).toInt();
+    QString trainNumber = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
+
+    TrainChangeWindow *changeWindow = new TrainChangeWindow(nullptr);
+    changeWindow->setTrainData(trainId, trainNumber);
+
+    // Подключение сигнала к слоту для обновления таблицы после изменения данных
+    connect(changeWindow, &TrainChangeWindow::dataChanged, this, &TrainAdminWindow::updateModel);
+
+    connect(changeWindow, &TrainChangeWindow::closing, this, &TrainAdminWindow::show);
+
+    //qDebug() << "Current window type before hiding:" << this->metaObject()->className();
+    this->hide();  // Должно скрыть TrainAdminWindow
+
+    changeWindow->show();
+}
+
 

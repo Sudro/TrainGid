@@ -106,7 +106,7 @@ public:
         pushButton_9->setGeometry(QRect(371, 476, 240, 82));
         pushButton_9->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/appendAdminButton.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/appendAdminButton_1.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_9->setIcon(icon2);
         pushButton_9->setIconSize(QSize(240, 82));
 

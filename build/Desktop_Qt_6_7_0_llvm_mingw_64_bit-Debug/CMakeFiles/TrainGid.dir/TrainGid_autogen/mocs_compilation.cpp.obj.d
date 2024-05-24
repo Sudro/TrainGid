@@ -982,6 +982,9 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainaddwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainadminwindow.cpp \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainadminwindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainchangewindow.cpp \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainchangewindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_traindeletewindow.cpp \

@@ -225,6 +225,7 @@ QHeaderView::section {
     font-family: Karla;
     font-size: 14pt;
 }
+
 QHeaderView::section:horizontal {
     border: none; /* убираем горизонтальные линии разделителя */
 }
@@ -234,14 +235,47 @@ QHeaderView::section:vertical {
 }
 
 QScrollBar:vertical {
-	border: 2px solid grey;
-	background: white;
-	width: 15px;
-	margin: 15px 3px 15px 3px;
+    border: none;
+    background: white; /* Можно изменить на цвет фона таблицы или окна */
+    width: 7px; /* Уменьшенная ширина */
+    margin: 0px; /* Если не нужно отступление от краев */
+    /*border-radius: 5px; /* Уменьшенное закругление */
 }
 
+QScrollBar::handle:vertical {
+    background: #6E93FC;
+    min-height: 7px; /* Уменьшенная минимальная длина */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
 
-</string>
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: white; /* Это изменит цвет фона неактивных частей ползунка */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: white; /* Можно изменить на цвет фона таблицы или окна */
+    height: 7px; /* Уменьшенная высота */
+    margin: 0px; /* Если не нужно отступление от краев */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::handle:horizontal {
+    background: #6E93FC;
+    min-width: 10px; /* Уменьшенная минимальная длина */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: white; /* Это изменит цвет фона неактивных частей ползунка */
+}</string>
    </property>
    <property name="showGrid">
     <bool>true</bool>

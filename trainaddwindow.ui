@@ -173,7 +173,7 @@
    </property>
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/appendAdminButton.png</normaloff>:/appendAdminButton.png</iconset>
+     <normaloff>:/appendAdminButton_1.png</normaloff>:/appendAdminButton_1.png</iconset>
    </property>
    <property name="iconSize">
     <size>

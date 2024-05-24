@@ -941,6 +941,9 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/ui_trainadminwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
@@ -960,7 +963,6 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyleoption.h \
@@ -985,6 +987,7 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: \
   D:/qt/projects/TrainGid/stationadminwindow.h \
   D:/qt/projects/TrainGid/routeadminwindow.h \
   D:/qt/projects/TrainGid/trainaddwindow.h \
+  D:/qt/projects/TrainGid/trainchangewindow.h \
   D:/qt/projects/TrainGid/mainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \

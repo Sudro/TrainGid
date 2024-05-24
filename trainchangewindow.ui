@@ -121,24 +121,12 @@
     border: 3px solid #F0B78E;
     border-radius: 8px;
     gridline-color: #6D55FF;
-    background-color: #D8D8D8;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+    background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
@@ -156,23 +144,11 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
@@ -190,23 +166,11 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
  </widget>

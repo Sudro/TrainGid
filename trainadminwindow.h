@@ -5,6 +5,7 @@
 #include <QEvent>
 #include <QPushButton>
 #include <QIcon>
+#include <QStandardItemModel>
 
 namespace Ui {
 class TrainAdminWindow;
@@ -41,6 +42,8 @@ private slots:
     void on_pushButton_9_clicked();
 
     void on_pushButton_10_clicked();
+
+    void updateModel();
 
 private:
     Ui::TrainAdminWindow *ui;

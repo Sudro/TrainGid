@@ -964,6 +964,9 @@ CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qurl.h \
   D:/qt/projects/TrainGid/trainuserwindow.h \
   D:/qt/projects/TrainGid/trainadminwindow.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \

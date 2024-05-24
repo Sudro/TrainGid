@@ -9,6 +9,7 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: TrainGid_auto
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20type_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q23utility.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qalgorithms.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydata.h \
@@ -125,6 +126,7 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: TrainGid_auto
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
@@ -144,6 +146,7 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: TrainGid_auto
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
@@ -1009,6 +1012,7 @@ CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: D:/qt/projects/TrainGid/choicewind
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20type_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q23utility.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qalgorithms.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydata.h \
@@ -1134,6 +1138,7 @@ CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: D:/qt/projects/TrainGid/choicewind
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
@@ -1164,6 +1169,7 @@ CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: D:/qt/projects/TrainGid/choicewind
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
@@ -5937,6 +5943,7 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
@@ -5967,6 +5974,7 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
@@ -10900,6 +10908,7 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
@@ -10930,6 +10939,7 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
@@ -15863,6 +15873,7 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
@@ -15893,6 +15904,7 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
@@ -19718,11 +19730,17 @@ CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj: D:/qt/projects/TrainGid/tariff
 
 CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainaddwindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20type_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q23utility.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qalgorithms.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydata.h \
@@ -19847,11 +19865,16 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcolor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfont.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontmetrics.h \
@@ -19859,6 +19882,7 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qicon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qimage.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qkeysequence.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpaintdevice.h \
@@ -19867,10 +19891,14 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixelformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpolygon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextcursor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextformat.h \
@@ -19879,6 +19907,8 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
@@ -20840,6 +20870,7 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
@@ -20870,6 +20901,7 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
@@ -21726,14 +21758,23 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/projects/TrainGid/stationadminwindow.h \
   D:/qt/projects/TrainGid/tariffadminwindow.h \
   D:/qt/projects/TrainGid/trainaddwindow.h \
-  D:/qt/projects/TrainGid/trainadminwindow.h
+  D:/qt/projects/TrainGid/trainadminwindow.h \
+  D:/qt/projects/TrainGid/trainchangewindow.h
 
 CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/trainchangewindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20type_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q23utility.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qalgorithms.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydata.h \
@@ -21858,11 +21899,16 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcolor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfont.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontmetrics.h \
@@ -21870,6 +21916,7 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qicon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qimage.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qkeysequence.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpaintdevice.h \
@@ -21878,10 +21925,14 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixelformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpolygon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextcursor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextformat.h \
@@ -21890,18 +21941,33 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLineEdit \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlineedit.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -22694,7 +22760,9 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stddef.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   TrainGid_autogen/include/ui_trainchangewindow.h \
+  D:/qt/projects/TrainGid/trainadminwindow.h \
   D:/qt/projects/TrainGid/trainchangewindow.h
 
 CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: D:/qt/projects/TrainGid/traindeletewindow.cpp \
@@ -26655,6 +26723,18 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h:
 
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp:
 
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__numeric/inner_product.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_constant_evaluated.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/stdlib.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__thread/id.h:
+
 D:/qt/projects/TrainGid/trainchangewindow.cpp:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20type_traits.h:
@@ -26699,14 +26779,6 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qalgorithms.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__threading_support:
 
-D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h:
-
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_constant_evaluated.h:
-
-D:/qt/Tools/llvm-mingw1706_64/include/stdlib.h:
-
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__thread/id.h:
-
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_any_of.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydata.h:
@@ -26746,14 +26818,6 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qatomic.h:
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_set_intersection.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qatomic_cxx11.h:
-
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/lexicographical_compare.h:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qnumeric.h:
-
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__exception/nested_exception.h:
-
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/copy.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qbasicatomic.h:
 
@@ -26946,6 +27010,14 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qminmax.h:
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/map:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__config:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/lexicographical_compare.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qnumeric.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__exception/nested_exception.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/copy.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__format/formatter_integral.h:
 
@@ -27243,6 +27315,10 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon:
 
 TrainGid_autogen/EWIEGA46WW/moc_routeaddwindow.cpp:
 
+D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel:
+
+D:/qt/projects/TrainGid/routeadminwindow.h:
+
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__compare/ordering.h:
@@ -27312,6 +27388,14 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h:
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_abstract.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__functional/unary_negate.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_swappable.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/vector:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_remove.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h:
 
@@ -27795,12 +27879,6 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qlocale.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_push_heap.h:
 
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_swappable.h:
-
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/vector:
-
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/ranges_remove.h:
-
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_nothrow_assignable.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__utility/integer_sequence.h:
@@ -27881,9 +27959,9 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/reverse.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/reverse_copy.h:
 
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/rotate_copy.h:
-
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__functional/bind_back.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__algorithm/rotate_copy.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__functional/hash.h:
 
@@ -28349,8 +28427,6 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_trivially_construc
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__numeric/inclusive_scan.h:
 
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__numeric/inner_product.h:
-
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__numeric/partial_sum.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__numeric/pstl_reduce.h:
@@ -28479,9 +28555,9 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_core_convertible.h
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/remove_all_extents.h:
 
-D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_destructible.h:
-
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__type_traits/is_destructible.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextformat.h:
 
@@ -28693,9 +28769,9 @@ D:/qt/Tools/llvm-mingw1706_64/include/sec_api/stdio_s.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/sec_api/stdlib_s.h:
 
-D:/qt/Tools/llvm-mingw1706_64/include/sec_api/sys/timeb_s.h:
-
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h:
+
+D:/qt/Tools/llvm-mingw1706_64/include/sec_api/sys/timeb_s.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/sec_api/wchar_s.h:
 
@@ -28714,8 +28790,6 @@ D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/mm_malloc.h:
 D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h:
 
 D:/qt/projects/TrainGid/routeaddwindow.h:
-
-D:/qt/projects/TrainGid/routeadminwindow.h:
 
 D:/qt/projects/TrainGid/routechangewindow.h:
 
@@ -28824,8 +28898,6 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextoption.h:
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlineedit.h:
 
 D:/qt/projects/TrainGid/routeadminwindow.cpp:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h:
 
