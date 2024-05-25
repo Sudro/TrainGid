@@ -13,6 +13,14 @@
 #include <QVBoxLayout>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
 
+TariffAdminWindow* TariffAdminWindow::instance = nullptr; //
+
+TariffAdminWindow* TariffAdminWindow::getInstance(QWidget *parent) { //
+    if (!instance)
+        instance = new TariffAdminWindow(parent);
+    return instance;
+}
+
 TariffAdminWindow::TariffAdminWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::TariffAdminWindow)
@@ -60,6 +68,8 @@ TariffAdminWindow::TariffAdminWindow(QWidget *parent)
 TariffAdminWindow::~TariffAdminWindow()
 {
     delete ui;
+
+    instance = nullptr; //
 }
 
 

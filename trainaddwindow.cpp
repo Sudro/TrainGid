@@ -7,6 +7,14 @@
 #include <QVariant>
 #include <QMouseEvent>
 
+TrainAddWindow* TrainAddWindow::instance = nullptr; //
+
+TrainAddWindow* TrainAddWindow::getInstance(QWidget *parent) { //
+    if (!instance)
+        instance = new TrainAddWindow(parent);
+    return instance;
+}
+
 TrainAddWindow::TrainAddWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::TrainAddWindow)
@@ -30,6 +38,8 @@ TrainAddWindow::TrainAddWindow(QWidget *parent)
 TrainAddWindow::~TrainAddWindow()
 {
     delete ui;
+
+    instance = nullptr;
 }
 
 bool TrainAddWindow::eventFilter(QObject *obj, QEvent *event)
@@ -95,12 +105,21 @@ void TrainAddWindow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем слот для закрытия текущего окна
 void TrainAddWindow::on_pushButton_2_clicked()
 {
+    /*
     // Создаем экземпляр окна TrainAdminWindow
     TrainAdminWindow *trainAdminWindow = new TrainAdminWindow();
     // Показываем окно TrainAdminWindow
     trainAdminWindow->show();
     // Закрываем текущее окно (TrainAddWindow)
     this->close();
+    */
+
+    TrainAdminWindow *trainAdminWindow = TrainAdminWindow::getInstance();
+    trainAdminWindow->raise();
+    trainAdminWindow->activateWindow();
+    trainAdminWindow->show();
+    this->close();
+    instance = nullptr;
 }
 
 void TrainAddWindow::on_pushButton_9_clicked()
@@ -131,6 +150,8 @@ void TrainAddWindow::on_pushButton_9_clicked()
             QMessageBox::information(this, "Успех", result);
             // Закрываем окно или очищаем поля для ввода
             // this->close(); // или
+
+            emit dataChanged();
             ui->lineEdit->clear();
             ui->lineEdit_2->clear();
             ui->lineEdit_3->clear();
@@ -144,4 +165,11 @@ void TrainAddWindow::on_pushButton_3_clicked()
     // Сворачиваем текущее окно (TrainAddWindow)
     this->showMinimized();
 }
+
+/*
+void TrainAddWindow::closeEvent(QCloseEvent *event)
+{
+    emit closing();
+    QWidget::closeEvent(event);
+}*/
 

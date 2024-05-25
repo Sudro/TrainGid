@@ -18,8 +18,12 @@ public:
     explicit TrainAddWindow(QWidget *parent = nullptr);
     ~TrainAddWindow();
 
+    static TrainAddWindow* getInstance(QWidget *parent = nullptr);
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
+
+    //void closeEvent(QCloseEvent *event) override; //
 
 private slots:
     void on_pushButton_2_clicked();
@@ -38,6 +42,14 @@ private:
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
 
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
+
+    static TrainAddWindow* instance; // Статическая переменная для хранения экземпляра
+
+signals:
+    void dataChanged();
+
+    //void closing(); //
+
 };
 
 #endif // TRAINADDWINDOW_H

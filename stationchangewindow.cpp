@@ -9,6 +9,14 @@
 #include <QWidget>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
 
+StationChangeWindow* StationChangeWindow::instance = nullptr; //
+
+StationChangeWindow* StationChangeWindow::getInstance(QWidget *parent) { //
+    if (!instance)
+        instance = new StationChangeWindow(parent);
+    return instance;
+}
+
 StationChangeWindow::StationChangeWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::StationChangeWindow)
@@ -39,6 +47,8 @@ void StationChangeWindow::setStationData(int stationId, const QString &stationNa
 StationChangeWindow::~StationChangeWindow()
 {
     delete ui;
+
+    instance = nullptr; //
 }
 
 // Вставьте эту функцию в начало файла trainchangewindow.cpp
@@ -117,9 +127,9 @@ void StationChangeWindow::on_pushButton_10_clicked() {
             // this->close(); // или
 
             //ui->lineEdit->clear();
-            //ui->lineEdit_2->clear();
-            //ui->lineEdit_3->clear();
-            //ui->lineEdit_4->clear();
+            ui->lineEdit_2->clear();
+            ui->lineEdit_3->clear();
+            ui->lineEdit_4->clear();
 
             emit dataChanged();  // Сигнал, который нужно определить в StationChangeWindow
             this->close();
@@ -164,6 +174,15 @@ void StationChangeWindow::mouseReleaseEvent(QMouseEvent *event)
 // Вставьте или замените этот код в trainchangewindow.cpp в слоте on_pushButton_2_clicked
 void StationChangeWindow::on_pushButton_2_clicked()
 {
+    StationAdminWIndow *existingWindow = StationAdminWIndow::getInstance();
+    if (existingWindow) {
+        existingWindow->show();
+        existingWindow->raise();
+        existingWindow->activateWindow();
+    }
+    this->close();
+
+    /*
     StationAdminWIndow *existingWindow = findExistingStationAdminWindow();
     if (existingWindow) {
         existingWindow->show();
@@ -174,6 +193,7 @@ void StationChangeWindow::on_pushButton_2_clicked()
         newWindow->show();
     }
     this->close();  // Закрывает текущее окно изменения
+    */
 }
 
 // Определяем слот для сворачивания текущего окна

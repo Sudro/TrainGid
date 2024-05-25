@@ -41,12 +41,22 @@ void ChoiceWindow::on_pushButton_3_clicked()
 
 void ChoiceWindow::on_pushButton_5_clicked()
 {
+    // Используем getInstance вместо создания нового экземпляра
+    TrainAdminWindow *trainAdminWindow = TrainAdminWindow::getInstance();
+    trainAdminWindow->raise();
+    trainAdminWindow->activateWindow();
+    trainAdminWindow->show();
+    // Закрываем текущее окно (ChoiceWindow)
+    this->close();
+
+    /*
     // Создаем экземпляр окна TrainAdminWindow
     TrainAdminWindow *trainAdminWindow = new TrainAdminWindow();
     // Показываем окно TrainAdminWindow
     trainAdminWindow->show();
     // Закрываем текущее окно (ChoiceWindow)
     this->close();
+    */
 }
 
 void ChoiceWindow::on_pushButton_4_clicked()

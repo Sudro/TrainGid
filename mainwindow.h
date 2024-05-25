@@ -21,6 +21,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    static MainWindow* getInstance(QWidget *parent = nullptr); //
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
@@ -50,5 +52,7 @@ private:
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
 
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
+
+    static MainWindow* instance; // Статическая переменная для хранения экземпляра
 };
 #endif // MAINWINDOW_H

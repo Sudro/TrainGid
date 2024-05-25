@@ -19,6 +19,9 @@ public:
     ~TrainChangeWindow();
 
     void setTrainData(int trainId, const QString &trainNumber);
+
+    static TrainChangeWindow* getInstance(QWidget *parent = nullptr); //
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
@@ -43,6 +46,8 @@ private:
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
 
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
+
+    static TrainChangeWindow* instance; // Статическая переменная для хранения экземпляра
 
 signals:
     void dataChanged();  // Определение сигнала

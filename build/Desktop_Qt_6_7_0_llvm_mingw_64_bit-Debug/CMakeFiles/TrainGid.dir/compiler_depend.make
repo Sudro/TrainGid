@@ -21822,8 +21822,7 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/projects/TrainGid/tariffadminwindow.h \
   D:/qt/projects/TrainGid/trainaddwindow.h \
   D:/qt/projects/TrainGid/trainadminwindow.h \
-  D:/qt/projects/TrainGid/trainchangewindow.h \
-  D:/qt/projects/TrainGid/traindeletewindow.h
+  D:/qt/projects/TrainGid/trainchangewindow.h
 
 CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/trainchangewindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \

@@ -7,6 +7,14 @@
 #include "trainuserwindow.h" // Включаем заголовочный файл для TrainUserwindow
 #include <QMouseEvent>
 
+MainWindow* MainWindow::instance = nullptr; //
+
+MainWindow* MainWindow::getInstance(QWidget *parent) { //
+    if (!instance)
+        instance = new MainWindow(parent);
+    return instance;
+}
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -43,6 +51,8 @@ MainWindow::~MainWindow()
 {
     delete ui;
     delete choiceWindow; // Освобождаем память, выделенную под ChoiceWindow
+
+    instance = nullptr; //
 }
 
 bool MainWindow::eventFilter(QObject *obj, QEvent *event)

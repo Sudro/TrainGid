@@ -19,6 +19,8 @@ public:
     explicit TrainAdminWindow(QWidget *parent = nullptr);
     ~TrainAdminWindow();
 
+    static TrainAdminWindow* getInstance(QWidget *parent = nullptr); //
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
@@ -47,12 +49,17 @@ private slots:
 
     void on_pushButton_11_clicked();
 
+signals:
+    void dataAdded();
+
 private:
     Ui::TrainAdminWindow *ui;
 
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
 
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
+
+    static TrainAdminWindow* instance; // Статическая переменная для хранения экземпляра //
 };
 
 #endif // TRAINADMINWINDOW_H

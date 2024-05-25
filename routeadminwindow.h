@@ -18,6 +18,8 @@ public:
     explicit RouteAdminWindow(QWidget *parent = nullptr);
     ~RouteAdminWindow();
 
+    static RouteAdminWindow* getInstance(QWidget *parent = nullptr);
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
@@ -46,6 +48,8 @@ private:
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
 
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
+
+    static RouteAdminWindow* instance; // Статическая переменная для хранения экземпляра
 };
 
 #endif // ROUTEADMINWINDOW_H

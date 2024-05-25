@@ -4,7 +4,7 @@
 #include "stationadminwindow.h"
 #include "routeadminwindow.h" // Включаем заголовочный файл для RouteUserwindow
 #include "trainaddwindow.h"
-#include "traindeletewindow.h"
+//#include "traindeletewindow.h"
 #include "trainchangewindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
@@ -15,6 +15,14 @@
 #include <QMessageBox>
 #include <QVBoxLayout>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+
+TrainAdminWindow* TrainAdminWindow::instance = nullptr; //
+
+TrainAdminWindow* TrainAdminWindow::getInstance(QWidget *parent) { //
+    if (!instance)
+        instance = new TrainAdminWindow(parent);
+    return instance;
+}
 
 TrainAdminWindow::TrainAdminWindow(QWidget *parent)
     : QWidget(parent)
@@ -74,6 +82,7 @@ TrainAdminWindow::TrainAdminWindow(QWidget *parent)
 TrainAdminWindow::~TrainAdminWindow()
 {
     delete ui;
+    instance = nullptr;
 }
 
 // Определяем слот для закрытия текущего окна
@@ -81,6 +90,7 @@ void TrainAdminWindow::on_pushButton_2_clicked()
 {
     // Закрываем текущее окно (TrainAdminWindow)
     this->close();
+    instance = nullptr;
 }
 
 // Определяем слот для сворачивания текущего окна
@@ -118,44 +128,76 @@ void TrainAdminWindow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем обработчик для кнопки pushButton_8
 void TrainAdminWindow::on_pushButton_8_clicked()
 {
+    TariffAdminWindow *tariffAdminWindow = TariffAdminWindow::getInstance();
+    tariffAdminWindow->raise();
+    tariffAdminWindow->activateWindow();
+    tariffAdminWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна TariffAdminWindow
     TariffAdminWindow *tariffAdminWindow = new TariffAdminWindow();
     // Показываем окно TariffAdminWindow
     tariffAdminWindow->show();
     // Закрываем текущее окно (TrainAdminWindow)
     this->close();
+    */
 }
 
 
 void TrainAdminWindow::on_pushButton_7_clicked()
 {
+    /*
     // Создаем экземпляр окна StationAdminWIndow
     StationAdminWIndow *stationAdminWindow = new StationAdminWIndow();
     // Показываем окно StationAdminWIndow
     stationAdminWindow->show();
     // Закрываем текущее окно (TrainAdminWindow)
     this->close();
+    */
+
+    StationAdminWIndow *stationAdminWindow = StationAdminWIndow::getInstance();
+    stationAdminWindow->raise();
+    stationAdminWindow->activateWindow();
+    stationAdminWindow->show();
+    this->close();
 }
 
 
 void TrainAdminWindow::on_pushButton_6_clicked()
 {
+    RouteAdminWindow *routeAdminWindow = RouteAdminWindow::getInstance();
+    routeAdminWindow->raise();
+    routeAdminWindow->activateWindow();
+    routeAdminWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна RouteAdminWindow
     RouteAdminWindow *routeAdminWindow = new RouteAdminWindow();
     // Показываем окно RouteAdminWindow
     routeAdminWindow->show();
     // Закрываем текущее окно (TrainAdminWindow)
     this->close();
+    */
 }
 
 void TrainAdminWindow::on_pushButton_4_clicked()
 {
+    MainWindow *mainWindow = MainWindow::getInstance();
+    mainWindow->raise();
+    mainWindow->activateWindow();
+    mainWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна MainWindow
     MainWindow *mainWindow = new MainWindow();
     // Показываем окно MainWindow
     mainWindow->show();
     // Закрываем текущее окно (TrainAdminWindow)
     this->close();
+    */
 }
 
 bool TrainAdminWindow::eventFilter(QObject *obj, QEvent *event)
@@ -218,12 +260,21 @@ void TrainAdminWindow::updateButtonIcon(QPushButton *button, const QString &icon
 
 void TrainAdminWindow::on_pushButton_9_clicked()
 {
+    TrainAddWindow *trainAddWindow = TrainAddWindow::getInstance();
+    trainAddWindow->raise();
+    trainAddWindow->activateWindow();
+    connect(trainAddWindow, &TrainAddWindow::dataChanged, this, &TrainAdminWindow::updateModel);
+    trainAddWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна TrainAddWindow
     TrainAddWindow *trainAddWindow = new TrainAddWindow();
     // Показываем окно TrainAddWindow
     trainAddWindow->show();
     // Закрываем текущее окно (TrainAdminWindow)
     this->close();
+    */
 }
 
 void TrainAdminWindow::updateModel() {
@@ -245,6 +296,7 @@ void TrainAdminWindow::on_pushButton_10_clicked() {
     int trainId = ui->tableView->model()->data(ui->tableView->model()->index(row, 0)).toInt();
     QString trainNumber = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
 
+    /*
     TrainChangeWindow *changeWindow = new TrainChangeWindow(nullptr);
     changeWindow->setTrainData(trainId, trainNumber);
 
@@ -256,6 +308,16 @@ void TrainAdminWindow::on_pushButton_10_clicked() {
     //qDebug() << "Current window type before hiding:" << this->metaObject()->className();
     this->hide();  // Должно скрыть TrainAdminWindow
 
+    changeWindow->show();
+    */
+
+    TrainChangeWindow *changeWindow = TrainChangeWindow::getInstance();
+    changeWindow->setTrainData(trainId, trainNumber);
+
+    connect(changeWindow, &TrainChangeWindow::dataChanged, this, &TrainAdminWindow::updateModel);
+    connect(changeWindow, &TrainChangeWindow::closing, this, &TrainAdminWindow::show);
+
+    this->hide();
     changeWindow->show();
 }
 

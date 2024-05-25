@@ -19,6 +19,8 @@ public:
     ~StationChangeWindow();
     void setStationData(int stationId, const QString &stationName);
 
+    static StationChangeWindow* getInstance(QWidget *parent = nullptr); //
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
@@ -43,6 +45,8 @@ private:
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
 
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
+
+    static StationChangeWindow* instance; // Статическая переменная для хранения экземпляра
 
 signals:
     void dataChanged();  // Определение сигнала

@@ -7,6 +7,15 @@
 #include <QVariant>
 #include <QMouseEvent>
 
+StationAddWindow* StationAddWindow::instance = nullptr; //
+
+StationAddWindow* StationAddWindow::getInstance(QWidget *parent) { //
+    if (!instance) {
+        instance = new StationAddWindow(parent);
+    }
+    return instance;
+}
+
 StationAddWindow::StationAddWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::StationAddWindow)
@@ -31,6 +40,8 @@ StationAddWindow::StationAddWindow(QWidget *parent)
 StationAddWindow::~StationAddWindow()
 {
     delete ui;
+
+    instance = nullptr;
 }
 
 bool StationAddWindow::eventFilter(QObject *obj, QEvent *event)
@@ -96,12 +107,21 @@ void StationAddWindow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем слот для закрытия текущего окна
 void StationAddWindow::on_pushButton_2_clicked()
 {
+    /*
     // Создаем экземпляр окна StationAdminWindow
     StationAdminWIndow *stationAdminWindow = new StationAdminWIndow();
     // Показываем окно StationAdminWindow
     stationAdminWindow->show();
     // Закрываем текущее окно (StationAddWindow)
     this->close();
+    */
+
+    StationAdminWIndow *stationAdminWindow = StationAdminWIndow::getInstance();
+    stationAdminWindow->raise();
+    stationAdminWindow->activateWindow();
+    stationAdminWindow->show();
+    this->close();
+    instance = nullptr;
 }
 
 void StationAddWindow::on_pushButton_9_clicked()
@@ -132,6 +152,7 @@ void StationAddWindow::on_pushButton_9_clicked()
             QMessageBox::information(this, "Информация", result);
         } else {
             QMessageBox::information(this, "Успех", result);
+            emit dataChanged();
             // Закрываем окно или очищаем поля для ввода
             // this->close(); // или
             ui->lineEdit->clear();

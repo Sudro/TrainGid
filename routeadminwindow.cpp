@@ -13,6 +13,14 @@
 #include <QVBoxLayout>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
 
+RouteAdminWindow* RouteAdminWindow::instance = nullptr; //
+
+RouteAdminWindow* RouteAdminWindow::getInstance(QWidget *parent) { //
+    if (!instance)
+        instance = new RouteAdminWindow(parent);
+    return instance;
+}
+
 RouteAdminWindow::RouteAdminWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::RouteAdminWindow)
@@ -63,6 +71,8 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
 RouteAdminWindow::~RouteAdminWindow()
 {
     delete ui;
+
+    instance = nullptr; //
 }
 
 // Определяем слот для закрытия текущего окна

@@ -18,8 +18,13 @@ public:
     explicit StationAddWindow(QWidget *parent = nullptr);
     ~StationAddWindow();
 
+    static StationAddWindow* getInstance(QWidget *parent = nullptr);
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
+
+signals:
+    void dataChanged();  // Сигнал для обновления данных в StationAdminWIndow
 
 private slots:
     void on_pushButton_9_clicked();
@@ -38,6 +43,8 @@ private:
     QPoint m_lastPoint; // Добавляем переменную для хранения последней позиции курсора
 
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
+
+    static StationAddWindow* instance; // Статическая переменная для хранения экземпляра
 };
 
 #endif // STATIONADDWINDOW_H

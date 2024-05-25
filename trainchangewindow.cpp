@@ -9,6 +9,14 @@
 #include <QWidget>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
 
+TrainChangeWindow* TrainChangeWindow::instance = nullptr; //
+
+TrainChangeWindow* TrainChangeWindow::getInstance(QWidget *parent) { //
+    if (!instance)
+        instance = new TrainChangeWindow(parent);
+    return instance;
+}
+
 TrainChangeWindow::TrainChangeWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::TrainChangeWindow)
@@ -38,6 +46,8 @@ void TrainChangeWindow::setTrainData(int trainId, const QString &trainNumber) {
 TrainChangeWindow::~TrainChangeWindow()
 {
     delete ui;
+
+    instance = nullptr;
 }
 
 // Вставьте эту функцию в начало файла trainchangewindow.cpp
@@ -106,6 +116,11 @@ void TrainChangeWindow::on_pushButton_10_clicked() {
         QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + query.lastError().text());
     } else {
         QMessageBox::information(this, "Успех", "Данные поезда успешно обновлены.");
+
+        //ui->lineEdit->clear();
+        ui->lineEdit_2->clear();
+        ui->lineEdit_3->clear();
+
         emit dataChanged();  // Сигнал, который нужно определить в TrainChangeWindow
         this->close();
     }
@@ -139,6 +154,15 @@ void TrainChangeWindow::mouseReleaseEvent(QMouseEvent *event)
 // Вставьте или замените этот код в trainchangewindow.cpp в слоте on_pushButton_2_clicked
 void TrainChangeWindow::on_pushButton_2_clicked()
 {
+    TrainAdminWindow *existingWindow = TrainAdminWindow::getInstance();
+    if (existingWindow) {
+        existingWindow->show();
+        existingWindow->raise();
+        existingWindow->activateWindow();
+    }
+    this->close();
+
+    /*
     TrainAdminWindow *existingWindow = findExistingTrainAdminWindow();
     if (existingWindow) {
         existingWindow->show();
@@ -149,6 +173,7 @@ void TrainChangeWindow::on_pushButton_2_clicked()
         newWindow->show();
     }
     this->close();  // Закрывает текущее окно изменения
+    */
 }
 
 // Определяем слот для сворачивания текущего окна
