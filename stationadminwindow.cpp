@@ -253,3 +253,33 @@ void StationAdminWIndow::on_pushButton_10_clicked() {
 
     changeWindow->show();
 }
+
+void StationAdminWIndow::on_pushButton_11_clicked()
+{
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбрана ни одна станция!");
+        return;
+    }
+
+    int row = selected.first().row();
+    QString stationName = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
+    QString city = ui->tableView->model()->data(ui->tableView->model()->index(row, 2)).toString();
+
+    QSqlQuery query;
+    query.prepare("SELECT delete_station(:p_station_name, :p_city)");
+    query.bindValue(":p_station_name", stationName);
+    query.bindValue(":p_city", city);
+
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + query.lastError().text());
+    } else {
+        query.next();
+        if (query.value(0).toBool()) {
+            QMessageBox::information(this, "Успех", "Станция успешно удалена.");
+            updateModel();  // Обновляем модель после удаления
+        } else {
+            QMessageBox::warning(this, "Ошибка", "Такой станции не существует.");
+        }
+    }
+}
