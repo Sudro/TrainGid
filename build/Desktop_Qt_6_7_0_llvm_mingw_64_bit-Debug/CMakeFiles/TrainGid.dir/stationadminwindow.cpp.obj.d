@@ -983,6 +983,7 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtableview.h \
   D:/qt/projects/TrainGid/tariffadminwindow.h \
   D:/qt/projects/TrainGid/routeadminwindow.h \
+  D:/qt/projects/TrainGid/stationaddwindow.h \
   D:/qt/projects/TrainGid/trainadminwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \

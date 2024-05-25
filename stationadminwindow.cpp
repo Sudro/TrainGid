@@ -2,6 +2,7 @@
 #include "ui_stationadminwindow.h"
 #include "tariffadminwindow.h"
 #include "routeadminwindow.h"
+#include "stationaddwindow.h"
 #include "trainadminwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
@@ -21,6 +22,8 @@ StationAdminWIndow::StationAdminWIndow(QWidget *parent)
 
     ui->tableView->verticalHeader()->hide();
     ui->tableView->verticalHeader()->setVisible(false);
+    ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection); // Разрешает выбор только одной строки за раз
+    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows); // Указывает, что при выборе должны выделяться строки
 
     // Устанавливаем флаг Qt::FramelessWindowHint
     setWindowFlags(Qt::FramelessWindowHint);
@@ -205,6 +208,11 @@ void StationAdminWIndow::updateButtonIcon(QPushButton *button, const QString &ic
 
 void StationAdminWIndow::on_pushButton_9_clicked()
 {
-
+    // Создаем экземпляр окна StationAddWindow
+    StationAddWindow *stationAddWindow = new StationAddWindow();
+    // Показываем окно StationAddWindow
+    stationAddWindow->show();
+    // Закрываем текущее окно (StationAdminWIndow)
+    this->close();
 }
 

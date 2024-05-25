@@ -23,6 +23,8 @@ TrainAddWindow::TrainAddWindow(QWidget *parent)
     ui->lineEdit->setPlaceholderText("Введите номер поезда");
     ui->lineEdit_2->setPlaceholderText("Введите название поезда");
     ui->lineEdit_3->setPlaceholderText("Введите тип поезда");
+
+    ui->lineEdit->setFocus(); // Установка фокуса на первый lineEdit
 }
 
 TrainAddWindow::~TrainAddWindow()

@@ -48,24 +48,11 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         pushButton_9 = new QPushButton(StationAddWindow);
         pushButton_9->setObjectName("pushButton_9");
         pushButton_9->setGeometry(QRect(371, 476, 240, 82));
@@ -82,24 +69,11 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         pushButton_2 = new QPushButton(StationAddWindow);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(958, 14, 17, 17));
@@ -124,24 +98,11 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         lineEdit_4 = new QLineEdit(StationAddWindow);
         lineEdit_4->setObjectName("lineEdit_4");
         lineEdit_4->setGeometry(QRect(43, 364, 895, 66));
@@ -150,24 +111,17 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
+        QWidget::setTabOrder(lineEdit, lineEdit_2);
+        QWidget::setTabOrder(lineEdit_2, lineEdit_3);
+        QWidget::setTabOrder(lineEdit_3, lineEdit_4);
+        QWidget::setTabOrder(lineEdit_4, pushButton_9);
+        QWidget::setTabOrder(pushButton_9, pushButton_3);
+        QWidget::setTabOrder(pushButton_3, pushButton_2);
 
         retranslateUi(StationAddWindow);
 

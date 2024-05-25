@@ -44,23 +44,11 @@
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_9">
@@ -104,23 +92,11 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
@@ -190,23 +166,11 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_4">
@@ -224,26 +188,23 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_2</tabstop>
+ </tabstops>
  <resources>
   <include location="resources.qrc"/>
  </resources>
