@@ -4,6 +4,8 @@
 #include "routeadminwindow.h"
 #include "stationaddwindow.h"
 #include "trainadminwindow.h"
+#include "stationchangewindow.h"
+#include "stationadminwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -61,6 +63,9 @@ StationAdminWIndow::StationAdminWIndow(QWidget *parent)
     ui->pushButton_9->installEventFilter(this);
     ui->pushButton_10->installEventFilter(this);
     ui->pushButton_11->installEventFilter(this);
+
+    ui->pushButton_10->disconnect(); // Отключаем все сигналы, связанные с этой кнопкой
+    connect(ui->pushButton_10, &QPushButton::clicked, this, &StationAdminWIndow::on_pushButton_10_clicked);
 }
 
 StationAdminWIndow::~StationAdminWIndow()
@@ -216,3 +221,35 @@ void StationAdminWIndow::on_pushButton_9_clicked()
     this->close();
 }
 
+void StationAdminWIndow::updateModel() {
+    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+    if (model) {
+        model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+    }
+}
+
+void StationAdminWIndow::on_pushButton_10_clicked() {
+
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбрана ни одна станция!");
+        return;
+    }
+
+    int row = selected.first().row();
+    int stationId = ui->tableView->model()->data(ui->tableView->model()->index(row, 0)).toInt();
+    QString stationName = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
+
+    StationChangeWindow *changeWindow = new StationChangeWindow(nullptr);
+    changeWindow->setStationData(stationId, stationName);
+
+    // Подключение сигнала к слоту для обновления таблицы после изменения данных
+    connect(changeWindow, &StationChangeWindow::dataChanged, this, &StationAdminWIndow::updateModel);
+
+    connect(changeWindow, &StationChangeWindow::closing, this, &StationAdminWIndow::show);
+
+    //qDebug() << "Current window type before hiding:" << this->metaObject()->className();
+    this->hide();  // Должно скрыть StationAdminWIndow
+
+    changeWindow->show();
+}

@@ -121,7 +121,7 @@
     border: 3px solid #F0B78E;
     border-radius: 8px;
     gridline-color: #6D55FF;
-    background-color: white;	
+    background-color: #D8D8D8;	
 	color: black;
 	font-size: 16pt;
 	padding-left: 10px;

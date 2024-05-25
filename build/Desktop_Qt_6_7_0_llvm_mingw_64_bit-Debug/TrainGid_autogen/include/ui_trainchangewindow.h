@@ -70,7 +70,7 @@ public:
 "    border: 3px solid #F0B78E;\n"
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
-"    background-color: white;	\n"
+"    background-color: #D8D8D8;	\n"
 "	color: black;\n"
 "	font-size: 16pt;\n"
 "	padding-left: 10px;\n"
