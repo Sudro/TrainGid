@@ -45,6 +45,8 @@ private slots:
 
     void updateModel();
 
+    void on_pushButton_11_clicked();
+
 private:
     Ui::TrainAdminWindow *ui;
 

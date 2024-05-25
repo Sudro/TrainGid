@@ -21759,7 +21759,8 @@ CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj: D:/qt/projects/TrainGid/traina
   D:/qt/projects/TrainGid/tariffadminwindow.h \
   D:/qt/projects/TrainGid/trainaddwindow.h \
   D:/qt/projects/TrainGid/trainadminwindow.h \
-  D:/qt/projects/TrainGid/trainchangewindow.h
+  D:/qt/projects/TrainGid/trainchangewindow.h \
+  D:/qt/projects/TrainGid/traindeletewindow.h
 
 CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/trainchangewindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
@@ -22766,6 +22767,7 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/projects/TrainGid/trainchangewindow.h
 
 CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: D:/qt/projects/TrainGid/traindeletewindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
@@ -22929,16 +22931,29 @@ CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLineEdit \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlineedit.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -23731,6 +23746,7 @@ CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stddef.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   TrainGid_autogen/include/ui_traindeletewindow.h \
   D:/qt/projects/TrainGid/traindeletewindow.h
 

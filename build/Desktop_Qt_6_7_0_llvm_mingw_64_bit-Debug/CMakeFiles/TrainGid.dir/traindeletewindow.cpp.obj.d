@@ -966,4 +966,19 @@ CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextoption.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/qt/projects/TrainGid/DatabaseManager.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h

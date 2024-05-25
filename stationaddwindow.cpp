@@ -12,3 +12,4 @@ StationAddWindow::~StationAddWindow()
 {
     delete ui;
 }
+

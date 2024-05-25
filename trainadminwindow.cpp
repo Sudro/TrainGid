@@ -4,6 +4,7 @@
 #include "stationadminwindow.h"
 #include "routeadminwindow.h" // Включаем заголовочный файл для RouteUserwindow
 #include "trainaddwindow.h"
+#include "traindeletewindow.h"
 #include "trainchangewindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
@@ -43,6 +44,9 @@ TrainAdminWindow::TrainAdminWindow(QWidget *parent)
 
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
+
+        // Скрываем столбец train_id
+        ui->tableView->hideColumn(0);
     }
     else
     {
@@ -255,4 +259,33 @@ void TrainAdminWindow::on_pushButton_10_clicked() {
     changeWindow->show();
 }
 
+
+
+void TrainAdminWindow::on_pushButton_11_clicked()
+{
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбран ни один поезд!");
+        return;
+    }
+
+    int row = selected.first().row();
+    QString trainNumber = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
+
+    QSqlQuery query;
+    query.prepare("SELECT delete_train(:p_train_number)");
+    query.bindValue(":p_train_number", trainNumber);
+
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + query.lastError().text());
+    } else {
+        query.next();
+        if (query.value(0).toBool()) {
+            QMessageBox::information(this, "Успех", "Поезд успешно удален.");
+            updateModel();  // Обновляем модель после удаления
+        } else {
+            QMessageBox::warning(this, "Ошибка", "Такого поезда не существует.");
+        }
+    }
+}
 

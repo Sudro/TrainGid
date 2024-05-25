@@ -39,6 +39,9 @@ StationAdminWIndow::StationAdminWIndow(QWidget *parent)
 
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
+
+        // Скрываем столбец station_id
+        ui->tableView->hideColumn(0);
     }
     else
     {

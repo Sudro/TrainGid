@@ -15,6 +15,9 @@ public:
     explicit TrainDeleteWindow(QWidget *parent = nullptr);
     ~TrainDeleteWindow();
 
+private slots:
+    void on_pushButton_11_clicked();
+
 private:
     Ui::TrainDeleteWindow *ui;
 };

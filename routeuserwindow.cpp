@@ -39,6 +39,9 @@ RouteWindow::RouteWindow(QWidget *parent)
 
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
+
+        // Скрываем столбец route_id
+        ui->tableView->hideColumn(0);
     }
     else
     {

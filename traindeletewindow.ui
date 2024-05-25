@@ -122,21 +122,12 @@
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
 }
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}</string>
+</string>
    </property>
   </widget>
  </widget>
