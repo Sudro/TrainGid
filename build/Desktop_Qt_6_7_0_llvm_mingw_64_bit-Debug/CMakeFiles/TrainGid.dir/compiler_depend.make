@@ -4834,11 +4834,18 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: D:/qt/projects/TrainGid/mainwindow.c
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeaddwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20type_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q23utility.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qalgorithms.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydata.h \
@@ -4914,6 +4921,7 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qprocessordetection.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qrect.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qrefcount.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qscopedpointer.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qscopeguard.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qset.h \
@@ -4963,11 +4971,15 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcolor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfont.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qfontmetrics.h \
@@ -4975,6 +4987,7 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qicon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qimage.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qkeysequence.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpaintdevice.h \
@@ -4983,10 +4996,13 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixelformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpixmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpolygon.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextcursor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextformat.h \
@@ -4995,20 +5011,46 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QComboBox \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLineEdit \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractspinbox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qcombobox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlineedit.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qslider.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyle.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyleoption.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabbar.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -5800,7 +5842,8 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_routeaddwindow.h \
-  D:/qt/projects/TrainGid/routeaddwindow.h
+  D:/qt/projects/TrainGid/routeaddwindow.h \
+  D:/qt/projects/TrainGid/routeadminwindow.h
 
 CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routeadminwindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
@@ -6827,6 +6870,7 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: D:/qt/projects/TrainGid/routea
   TrainGid_autogen/include/ui_routeadminwindow.h \
   D:/qt/projects/TrainGid/choicewindow.h \
   D:/qt/projects/TrainGid/mainwindow.h \
+  D:/qt/projects/TrainGid/routeaddwindow.h \
   D:/qt/projects/TrainGid/routeadminwindow.h \
   D:/qt/projects/TrainGid/stationadminwindow.h \
   D:/qt/projects/TrainGid/tariffadminwindow.h \
@@ -28967,29 +29011,19 @@ TrainGid_autogen/include/ui_mainwindow.h:
 
 D:/qt/projects/TrainGid/routeaddwindow.cpp:
 
+D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h:
+
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpen.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextcursor.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextoption.h:
 
-D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlineedit.h:
-
-D:/qt/projects/TrainGid/routeadminwindow.cpp:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel:
-
 D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h:
 
-D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h:
+TrainGid_autogen/include/ui_trainstationconnectwindow.h:
 
-D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QVBoxLayout:
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QComboBox:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemdelegate.h:
 
@@ -28999,9 +29033,7 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h:
 
-D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayout.h:
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlineedit.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h:
 
@@ -29012,6 +29044,22 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qslider.h:
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyle.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabbar.h:
+
+D:/qt/projects/TrainGid/routeadminwindow.cpp:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QHeaderView:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QVBoxLayout:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayout.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtableview.h:
 
@@ -29044,10 +29092,6 @@ TrainGid_autogen/include/ui_tariffuserwindow.h:
 TrainGid_autogen/include/ui_traindeletewindow.h:
 
 D:/qt/projects/TrainGid/trainstationconnectwindow.cpp:
-
-TrainGid_autogen/include/ui_trainstationconnectwindow.h:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QComboBox:
 
 D:/qt/projects/TrainGid/trainstationdeletewindow.cpp:
 

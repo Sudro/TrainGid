@@ -53,5 +53,6 @@
         <file>changeAdminButton2.png</file>
         <file>removeAdminNewButton2.png</file>
         <file>appendAdminButton_1.png</file>
+        <file>DownArrow3.png</file>
     </qresource>
 </RCC>

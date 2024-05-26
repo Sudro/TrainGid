@@ -100,6 +100,7 @@ TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainButt
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/connectTrainStationButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/DownArrow2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/trainFrame.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/DownArrow3.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/mainButtonFrame.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/DeleteConnectWindow.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/stationsButton2.png

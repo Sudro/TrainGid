@@ -1,6 +1,7 @@
 #include "routeadminwindow.h"
 #include "ui_routeadminwindow.h"
 #include "tariffadminwindow.h"
+#include "routeaddwindow.h"
 #include "stationadminwindow.h"
 #include "trainadminwindow.h"
 #include "mainwindow.h"
@@ -29,6 +30,8 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
 
     ui->tableView->verticalHeader()->hide();
     ui->tableView->verticalHeader()->setVisible(false);
+    ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection); // Разрешает выбор только одной строки за раз
+    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows); // Указывает, что при выборе должны выделяться строки
 
     // Устанавливаем флаг Qt::FramelessWindowHint
     setWindowFlags(Qt::FramelessWindowHint);
@@ -66,6 +69,9 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
     ui->pushButton_9->installEventFilter(this);
     ui->pushButton_10->installEventFilter(this);
     ui->pushButton_11->installEventFilter(this);
+
+    //ui->pushButton_10->disconnect(); // Отключаем все сигналы, связанные с этой кнопкой
+    //connect(ui->pushButton_10, &QPushButton::clicked, this, &StationAdminWIndow::on_pushButton_10_clicked);
 }
 
 RouteAdminWindow::~RouteAdminWindow()
@@ -80,6 +86,8 @@ void RouteAdminWindow::on_pushButton_2_clicked()
 {
     // Закрываем текущее окно (TrainUserWindow)
     this->close();
+
+    instance = nullptr;
 }
 
 // Определяем слот для сворачивания текущего окна
@@ -117,44 +125,76 @@ void RouteAdminWindow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем обработчик для кнопки pushButton_8
 void RouteAdminWindow::on_pushButton_8_clicked()
 {
+    TariffAdminWindow *tariffAdminWindow = TariffAdminWindow::getInstance();
+    tariffAdminWindow->raise();
+    tariffAdminWindow->activateWindow();
+    tariffAdminWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна TariffAdminWindow
     TariffAdminWindow *tariffAdminWindow = new TariffAdminWindow();
     // Показываем окно TariffAdminWindow
     tariffAdminWindow->show();
     // Закрываем текущее окно (RouteAdminWindow)
     this->close();
+    */
 }
 
 
 void RouteAdminWindow::on_pushButton_7_clicked()
 {
+    StationAdminWIndow *stationAdminWindow = StationAdminWIndow::getInstance();
+    stationAdminWindow->raise();
+    stationAdminWindow->activateWindow();
+    stationAdminWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна StationAdminWIndow
     StationAdminWIndow *stationAdminWindow = new StationAdminWIndow();
     // Показываем окно StationAdminWIndow
     stationAdminWindow->show();
     // Закрываем текущее окно (RouteAdminWindow)
     this->close();
+    */
 }
 
 
 void RouteAdminWindow::on_pushButton_5_clicked()
 {
+    TrainAdminWindow *trainAdminWindow = TrainAdminWindow::getInstance();
+    trainAdminWindow->raise();
+    trainAdminWindow->activateWindow();
+    trainAdminWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна TrainAdminWindow
     TrainAdminWindow *trainAdminWindow = new TrainAdminWindow();
     // Показываем окно TrainAdminWindow
     trainAdminWindow->show();
     // Закрываем текущее окно (RouteAdminWindow)
     this->close();
+    */
 }
 
 void RouteAdminWindow::on_pushButton_4_clicked()
 {
+    MainWindow *mainWindow = MainWindow::getInstance();
+    mainWindow->raise();
+    mainWindow->activateWindow();
+    mainWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна MainWindow
     MainWindow *mainWindow = new MainWindow();
     // Показываем окно MainWindow
     mainWindow->show();
     // Закрываем текущее окно (RouteAdminWindow)
     this->close();
+    */
 }
 
 bool RouteAdminWindow::eventFilter(QObject *obj, QEvent *event)
@@ -215,6 +255,17 @@ void RouteAdminWindow::updateButtonIcon(QPushButton *button, const QString &icon
 
 void RouteAdminWindow::on_pushButton_9_clicked()
 {
-
+    RouteAddWindow *routeAddWindow = RouteAddWindow::getInstance();
+    routeAddWindow->raise();
+    routeAddWindow->activateWindow();
+    connect(routeAddWindow, &RouteAddWindow::dataChanged, this, &RouteAdminWindow::updateModel); //
+    routeAddWindow->show();
+    this->close();
 }
 
+void RouteAdminWindow::updateModel() {
+    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+    if (model) {
+        model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+    }
+}

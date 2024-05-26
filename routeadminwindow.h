@@ -40,7 +40,12 @@ private slots:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
 
+    void updateModel();
+
     void on_pushButton_9_clicked();
+
+signals:
+    void dataAdded();
 
 private:
     Ui::RouteAdminWindow *ui;
