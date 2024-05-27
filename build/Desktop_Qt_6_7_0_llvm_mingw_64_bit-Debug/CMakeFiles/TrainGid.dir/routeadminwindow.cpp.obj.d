@@ -1015,6 +1015,8 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlRecord \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlrecord.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqltablemodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h \

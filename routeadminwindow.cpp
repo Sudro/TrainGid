@@ -9,6 +9,7 @@
 #include <QSqlDatabase>
 #include <QSqlError>
 #include <QSqlQuery>
+#include <QSqlRecord>
 #include <QSqlTableModel>
 #include <QMessageBox>
 #include <QVBoxLayout>
@@ -44,6 +45,30 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
         QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
         model->setTable("routes");
         model->select();
+
+        // Добавление новой колонки для текстового представления маршрута
+        while (model->canFetchMore()) {
+            model->fetchMore();
+        }
+
+        for (int row = 0; row < model->rowCount(); ++row) {
+            int parentRouteId = model->record(row).value("parent_route_id").toInt();
+            if (!model->record(row).isNull("parent_route_id")) {
+                QSqlQuery query;
+                query.prepare("SELECT departure_point, destination, trip_duration FROM routes WHERE route_id = :id");
+                query.bindValue(":id", parentRouteId);
+                if (query.exec() && query.next()) {
+                    QString departurePoint = query.value(0).toString();
+                    QString destination = query.value(1).toString();
+                    QString tripDuration = query.value(2).toString();
+                    if (!tripDuration.contains("час")) {
+                        tripDuration += " часа";
+                    }
+                    QString parentRouteText = departurePoint + " -> " + destination + " (" + tripDuration + ")";
+                    model->setData(model->index(row, model->fieldIndex("parent_route_id")), parentRouteText);
+                }
+            }
+        }
 
         // Устанавливаем режим растягивания столбцов
         ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -263,9 +288,41 @@ void RouteAdminWindow::on_pushButton_9_clicked()
     this->close();
 }
 
+/*
 void RouteAdminWindow::updateModel() {
     QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
     if (model) {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+    }
+}
+*/
+void RouteAdminWindow::updateModel() {
+    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+    if (model) {
+        model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+
+        // Обновление текстового представления маршрутов
+        while (model->canFetchMore()) {
+            model->fetchMore();
+        }
+
+        for (int row = 0; row < model->rowCount(); ++row) {
+            int parentRouteId = model->record(row).value("parent_route_id").toInt();
+            if (!model->record(row).isNull("parent_route_id")) {
+                QSqlQuery query;
+                query.prepare("SELECT departure_point, destination, trip_duration FROM routes WHERE route_id = :id");
+                query.bindValue(":id", parentRouteId);
+                if (query.exec() && query.next()) {
+                    QString departurePoint = query.value(0).toString();
+                    QString destination = query.value(1).toString();
+                    QString tripDuration = query.value(2).toString();
+                    if (!tripDuration.contains("час")) {
+                        tripDuration += " часа";
+                    }
+                    QString parentRouteText = departurePoint + " -> " + destination + " (" + tripDuration + ")";
+                    model->setData(model->index(row, model->fieldIndex("parent_route_id")), parentRouteText);
+                }
+            }
+        }
     }
 }
