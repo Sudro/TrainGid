@@ -1030,4 +1030,5 @@ CMakeFiles/TrainGid.dir/routeadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qgridlayout.h \
   D:/qt/projects/TrainGid/DatabaseManager.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
+  D:/qt/projects/TrainGid/customsqltablemodel.h

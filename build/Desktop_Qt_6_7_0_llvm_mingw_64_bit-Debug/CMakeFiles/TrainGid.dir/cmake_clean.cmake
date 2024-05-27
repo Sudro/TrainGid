@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj"
   "CMakeFiles/TrainGid.dir/choicewindow.cpp.obj.d"
+  "CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj"
+  "CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj.d"
   "CMakeFiles/TrainGid.dir/databasemanager.cpp.obj"
   "CMakeFiles/TrainGid.dir/databasemanager.cpp.obj.d"
   "CMakeFiles/TrainGid.dir/main.cpp.obj"

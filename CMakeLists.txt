@@ -51,6 +51,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         tariffdeletewindow.h tariffdeletewindow.cpp tariffdeletewindow.ui
         trainstationconnectwindow.h trainstationconnectwindow.cpp trainstationconnectwindow.ui
         trainstationdeletewindow.h trainstationdeletewindow.cpp trainstationdeletewindow.ui
+        customsqltablemodel.h customsqltablemodel.cpp
 
 
 

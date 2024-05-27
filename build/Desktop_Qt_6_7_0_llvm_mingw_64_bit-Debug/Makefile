@@ -258,6 +258,30 @@ choicewindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/choicewindow.cpp.s
 .PHONY : choicewindow.cpp.s
 
+customsqltablemodel.obj: customsqltablemodel.cpp.obj
+.PHONY : customsqltablemodel.obj
+
+# target to build an object file
+customsqltablemodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj
+.PHONY : customsqltablemodel.cpp.obj
+
+customsqltablemodel.i: customsqltablemodel.cpp.i
+.PHONY : customsqltablemodel.i
+
+# target to preprocess a source file
+customsqltablemodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.i
+.PHONY : customsqltablemodel.cpp.i
+
+customsqltablemodel.s: customsqltablemodel.cpp.s
+.PHONY : customsqltablemodel.s
+
+# target to generate assembly for a file
+customsqltablemodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.s
+.PHONY : customsqltablemodel.cpp.s
+
 databasemanager.obj: databasemanager.cpp.obj
 .PHONY : databasemanager.obj
 
@@ -881,6 +905,9 @@ help:
 	@echo ... choicewindow.obj
 	@echo ... choicewindow.i
 	@echo ... choicewindow.s
+	@echo ... customsqltablemodel.obj
+	@echo ... customsqltablemodel.i
+	@echo ... customsqltablemodel.s
 	@echo ... databasemanager.obj
 	@echo ... databasemanager.i
 	@echo ... databasemanager.s

@@ -335,6 +335,12 @@
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/customsqltablemodel.h",
+			"MU",
+			"EWIEGA46WW/moc_customsqltablemodel.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/databasemanager.h",
 			"MU",
 			"EWIEGA46WW/moc_databasemanager.cpp",
@@ -551,6 +557,7 @@
 	"SOURCES" : 
 	[
 		[ "D:/qt/projects/TrainGid/choicewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/customsqltablemodel.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/databasemanager.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/main.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/mainwindow.cpp", "MU", null ],

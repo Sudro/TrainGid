@@ -533,11 +533,26 @@ CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.s"
 	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\trainstationdeletewindow.cpp -o CMakeFiles\TrainGid.dir\trainstationdeletewindow.cpp.s
 
+CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
+CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
+CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj: D:/qt/projects/TrainGid/customsqltablemodel.cpp
+CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj -MF CMakeFiles\TrainGid.dir\customsqltablemodel.cpp.obj.d -o CMakeFiles\TrainGid.dir\customsqltablemodel.cpp.obj -c D:\qt\projects\TrainGid\customsqltablemodel.cpp
+
+CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.i"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\qt\projects\TrainGid\customsqltablemodel.cpp > CMakeFiles\TrainGid.dir\customsqltablemodel.cpp.i
+
+CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.s"
+	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\qt\projects\TrainGid\customsqltablemodel.cpp -o CMakeFiles\TrainGid.dir\customsqltablemodel.cpp.s
+
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/flags.make
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/includes_CXX.rsp
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/TrainGid.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 	D:\qt\Tools\llvm-mingw1706_64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\TrainGid.dir\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\TrainGid.dir\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\TrainGid_autogen\EWIEGA46WW\qrc_resources.cpp
 
 CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -577,6 +592,7 @@ TrainGid_OBJECTS = \
 "CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj" \
 "CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj" \
 "CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj" \
+"CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj" \
 "CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target TrainGid
@@ -609,6 +625,7 @@ TrainGid.exe: CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/tariffdeletewindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj
+TrainGid.exe: CMakeFiles/TrainGid.dir/customsqltablemodel.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 TrainGid.exe: CMakeFiles/TrainGid.dir/build.make
 TrainGid.exe: D:/qt/6.7.0/llvm-mingw_64/lib/libQt6Widgets.a
@@ -619,7 +636,7 @@ TrainGid.exe: D:/qt/6.7.0/llvm-mingw_64/lib/libQt6EntryPoint.a
 TrainGid.exe: CMakeFiles/TrainGid.dir/linkLibs.rsp
 TrainGid.exe: CMakeFiles/TrainGid.dir/objects1.rsp
 TrainGid.exe: CMakeFiles/TrainGid.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable TrainGid.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\qt\projects\TrainGid\build\Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable TrainGid.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TrainGid.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -14,6 +14,7 @@
 #include <QMessageBox>
 #include <QVBoxLayout>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+#include "customsqltablemodel.h"
 
 RouteAdminWindow* RouteAdminWindow::instance = nullptr; //
 
@@ -41,6 +42,11 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
     DatabaseManager& dbManager = DatabaseManager::instance();
     if (dbManager.openDatabase())
     {
+        CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
+        model->setTable("routes");
+        model->select();
+
+        /*
         // Создаем модель для отображения данных
         QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
         model->setTable("routes");
@@ -69,6 +75,8 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
                 }
             }
         }
+
+        */
 
         // Устанавливаем режим растягивания столбцов
         ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -297,7 +305,15 @@ void RouteAdminWindow::updateModel() {
 }
 */
 void RouteAdminWindow::updateModel() {
+    CustomSqlTableModel *model = static_cast<CustomSqlTableModel*>(ui->tableView->model());
+
+    if (model) {
+        model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+    }
+
+    /*
     QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+
     if (model) {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
 
@@ -325,4 +341,5 @@ void RouteAdminWindow::updateModel() {
             }
         }
     }
+    */
 }
