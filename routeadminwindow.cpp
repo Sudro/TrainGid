@@ -2,6 +2,7 @@
 #include "ui_routeadminwindow.h"
 #include "tariffadminwindow.h"
 #include "routeaddwindow.h"
+#include "routechangewindow.h"
 #include "stationadminwindow.h"
 #include "trainadminwindow.h"
 #include "mainwindow.h"
@@ -103,8 +104,8 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
     ui->pushButton_10->installEventFilter(this);
     ui->pushButton_11->installEventFilter(this);
 
-    //ui->pushButton_10->disconnect(); // Отключаем все сигналы, связанные с этой кнопкой
-    //connect(ui->pushButton_10, &QPushButton::clicked, this, &StationAdminWIndow::on_pushButton_10_clicked);
+    ui->pushButton_10->disconnect(); // Отключаем все сигналы, связанные с этой кнопкой
+    connect(ui->pushButton_10, &QPushButton::clicked, this, &RouteAdminWindow::on_pushButton_10_clicked);
 }
 
 RouteAdminWindow::~RouteAdminWindow()
@@ -341,5 +342,46 @@ void RouteAdminWindow::updateModel() {
             }
         }
     }
+    */
+}
+
+void RouteAdminWindow::on_pushButton_10_clicked() {
+
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбран ни один маршрут!");
+        return;
+    }
+
+    int row = selected.first().row();
+    int routeId = ui->tableView->model()->data(ui->tableView->model()->index(row, 0)).toInt();
+    QString departurePoint = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
+    QString destination = ui->tableView->model()->data(ui->tableView->model()->index(row, 2)).toString();
+    QString tripDuration = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
+
+    QString routeDescription = QString("%1 -> %2 (%3)").arg(departurePoint, destination, tripDuration);
+
+    RouteChangeWindow *changeWindow = RouteChangeWindow::getInstance();
+    changeWindow->setRouteData(routeId, routeDescription, departurePoint, destination, tripDuration);
+
+    connect(changeWindow, &RouteChangeWindow::dataChanged, this, &RouteAdminWindow::updateModel);
+    connect(changeWindow, &RouteChangeWindow::closing, this, &RouteAdminWindow::show);
+
+    this->hide();
+    changeWindow->show();
+
+    /*
+    StationChangeWindow *changeWindow = new StationChangeWindow(nullptr);
+    changeWindow->setStationData(stationId, stationName);
+
+    // Подключение сигнала к слоту для обновления таблицы после изменения данных
+    connect(changeWindow, &StationChangeWindow::dataChanged, this, &StationAdminWIndow::updateModel);
+
+    connect(changeWindow, &StationChangeWindow::closing, this, &StationAdminWIndow::show);
+
+    //qDebug() << "Current window type before hiding:" << this->metaObject()->className();
+    this->hide();  // Должно скрыть StationAdminWIndow
+
+    changeWindow->show();
     */
 }
