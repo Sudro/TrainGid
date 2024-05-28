@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -27,11 +28,10 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLineEdit *lineEdit_3;
-    QLineEdit *lineEdit_4;
     QLineEdit *lineEdit_5;
     QLineEdit *lineEdit_6;
+    QComboBox *comboBox;
+    QComboBox *comboBox_2;
 
     void setupUi(QWidget *TariffAddWindow)
     {
@@ -74,154 +74,95 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
-        lineEdit_2 = new QLineEdit(TariffAddWindow);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setGeometry(QRect(39, 162, 895, 48));
-        lineEdit_2->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
-"    border: 3px solid #4DB8FF;\n"
-"    border-radius: 8px;\n"
-"    gridline-color: #6D55FF;\n"
-"    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
-        lineEdit_3 = new QLineEdit(TariffAddWindow);
-        lineEdit_3->setObjectName("lineEdit_3");
-        lineEdit_3->setGeometry(QRect(39, 228, 895, 48));
-        lineEdit_3->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
-"    border: 3px solid #4DB8FF;\n"
-"    border-radius: 8px;\n"
-"    gridline-color: #6D55FF;\n"
-"    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
-        lineEdit_4 = new QLineEdit(TariffAddWindow);
-        lineEdit_4->setObjectName("lineEdit_4");
-        lineEdit_4->setGeometry(QRect(39, 294, 895, 48));
-        lineEdit_4->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
-"    border: 3px solid #4DB8FF;\n"
-"    border-radius: 8px;\n"
-"    gridline-color: #6D55FF;\n"
-"    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         lineEdit_5 = new QLineEdit(TariffAddWindow);
         lineEdit_5->setObjectName("lineEdit_5");
-        lineEdit_5->setGeometry(QRect(39, 359, 895, 48));
+        lineEdit_5->setGeometry(QRect(39, 345, 895, 48));
         lineEdit_5->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    border: 3px solid #4DB8FF;\n"
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         lineEdit_6 = new QLineEdit(TariffAddWindow);
         lineEdit_6->setObjectName("lineEdit_6");
-        lineEdit_6->setGeometry(QRect(39, 425, 895, 48));
+        lineEdit_6->setGeometry(QRect(39, 416, 895, 48));
         lineEdit_6->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    border: 3px solid #4DB8FF;\n"
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
+        comboBox = new QComboBox(TariffAddWindow);
+        comboBox->setObjectName("comboBox");
+        comboBox->setGeometry(QRect(39, 167, 895, 66));
+        comboBox->setStyleSheet(QString::fromUtf8("QComboBox {\n"
+"    border: 3px solid #4DB8FF;\n"
+"    border-radius: 8px;\n"
+"    gridline-color: #6D55FF;\n"
+"    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
 "}\n"
 "\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
+"QComboBox::drop-down {\n"
+"	subcontrol-origin: padding;\n"
+"    subcontrol-position: top right;\n"
+"    width: 40px;\n"
+"    border-left-width: 1px;\n"
+"    border-left-style: solid;\n"
+"    border-top-right-radius: 3px;\n"
+"    border-bottom-right-radius: 3px;\n"
 "}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
+"QComboBox::down-arrow {\n"
+"	image: url(:/DownArrow3.png);\n"
+"}\n"
+"QComboBox::drop-down:hover {\n"
+"	background-color: lightgray;\n"
+"}"));
+        comboBox_2 = new QComboBox(TariffAddWindow);
+        comboBox_2->setObjectName("comboBox_2");
+        comboBox_2->setGeometry(QRect(39, 256, 895, 66));
+        comboBox_2->setStyleSheet(QString::fromUtf8("QComboBox {\n"
+"    border: 3px solid #4DB8FF;\n"
+"    border-radius: 8px;\n"
+"    gridline-color: #6D55FF;\n"
+"    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
 "}\n"
 "\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"QComboBox::drop-down {\n"
+"	subcontrol-origin: padding;\n"
+"    subcontrol-position: top right;\n"
+"    width: 40px;\n"
+"    border-left-width: 1px;\n"
+"    border-left-style: solid;\n"
+"    border-top-right-radius: 3px;\n"
+"    border-bottom-right-radius: 3px;\n"
+"}\n"
+"QComboBox::down-arrow {\n"
+"	image: url(:/DownArrow3.png);\n"
+"}\n"
+"QComboBox::drop-down:hover {\n"
+"	background-color: lightgray;\n"
+"}"));
 
         retranslateUi(TariffAddWindow);
 

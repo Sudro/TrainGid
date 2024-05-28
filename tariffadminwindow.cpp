@@ -1,5 +1,6 @@
 #include "tariffadminwindow.h"
 #include "ui_tariffadminwindow.h"
+#include "tariffaddwindow.h"
 #include "routeadminwindow.h"
 #include "stationadminwindow.h"
 #include "trainadminwindow.h"
@@ -12,6 +13,7 @@
 #include <QMessageBox>
 #include <QVBoxLayout>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+#include "customsqltablemodel.h"
 
 TariffAdminWindow* TariffAdminWindow::instance = nullptr; //
 
@@ -43,10 +45,26 @@ TariffAdminWindow::TariffAdminWindow(QWidget *parent)
         model->select();
 
         // Устанавливаем режим растягивания столбцов
-        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+        //ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
+
+        // Скрываем столбец tariff_id
+        ui->tableView->hideColumn(0);
+
+        // Устанавливаем режим растягивания столбцов
+        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+        ui->tableView->horizontalHeader()->setStretchLastSection(true);
+
+
+        // Устанавливаем равномерное начальное распределение ширины столбцов
+        int columnCount = ui->tableView->horizontalHeader()->count();
+        int tableWidth = ui->tableView->viewport()->width();
+        int columnWidth = tableWidth / columnCount;
+        for (int i = 0; i < columnCount; ++i) {
+            ui->tableView->setColumnWidth(i, columnWidth);
+        }
     }
     else
     {
@@ -116,43 +134,78 @@ void TariffAdminWindow::mouseReleaseEvent(QMouseEvent *event)
 void TariffAdminWindow::on_pushButton_6_clicked()
 {
     // Создаем экземпляр окна RouteAdminWindow
+    RouteAdminWindow *routeAdminWindow = RouteAdminWindow::getInstance();
+    routeAdminWindow->raise();
+    routeAdminWindow->activateWindow();
+    routeAdminWindow->show();
+    this->close();
+
+    /*
+    // Создаем экземпляр окна RouteAdminWindow
     RouteAdminWindow *routeAdminWindow = new RouteAdminWindow();
     // Показываем окно RouteAdminWindow
     routeAdminWindow->show();
     // Закрываем текущее окно (TariffAdminWindow)
     this->close();
+    */
 }
 
 
 void TariffAdminWindow::on_pushButton_7_clicked()
 {
     // Создаем экземпляр окна StationAdminWindow
+    StationAdminWIndow *stationAdminWindow = StationAdminWIndow::getInstance();
+    stationAdminWindow->raise();
+    stationAdminWindow->activateWindow();
+    stationAdminWindow->show();
+    this->close();
+
+    /*
+    // Создаем экземпляр окна StationAdminWindow
     StationAdminWIndow *stationAdminWindow = new StationAdminWIndow();
     // Показываем окно StationAdminWindow
     stationAdminWindow->show();
     // Закрываем текущее окно (TariffAdminWindow)
     this->close();
+    */
 }
 
 
 void TariffAdminWindow::on_pushButton_5_clicked()
 {
     // Создаем экземпляр окна TrainAdminWindow
+    TrainAdminWindow *trainAdminWindow = TrainAdminWindow::getInstance();
+    trainAdminWindow->raise();
+    trainAdminWindow->activateWindow();
+    trainAdminWindow->show();
+    this->close();
+
+    /*
+    // Создаем экземпляр окна TrainAdminWindow
     TrainAdminWindow *trainAdminWindow = new TrainAdminWindow();
     // Показываем окно trainAdminWindow
     trainAdminWindow->show();
     // Закрываем текущее окно (TariffAdminWindow)
     this->close();
+    */
 }
 
 void TariffAdminWindow::on_pushButton_4_clicked()
 {
+    MainWindow *mainWindow = MainWindow::getInstance();
+    mainWindow->raise();
+    mainWindow->activateWindow();
+    mainWindow->show();
+    this->close();
+
+    /*
     // Создаем экземпляр окна MainWindow
     MainWindow *mainWindow = new MainWindow();
     // Показываем окно MainWindow
     mainWindow->show();
     // Закрываем текущее окно (TariffAdminWindow)
     this->close();
+    */
 }
 
 bool TariffAdminWindow::eventFilter(QObject *obj, QEvent *event)
@@ -211,4 +264,23 @@ bool TariffAdminWindow::eventFilter(QObject *obj, QEvent *event)
 void TariffAdminWindow::updateButtonIcon(QPushButton *button, const QString &iconPath)
 {
     button->setIcon(QIcon(iconPath));
+}
+
+void TariffAdminWindow::on_pushButton_9_clicked()
+{
+    TariffAddWindow *tariffAddWindow = TariffAddWindow::getInstance();
+    tariffAddWindow->raise();
+    tariffAddWindow->activateWindow();
+    connect(tariffAddWindow, &TariffAddWindow::dataChanged, this, &TariffAdminWindow::updateModel); //
+    tariffAddWindow->show();
+    this->close();
+}
+
+void TariffAdminWindow::updateModel() {
+    // CustomSqlTableModel *model = static_cast<CustomSqlTableModel*>(ui->tableView->model()); // ПОМЕНЯТЬ НА CustomSqlTableModel
+    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+
+    if (model) {
+        model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+    }
 }

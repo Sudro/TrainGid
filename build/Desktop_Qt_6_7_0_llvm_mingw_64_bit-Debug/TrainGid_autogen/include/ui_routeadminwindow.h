@@ -204,6 +204,13 @@ public:
 "\n"
 "QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
 "    background: white; /* \320\255\321\202\320\276 \320\270\320\267\320\274\320\265\320\275\320\270\321\202 \321\206\320\262\320\265\321\202 \321\204\320\276\320\275\320\260 \320\275\320\265\320\260\320\272\321\202\320\270\320\262\320\275\321\213\321\205 \321\207\320\260\321\201\321\202\320\265\320\271 \320\277\320\276\320\273\320\267\321\203\320\275\320\272\320\260 */\n"
+"}\n"
+"\n"
+"QScrollBar::add-line::horizontal, QScrollBar::sub-line::horizontal {\n"
+"    border: none;\n"
+"    background: none;\n"
+"    width: 0px;\n"
+"    height: 0px;\n"
 "}"));
         tableView->setShowGrid(true);
 

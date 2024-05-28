@@ -935,13 +935,18 @@ CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qcursor.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/projects/TrainGid/tariffadminwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/ui_tariffaddwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QVariant \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qapplication.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreapplication.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qdeadlinetimer.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qelapsedtimer.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qeventloop.h \
@@ -951,9 +956,23 @@ CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputmethod.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qlocale.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qguiapplication_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QComboBox \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qcombobox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyleoption.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractspinbox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qslider.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qstyle.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabbar.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtabwidget.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qrubberband.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpicture.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qiodevice.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextdocument.h \
@@ -964,6 +983,30 @@ CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpen.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextoption.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpointingdevice.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qinputdevice.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QRect \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h

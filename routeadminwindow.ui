@@ -353,6 +353,13 @@ QScrollBar::handle:horizontal {
 
 QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
     background: white; /* Это изменит цвет фона неактивных частей ползунка */
+}
+
+QScrollBar::add-line::horizontal, QScrollBar::sub-line::horizontal {
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
 }</string>
    </property>
    <property name="showGrid">

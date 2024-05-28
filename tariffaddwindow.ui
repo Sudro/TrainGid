@@ -122,132 +122,18 @@
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>39</x>
-     <y>162</y>
-     <width>895</width>
-     <height>48</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLineEdit {
-    border: 3px solid #4DB8FF;
-    border-radius: 8px;
-    gridline-color: #6D55FF;
-    background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>39</x>
-     <y>228</y>
-     <width>895</width>
-     <height>48</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLineEdit {
-    border: 3px solid #4DB8FF;
-    border-radius: 8px;
-    gridline-color: #6D55FF;
-    background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
-   <property name="geometry">
-    <rect>
-     <x>39</x>
-     <y>294</y>
-     <width>895</width>
-     <height>48</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLineEdit {
-    border: 3px solid #4DB8FF;
-    border-radius: 8px;
-    gridline-color: #6D55FF;
-    background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_5">
    <property name="geometry">
     <rect>
      <x>39</x>
-     <y>359</y>
+     <y>345</y>
      <width>895</width>
      <height>48</height>
     </rect>
@@ -258,30 +144,18 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_6">
    <property name="geometry">
     <rect>
      <x>39</x>
-     <y>425</y>
+     <y>416</y>
      <width>895</width>
      <height>48</height>
     </rect>
@@ -292,23 +166,87 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>167</y>
+     <width>895</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 3px solid #4DB8FF;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
 }
 
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 40px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
+QComboBox::down-arrow {
+	image: url(:/DownArrow3.png);
+}
+QComboBox::drop-down:hover {
+	background-color: lightgray;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>256</y>
+     <width>895</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    border: 3px solid #4DB8FF;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
 }
 
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 40px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
-
-</string>
+QComboBox::down-arrow {
+	image: url(:/DownArrow3.png);
+}
+QComboBox::drop-down:hover {
+	background-color: lightgray;
+}</string>
    </property>
   </widget>
  </widget>

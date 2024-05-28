@@ -79,14 +79,53 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
 
         */
 
+        /*
+        // Устанавливаем модель в tableView
+        ui->tableView->setModel(model);
+
+        // Скрываем столбец route_id
+        ui->tableView->hideColumn(0);
+
         // Устанавливаем режим растягивания столбцов
-        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+
+        // Вызываем resizeColumnsToContents, чтобы столбцы равномерно растянулись
+        ui->tableView->resizeColumnsToContents();
+
+        // Перераспределяем ширину столбцов, чтобы они были одинаковыми
+        int columnCount = ui->tableView->horizontalHeader()->count();
+        int tableWidth = ui->tableView->viewport()->width();
+        int columnWidth = tableWidth / columnCount;
+        for (int i = 0; i < columnCount; ++i) {
+            ui->tableView->setColumnWidth(i, columnWidth);
+        }
+        */
+
+
+        // Устанавливаем режим растягивания столбцов
+        //ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
 
         // Скрываем столбец route_id
         ui->tableView->hideColumn(0);
+
+        //ui->tableView->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+
+        // Устанавливаем режим растягивания столбцов
+        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+        ui->tableView->horizontalHeader()->setStretchLastSection(true);
+
+
+        // Устанавливаем равномерное начальное распределение ширины столбцов
+        int columnCount = ui->tableView->horizontalHeader()->count();
+        int tableWidth = ui->tableView->viewport()->width();
+        int columnWidth = tableWidth / columnCount;
+        for (int i = 0; i < columnCount; ++i) {
+            ui->tableView->setColumnWidth(i, columnWidth);
+        }
+
     }
     else
     {
@@ -385,3 +424,36 @@ void RouteAdminWindow::on_pushButton_10_clicked() {
     changeWindow->show();
     */
 }
+
+void RouteAdminWindow::on_pushButton_11_clicked()
+{
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбран ни один маршрут!");
+        return;
+    }
+
+    int row = selected.first().row();
+    QString departurePoint = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
+    QString destination = ui->tableView->model()->data(ui->tableView->model()->index(row, 2)).toString();
+    QString tripDuration = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
+
+    QSqlQuery query;
+    query.prepare("SELECT delete_route(:p_departure_point, :p_destination, :p_trip_duration)");
+    query.bindValue(":p_departure_point", departurePoint);
+    query.bindValue(":p_destination", destination);
+    query.bindValue(":p_trip_duration", tripDuration);
+
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + query.lastError().text());
+    } else {
+        query.next();
+        if (query.value(0).toBool()) {
+            QMessageBox::information(this, "Успех", "Маршрут успешно удалён.");
+            updateModel();  // Обновляем модель после удаления
+        } else {
+            QMessageBox::warning(this, "Ошибка", "Такого маршрута не существует.");
+        }
+    }
+}
+

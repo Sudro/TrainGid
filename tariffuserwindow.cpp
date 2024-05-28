@@ -39,6 +39,19 @@ TariffUserWindow::TariffUserWindow(QWidget *parent)
 
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
+
+        // Устанавливаем режим растягивания столбцов
+        ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+        ui->tableView->horizontalHeader()->setStretchLastSection(true);
+
+
+        // Устанавливаем равномерное начальное распределение ширины столбцов
+        int columnCount = ui->tableView->horizontalHeader()->count();
+        int tableWidth = ui->tableView->viewport()->width();
+        int columnWidth = tableWidth / columnCount;
+        for (int i = 0; i < columnCount; ++i) {
+            ui->tableView->setColumnWidth(i, columnWidth);
+        }
     }
     else
     {
