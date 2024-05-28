@@ -40,7 +40,8 @@ TariffAdminWindow::TariffAdminWindow(QWidget *parent)
     if (dbManager.openDatabase())
     {
         // Создаем модель для отображения данных
-        QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
+        //QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
+        CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
         model->setTable("tariffs");
         model->select();
 
@@ -278,7 +279,9 @@ void TariffAdminWindow::on_pushButton_9_clicked()
 
 void TariffAdminWindow::updateModel() {
     // CustomSqlTableModel *model = static_cast<CustomSqlTableModel*>(ui->tableView->model()); // ПОМЕНЯТЬ НА CustomSqlTableModel
-    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+    //QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+
+    CustomSqlTableModel *model = static_cast<CustomSqlTableModel*>(ui->tableView->model());
 
     if (model) {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
