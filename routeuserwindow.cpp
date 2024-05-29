@@ -12,6 +12,7 @@
 #include <QMessageBox>
 #include <QVBoxLayout>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+#include "customsqltablemodel.h"
 
 RouteWindow::RouteWindow(QWidget *parent)
     : QWidget(parent)
@@ -30,7 +31,8 @@ RouteWindow::RouteWindow(QWidget *parent)
     if (dbManager.openDatabase())
     {
         // Создаем модель для отображения данных
-        QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
+        //QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
+        CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
         model->setTable("routes");
         model->select();
 

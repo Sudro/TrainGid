@@ -33,7 +33,7 @@
    <property name="geometry">
     <rect>
      <x>371</x>
-     <y>476</y>
+     <y>516</y>
      <width>240</width>
      <height>82</height>
     </rect>
@@ -59,9 +59,9 @@
    <property name="geometry">
     <rect>
      <x>43</x>
-     <y>206</y>
+     <y>204</y>
      <width>895</width>
-     <height>66</height>
+     <height>48</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -69,33 +69,21 @@
     border: 3px solid #F0B78E;
     border-radius: 8px;
     gridline-color: #6D55FF;
-    background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+    background-color: #D8D8D8;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
     <rect>
      <x>43</x>
-     <y>297</y>
+     <y>275</y>
      <width>895</width>
-     <height>66</height>
+     <height>48</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -103,24 +91,12 @@ QHeaderView::section:vertical {
     border: 3px solid #F0B78E;
     border-radius: 8px;
     gridline-color: #6D55FF;
-    background-color: white;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+    background-color: #D8D8D8;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
@@ -138,23 +114,11 @@ QHeaderView::section:vertical {
     border-radius: 8px;
     gridline-color: #6D55FF;
     background-color: #D8D8D8;	
-}
-
-QHeaderView::section {
-    background-color: #6D55FF;
-    color: white;
-    font-family: Karla;
-    font-size: 14pt;
-}
-QHeaderView::section:horizontal {
-    border: none; /* убираем горизонтальные линии разделителя */
-}
-
-QHeaderView::section:vertical {
-    border: none; /* убираем вертикальные линии разделителя */
-}
-
-</string>
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
@@ -207,6 +171,50 @@ QHeaderView::section:vertical {
      <width>17</width>
      <height>17</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>346</y>
+     <width>895</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 3px solid #F0B78E;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_5">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>417</y>
+     <width>895</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 3px solid #F0B78E;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
+}</string>
    </property>
   </widget>
  </widget>

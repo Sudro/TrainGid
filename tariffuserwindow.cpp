@@ -12,6 +12,7 @@
 #include <QMessageBox>
 #include <QVBoxLayout>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+#include "customsqltablemodel.h"
 
 TariffUserWindow::TariffUserWindow(QWidget *parent)
     : QWidget(parent)
@@ -30,7 +31,8 @@ TariffUserWindow::TariffUserWindow(QWidget *parent)
     if (dbManager.openDatabase())
     {
         // Создаем модель для отображения данных
-        QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
+        //QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
+        CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
         model->setTable("tariffs");
         model->select();
 
@@ -39,6 +41,9 @@ TariffUserWindow::TariffUserWindow(QWidget *parent)
 
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
+
+        // Скрываем столбец tariff_id
+        ui->tableView->hideColumn(0);
 
         // Устанавливаем режим растягивания столбцов
         ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);

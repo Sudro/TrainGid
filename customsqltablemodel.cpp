@@ -49,6 +49,23 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
             } else {
                 qDebug() << "Failed to retrieve route data: " << query.lastError().text();
             }
+
+
+        } else if (idx.column() == fieldIndex("station_id")) {
+            int stationId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
+            QSqlQuery query;
+            query.prepare("SELECT station_name, city FROM stations WHERE station_id = :id");
+            query.bindValue(":id", stationId);
+            if (query.exec() && query.next()) {
+                QString stationName = query.value(0).toString();
+                QString city = query.value(1).toString();
+                return QString("%1 (%2)").arg(stationName).arg(city);
+            } else {
+                qDebug() << "Failed to retrieve station data: " << query.lastError().text();
+            }
+        }
+
+        /*
         } else if (idx.column() == fieldIndex("station_id")) {
             int stationId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
             QSqlQuery query;
@@ -59,7 +76,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
             } else {
                 qDebug() << "Failed to retrieve station data: " << query.lastError().text();
             }
-        }
+        }*/
     }
     return QSqlTableModel::data(idx, role);
 }

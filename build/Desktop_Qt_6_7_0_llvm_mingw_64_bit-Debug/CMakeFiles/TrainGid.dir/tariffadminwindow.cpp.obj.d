@@ -982,6 +982,7 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QTableView \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtableview.h \
   D:/qt/projects/TrainGid/tariffaddwindow.h \
+  D:/qt/projects/TrainGid/tariffchangewindow.h \
   D:/qt/projects/TrainGid/routeadminwindow.h \
   D:/qt/projects/TrainGid/stationadminwindow.h \
   D:/qt/projects/TrainGid/trainadminwindow.h \

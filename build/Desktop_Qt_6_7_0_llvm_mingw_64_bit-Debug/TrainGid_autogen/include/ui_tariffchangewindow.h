@@ -29,6 +29,8 @@ public:
     QLineEdit *lineEdit;
     QPushButton *pushButton_3;
     QPushButton *pushButton_2;
+    QLineEdit *lineEdit_4;
+    QLineEdit *lineEdit_5;
 
     void setupUi(QWidget *TariffChangeWindow)
     {
@@ -41,7 +43,7 @@ public:
         label->setPixmap(QPixmap(QString::fromUtf8(":/changeWindow.png")));
         pushButton_10 = new QPushButton(TariffChangeWindow);
         pushButton_10->setObjectName("pushButton_10");
-        pushButton_10->setGeometry(QRect(371, 476, 240, 82));
+        pushButton_10->setGeometry(QRect(371, 516, 240, 82));
         pushButton_10->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/changeAdminButton.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -49,56 +51,30 @@ public:
         pushButton_10->setIconSize(QSize(240, 82));
         lineEdit_2 = new QLineEdit(TariffChangeWindow);
         lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setGeometry(QRect(43, 206, 895, 66));
+        lineEdit_2->setGeometry(QRect(43, 204, 895, 48));
         lineEdit_2->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    border: 3px solid #F0B78E;\n"
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
-"    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"    background-color: #D8D8D8;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         lineEdit_3 = new QLineEdit(TariffChangeWindow);
         lineEdit_3->setObjectName("lineEdit_3");
-        lineEdit_3->setGeometry(QRect(43, 297, 895, 66));
+        lineEdit_3->setGeometry(QRect(43, 275, 895, 48));
         lineEdit_3->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    border: 3px solid #F0B78E;\n"
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
-"    background-color: white;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"    background-color: #D8D8D8;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         lineEdit = new QLineEdit(TariffChangeWindow);
         lineEdit->setObjectName("lineEdit");
         lineEdit->setGeometry(QRect(43, 115, 895, 66));
@@ -107,24 +83,11 @@ public:
 "    border-radius: 8px;\n"
 "    gridline-color: #6D55FF;\n"
 "    background-color: #D8D8D8;	\n"
-"}\n"
-"\n"
-"QHeaderView::section {\n"
-"    background-color: #6D55FF;\n"
-"    color: white;\n"
-"    font-family: Karla;\n"
-"    font-size: 14pt;\n"
-"}\n"
-"QHeaderView::section:horizontal {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\263\320\276\321\200\320\270\320\267\320\276\320\275\321\202\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-"}\n"
-"\n"
-"QHeaderView::section:vertical {\n"
-"    border: none; /* \321\203\320\261\320\270\321\200\320\260\320\265\320\274 \320\262\320\265\321\200\321\202\320\270\320\272\320\260\320\273\321\214\320\275\321\213\320\265 \320\273\320\270\320\275\320\270\320\270 \321\200\320\260\320\267\320\264\320\265\320\273\320\270\321\202\320\265\320\273\321\217 */\n"
-""
-                        "}\n"
-"\n"
-""));
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
         pushButton_3 = new QPushButton(TariffChangeWindow);
         pushButton_3->setObjectName("pushButton_3");
         pushButton_3->setGeometry(QRect(934, 14, 17, 17));
@@ -141,6 +104,32 @@ public:
         icon2.addFile(QString::fromUtf8(":/closeIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_2->setIcon(icon2);
         pushButton_2->setIconSize(QSize(17, 17));
+        lineEdit_4 = new QLineEdit(TariffChangeWindow);
+        lineEdit_4->setObjectName("lineEdit_4");
+        lineEdit_4->setGeometry(QRect(43, 346, 895, 48));
+        lineEdit_4->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    border: 3px solid #F0B78E;\n"
+"    border-radius: 8px;\n"
+"    gridline-color: #6D55FF;\n"
+"    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
+        lineEdit_5 = new QLineEdit(TariffChangeWindow);
+        lineEdit_5->setObjectName("lineEdit_5");
+        lineEdit_5->setGeometry(QRect(43, 417, 895, 48));
+        lineEdit_5->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    border: 3px solid #F0B78E;\n"
+"    border-radius: 8px;\n"
+"    gridline-color: #6D55FF;\n"
+"    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
+"}"));
 
         retranslateUi(TariffChangeWindow);
 

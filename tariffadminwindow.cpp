@@ -1,6 +1,7 @@
 #include "tariffadminwindow.h"
 #include "ui_tariffadminwindow.h"
 #include "tariffaddwindow.h"
+#include "tariffchangewindow.h"
 #include "routeadminwindow.h"
 #include "stationadminwindow.h"
 #include "trainadminwindow.h"
@@ -31,6 +32,8 @@ TariffAdminWindow::TariffAdminWindow(QWidget *parent)
 
     ui->tableView->verticalHeader()->hide();
     ui->tableView->verticalHeader()->setVisible(false);
+    ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection); // Разрешает выбор только одной строки за раз
+    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows); // Указывает, что при выборе должны выделяться строки
 
     // Устанавливаем флаг Qt::FramelessWindowHint
     setWindowFlags(Qt::FramelessWindowHint);
@@ -82,6 +85,9 @@ TariffAdminWindow::TariffAdminWindow(QWidget *parent)
     ui->pushButton_9->installEventFilter(this);
     ui->pushButton_10->installEventFilter(this);
     ui->pushButton_11->installEventFilter(this);
+
+    ui->pushButton_10->disconnect(); // Отключаем все сигналы, связанные с этой кнопкой
+    connect(ui->pushButton_10, &QPushButton::clicked, this, &TariffAdminWindow::on_pushButton_10_clicked);
 }
 
 TariffAdminWindow::~TariffAdminWindow()
@@ -97,6 +103,8 @@ void TariffAdminWindow::on_pushButton_2_clicked()
 {
     // Закрываем текущее окно (TariffAdminWindow)
     this->close();
+
+    instance = nullptr;
 }
 
 // Определяем слот для сворачивания текущего окна
@@ -287,3 +295,29 @@ void TariffAdminWindow::updateModel() {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
     }
 }
+
+void TariffAdminWindow::on_pushButton_10_clicked() {
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбран ни один тариф!");
+        return;
+    }
+
+    int row = selected.first().row();
+    int tariffId = ui->tableView->model()->data(ui->tableView->model()->index(row, 0)).toInt();
+    QString tariffName = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
+    QString route = ui->tableView->model()->data(ui->tableView->model()->index(row, 2)).toString();
+    QString station = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
+    QString details = ui->tableView->model()->data(ui->tableView->model()->index(row, 4)).toString(); // ???????????????????????????????????????????????????????????????????????????????????
+    QString price = ui->tableView->model()->data(ui->tableView->model()->index(row, 5)).toString(); // ???????????????????????????????????????????????????????????????????????????????????
+
+    TariffChangeWindow *changeWindow = TariffChangeWindow::getInstance();
+    changeWindow->setTariffData(tariffId, tariffName, route, station, details, price);
+
+    connect(changeWindow, &TariffChangeWindow::dataChanged, this, &TariffAdminWindow::updateModel);
+    connect(changeWindow, &TariffChangeWindow::closing, this, &TariffAdminWindow::show);
+
+    this->hide();
+    changeWindow->show();
+}
+
