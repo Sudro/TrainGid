@@ -43,13 +43,23 @@ RouteChangeWindow::~RouteChangeWindow()
 
 // СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)
 void RouteChangeWindow::setRouteData(int routeId, const QString &routeDescription, const QString &departurePoint, const QString &destination, const QString &tripDuration) {
+    qDebug() << "RouteChangeWindow::setRouteData - routeId:" << routeId;
+
     ui->lineEdit->setText(routeDescription); // СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)
+    //ui->lineEdit->setText("Маршрут: " + routeDescription); // Маршрут уже установлен и только для чтения
     ui->lineEdit->setReadOnly(true);
     this->routeId = routeId; // Сохраняем ID для использования в запросе на обновление
 
     ui->lineEdit_2->setPlaceholderText("Введите новый город отправления");
     ui->lineEdit_3->setPlaceholderText("Введите новый город прибытия");
     ui->lineEdit_4->setPlaceholderText("Введите новую продолжительность поездки");
+
+    // Добавляем qDebug для отладки
+    qDebug() << "RouteChangeWindow::setRouteData - routeId:" << routeId
+             << "routeDescription:" << routeDescription
+             << "departurePoint:" << departurePoint
+             << "destination:" << destination
+             << "tripDuration:" << tripDuration;
 }
 // СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)// СДЕЛАТЬ ЧТОБЫ БЫЛО МОСКВА -> КРАСНОДАР (2 часа)
 
@@ -116,6 +126,19 @@ void RouteChangeWindow::on_pushButton_10_clicked() {
         return;
     }
 
+    /*
+    // Удаляем надпись "Маршрут:" перед сохранением
+    QString routeDescription = ui->lineEdit->text();
+    if (routeDescription.startsWith("Маршрут: ")) {
+        routeDescription = routeDescription.mid(QString("Маршрут: ").length());
+    }
+    */
+
+    qDebug() << "RouteChangeWindow::on_pushButton_10_clicked - routeId:" << routeId
+             << "newDeparturePoint:" << newDeparturePoint
+             << "newDestination:" << newDestination
+             << "newTripDuration:" << newTripDuration;
+
     QSqlQuery query(DatabaseManager::instance().database());
     query.prepare("SELECT update_route(:route_id, :new_departure_point, :new_destination, :new_trip_duration)");
     query.bindValue(":route_id", routeId);
@@ -123,11 +146,14 @@ void RouteChangeWindow::on_pushButton_10_clicked() {
     query.bindValue(":new_destination", newDestination);
     query.bindValue(":new_trip_duration", newTripDuration);
 
+    qDebug() << "Executing query:" << query.executedQuery();
 
     if (!query.exec()) {
+        qDebug() << "Database error:" << query.lastError().text();
         QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + query.lastError().text());
     } else if (query.next()) {
         QString result = query.value(0).toString();
+        qDebug() << "Query result:" << result;
         if (result == "Маршрут с такой точкой отправления, точкой прибытия и временем уже существует.") {
             QMessageBox::information(this, "Информация", result);
         } else {

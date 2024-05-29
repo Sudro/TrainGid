@@ -37,13 +37,16 @@ TariffChangeWindow::TariffChangeWindow(QWidget *parent)
 void TariffChangeWindow::setTariffData(int tariffId, const QString &tariffName, const QString &route, const QString &station, const QString &details, const QString &price) {
     this->tariffId = tariffId;
 
-    ui->lineEdit->setText(tariffName);
+    //ui->lineEdit->setText(tariffName);
+    ui->lineEdit->setText("Тариф: " + tariffName);
     ui->lineEdit->setReadOnly(true);
 
-    ui->lineEdit_2->setText(route);
+    //ui->lineEdit_2->setText(route);
+    ui->lineEdit_2->setText("Маршрут: " + route);
     ui->lineEdit_2->setReadOnly(true);
 
-    ui->lineEdit_3->setText(station);
+    //ui->lineEdit_3->setText(station);
+    ui->lineEdit_3->setText("Станция: " + station);
     ui->lineEdit_3->setReadOnly(true);
 
     //ui->lineEdit_4->setText(details); // ???????????????????????????????????????????????????????????????????????????????????

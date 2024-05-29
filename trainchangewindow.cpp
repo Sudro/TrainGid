@@ -35,7 +35,9 @@ TrainChangeWindow::TrainChangeWindow(QWidget *parent)
 }
 
 void TrainChangeWindow::setTrainData(int trainId, const QString &trainNumber) {
-    ui->lineEdit->setText(trainNumber); // Номер поезда уже установлен и только для чтения
+
+    //ui->lineEdit->setText(trainNumber); // Номер поезда уже установлен и только для чтения
+    ui->lineEdit->setText("Номер поезда: " + trainNumber); // Номер поезда уже установлен и только для чтения
     ui->lineEdit->setReadOnly(true);
     this->trainId = trainId; // Сохраняем ID для использования в запросе на обновление
 
@@ -105,10 +107,27 @@ void TrainChangeWindow::on_pushButton_10_clicked() {
         return;
     }
 
+    // Удаляем надпись "Номер поезда:" перед сохранением
+    QString trainNumber = ui->lineEdit->text().remove("Номер поезда: ");
+
+    /*
+    // Удаляем надпись "Номер поезда:" перед сохранением
+    QString trainNumber = ui->lineEdit->text();
+    if (trainNumber.startsWith("Номер поезда: ")) {
+        trainNumber = trainNumber.mid(QString("Номер поезда: ").length());
+    }
+    */
+
+    /*
+    // Удаляем надпись "Номер поезда:" перед сохранением //
+    QString trainNumber = ui->lineEdit->text().remove("Номер поезда: "); //
+    */
+
     QSqlQuery query(DatabaseManager::instance().database());
     query.prepare("SELECT update_train(:train_id, :train_number, :new_name, :new_type)");
     query.bindValue(":train_id", trainId);
-    query.bindValue(":train_number", ui->lineEdit->text());
+    // query.bindValue(":train_number", ui->lineEdit->text());
+    query.bindValue(":train_number", trainNumber); //
     query.bindValue(":new_name", newName);
     query.bindValue(":new_type", newType);
 

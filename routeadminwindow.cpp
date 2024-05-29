@@ -46,6 +46,7 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
         CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
         model->setTable("routes");
         model->select();
+        qDebug() << "CustomSqlTableModel - fieldIndex for route_id:" << model->fieldIndex("route_id");
 
         /*
         // Создаем модель для отображения данных
@@ -392,13 +393,37 @@ void RouteAdminWindow::on_pushButton_10_clicked() {
         return;
     }
 
+    /*
     int row = selected.first().row();
-    int routeId = ui->tableView->model()->data(ui->tableView->model()->index(row, 0)).toInt();
+    QModelIndex routeIndex = ui->tableView->model()->index(row, 0); //
+    //int routeId = ui->tableView->model()->data(ui->tableView->model()->index(row, 0)).toInt();
+
+    //int routeId = ui->tableView->model()->data(routeIndex).toInt();
+
+    QVariant routeIdVariant = ui->tableView->model()->data(routeIndex);
+    int routeId = routeIdVariant.toInt();*/
+    int row = selected.first().row();
+    QModelIndex routeIndex = ui->tableView->model()->index(row, 0);
+    CustomSqlTableModel *model = qobject_cast<CustomSqlTableModel *>(ui->tableView->model());
+    int routeId = model->getRouteId(routeIndex);
+
+    //int routeId = routeIndex.data(Qt::DisplayRole).toInt();
+    //int routeId = routeIndex.data().toInt();  // Извлечение данных напрямую
+
+
+    qDebug() << "RouteAdminWindow::on_pushButton_10_clicked - row:" << row
+             << "routeIndex:" << routeIndex
+             //<< "routeIdVariant:" << routeIdVariant
+             << "routeId:" << routeId;
+
     QString departurePoint = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toString();
     QString destination = ui->tableView->model()->data(ui->tableView->model()->index(row, 2)).toString();
     QString tripDuration = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
 
     QString routeDescription = QString("%1 -> %2 (%3)").arg(departurePoint, destination, tripDuration);
+
+    qDebug() << "RouteAdminWindow::on_pushButton_10_clicked - routeId:" << routeId
+             << "routeDescription:" << routeDescription;
 
     RouteChangeWindow *changeWindow = RouteChangeWindow::getInstance();
     changeWindow->setRouteData(routeId, routeDescription, departurePoint, destination, tripDuration);

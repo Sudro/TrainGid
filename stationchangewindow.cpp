@@ -35,7 +35,8 @@ StationChangeWindow::StationChangeWindow(QWidget *parent)
 }
 
 void StationChangeWindow::setStationData(int stationId, const QString &stationName) {
-    ui->lineEdit->setText(stationName); // Название станции уже установлена и только для чтения
+    // ui->lineEdit->setText(stationName); // Название станции уже установлена и только для чтения
+    ui->lineEdit->setText("Станция: " + stationName); // Название станции уже установлена и только для чтения
     ui->lineEdit->setReadOnly(true);
     this->stationId = stationId; // Сохраняем ID для использования в запросе на обновление
 
@@ -107,10 +108,14 @@ void StationChangeWindow::on_pushButton_10_clicked() {
         return;
     }
 
+    // Удаляем надпись ""Станция: " перед сохранением
+    QString stationName = ui->lineEdit->text().remove("Станция: ");
+
     QSqlQuery query(DatabaseManager::instance().database());
     query.prepare("SELECT update_station(:station_id, :station_name, :new_city, :new_station_address, :new_platforms_count)");
     query.bindValue(":station_id", stationId);
-    query.bindValue(":station_name", ui->lineEdit->text());
+    // query.bindValue(":station_name", ui->lineEdit->text());
+    query.bindValue(":station_name", stationName); //
     query.bindValue(":new_city", newCity);
     query.bindValue(":new_station_address", newStationAddress);
     query.bindValue(":new_platforms_count", newPlatformsCount);
