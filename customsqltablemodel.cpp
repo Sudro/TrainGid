@@ -11,7 +11,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
         if (idx.column() == fieldIndex("parent_route_id")) {
             int parentRouteId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
 
-            qDebug() << "CustomSqlTableModel::data - parentRouteId:" << parentRouteId;
+            //qDebug() << "CustomSqlTableModel::data - parentRouteId:" << parentRouteId;
 
             if (parentRouteId == 0) {
                 return QVariant();
@@ -35,7 +35,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
             }
         } else if (idx.column() == fieldIndex("route_id")) {
             int routeId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
-            qDebug() << "CustomSqlTableModel::data - routeId:" << routeId << "index:" << idx;
+            //qDebug() << "CustomSqlTableModel::data - routeId:" << routeId << "index:" << idx;
             QSqlQuery query;
             query.prepare("SELECT departure_point, destination, trip_duration FROM routes WHERE route_id = :id");
             query.bindValue(":id", routeId);
@@ -56,7 +56,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
 
         } else if (idx.column() == fieldIndex("station_id")) {
             int stationId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
-            qDebug() << "CustomSqlTableModel::data - stationId:" << stationId << "index:" << idx;
+            //qDebug() << "CustomSqlTableModel::data - stationId:" << stationId << "index:" << idx;
             QSqlQuery query;
             query.prepare("SELECT station_name, city FROM stations WHERE station_id = :id");
             query.bindValue(":id", stationId);
