@@ -321,3 +321,83 @@ void TariffAdminWindow::on_pushButton_10_clicked() {
     changeWindow->show();
 }
 
+void TariffAdminWindow::on_pushButton_11_clicked()
+{
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбран ни один тариф!");
+        return;
+    }
+
+    int row = selected.first().row();
+    QModelIndex index = ui->tableView->model()->index(row, 0);
+
+    CustomSqlTableModel *model = qobject_cast<CustomSqlTableModel*>(ui->tableView->model());
+    if (!model) {
+        QMessageBox::critical(this, "Ошибка", "Не удалось получить модель данных.");
+        return;
+    }
+
+    int routeId = model->getRouteId(index);
+    int stationId = model->getStationId(index);
+    QString tariffName = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
+
+    // Чекаем для отладки
+    //qDebug() << "Route ID: " << routeId;
+    //qDebug() << "Station ID: " << stationId;
+    //qDebug() << "Tariff Name: " << tariffName;
+
+    // Удаляем запись на основе route_id, station_id и tariff_name
+    QSqlQuery deleteQuery(DatabaseManager::instance().database());
+    deleteQuery.prepare("SELECT delete_tariff(:route_id, :station_id, :tariff_name)");
+    deleteQuery.bindValue(":route_id", routeId);
+    deleteQuery.bindValue(":station_id", stationId);
+    deleteQuery.bindValue(":tariff_name", tariffName);
+
+    if (!deleteQuery.exec()) {
+        QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + deleteQuery.lastError().text());
+    } else {
+        deleteQuery.next();
+        if (deleteQuery.value(0).toBool()) {
+            QMessageBox::information(this, "Успех", "Тариф успешно удалён.");
+            updateModel();  // Обновляем модель после удаления
+        } else {
+            QMessageBox::warning(this, "Ошибка", "Такого тарифа не существует.");
+        }
+    }
+}
+
+/*
+void TariffAdminWindow::on_pushButton_11_clicked()
+{
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбран ни один тариф!");
+        return;
+    }
+
+    int row = selected.first().row();
+    int routeId = ui->tableView->model()->data(ui->tableView->model()->index(row, 1)).toInt();
+    int stationId = ui->tableView->model()->data(ui->tableView->model()->index(row, 2)).toInt();
+    QString tariffName = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
+
+    QSqlQuery query(DatabaseManager::instance().database());
+    query.prepare("SELECT delete_tariff(:route_id, :station_id, :tariff_name)");
+    query.bindValue(":route_id", routeId);
+    query.bindValue(":station_id", stationId);
+    query.bindValue(":tariff_name", tariffName);
+
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + query.lastError().text());
+    } else {
+        query.next();
+        if (query.value(0).toBool()) {
+            QMessageBox::information(this, "Успех", "Тариф успешно удален.");
+            updateModel();  // Обновляем модель после удаления
+        } else {
+            QMessageBox::warning(this, "Ошибка", "Такого тарифа не существует.");
+        }
+    }
+}
+*/
+

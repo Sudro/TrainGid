@@ -112,3 +112,13 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
     return QSqlTableModel::data(idx, role);
 }
 */
+
+int CustomSqlTableModel::getRouteId(const QModelIndex &idx) const
+{
+    return QSqlTableModel::data(idx.siblingAtColumn(fieldIndex("route_id")), Qt::DisplayRole).toInt();
+}
+
+int CustomSqlTableModel::getStationId(const QModelIndex &idx) const
+{
+    return QSqlTableModel::data(idx.siblingAtColumn(fieldIndex("station_id")), Qt::DisplayRole).toInt();
+}
