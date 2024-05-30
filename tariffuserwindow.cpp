@@ -3,6 +3,7 @@
 #include "routeuserwindow.h"
 #include "stationuserwindow.h"
 #include "trainuserwindow.h"
+#include "trainstationwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -70,6 +71,7 @@ TariffUserWindow::TariffUserWindow(QWidget *parent)
     ui->pushButton_5->installEventFilter(this);
     ui->pushButton_6->installEventFilter(this);
     ui->pushButton_7->installEventFilter(this);
+    ui->pushButton_9->installEventFilter(this);
 }
 
 TariffUserWindow::~TariffUserWindow()
@@ -177,6 +179,8 @@ bool TariffUserWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/routeButton3.png");
                 } else if (button == ui->pushButton_7) {
                     updateButtonIcon(button, ":/stationsButton3.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/trainStationButton3.png");
                 }
             } else if (event->type() == QEvent::Leave) {
                 // Здесь можно вернуть исходную иконку кнопки
@@ -192,6 +196,8 @@ bool TariffUserWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/routeButton2New.png");
                 } else if (button == ui->pushButton_7) {
                     updateButtonIcon(button, ":/stationsButton2New.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/trainStationButton2.png");
                 }
             }
         }
@@ -204,3 +210,14 @@ void TariffUserWindow::updateButtonIcon(QPushButton *button, const QString &icon
 {
     button->setIcon(QIcon(iconPath));
 }
+
+void TariffUserWindow::on_pushButton_9_clicked()
+{
+    // Создаем экземпляр окна TrainStationWindow
+    TrainStationWindow *trainStationWindow = new TrainStationWindow();
+    // Показываем окно TrainStationWindow
+    trainStationWindow->show();
+    // Закрываем текущее окно (TariffUserWindow)
+    this->close();
+}
+

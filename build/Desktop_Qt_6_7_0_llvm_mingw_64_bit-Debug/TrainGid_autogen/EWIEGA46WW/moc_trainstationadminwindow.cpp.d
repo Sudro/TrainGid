@@ -1,9 +1,11 @@
 D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainstationadminwindow.cpp: D:/qt/projects/TrainGid/trainstationadminwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/moc_predefs.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20functional.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20memory.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q20type_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/q23utility.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qalgorithms.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qanystringview.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qarraydata.h \
@@ -29,6 +31,7 @@ D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcontainerinfo.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcontainertools_impl.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcontiguouscache.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qcoreevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qdatastream.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qdebug.h \
@@ -117,6 +120,8 @@ D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qversiontagging.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qxptype_traits.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbitmap.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qbrush.h \
@@ -136,13 +141,17 @@ D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qregion.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgb.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qrgba64.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtgui-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qpushbutton.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qtwidgetsexports.h \

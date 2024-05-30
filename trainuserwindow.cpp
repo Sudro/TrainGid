@@ -3,6 +3,7 @@
 #include "tariffuserwindow.h"
 #include "stationuserwindow.h"
 #include "routeuserwindow.h" // Включаем заголовочный файл для RouteUserwindow
+#include "trainstationwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -68,6 +69,7 @@ TrainUserWindow::TrainUserWindow(QWidget *parent)
     ui->pushButton_6->installEventFilter(this);
     ui->pushButton_7->installEventFilter(this);
     ui->pushButton_8->installEventFilter(this);
+    ui->pushButton_9->installEventFilter(this);
 }
 
 TrainUserWindow::~TrainUserWindow()
@@ -176,6 +178,8 @@ bool TrainUserWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton3.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton3.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/trainStationButton3.png");
                 }
             } else if (event->type() == QEvent::Leave) {
                 // Здесь можно вернуть исходную иконку кнопки
@@ -191,6 +195,8 @@ bool TrainUserWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton2New.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton2New.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/trainStationButton2.png");
                 }
             }
         }
@@ -202,5 +208,16 @@ bool TrainUserWindow::eventFilter(QObject *obj, QEvent *event)
 void TrainUserWindow::updateButtonIcon(QPushButton *button, const QString &iconPath)
 {
     button->setIcon(QIcon(iconPath));
+}
+
+
+void TrainUserWindow::on_pushButton_9_clicked()
+{
+    // Создаем экземпляр окна TrainStationWindow
+    TrainStationWindow *trainStationWindow = new TrainStationWindow();
+    // Показываем окно TrainStationWindow
+    trainStationWindow->show();
+    // Закрываем текущее окно (TrainUserWindow)
+    this->close();
 }
 

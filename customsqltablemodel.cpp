@@ -67,8 +67,19 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
             } else {
                 qDebug() << "Failed to retrieve station data: " << query.lastError().text();
             }
+        } else if (idx.column() == fieldIndex("train_id")) {
+            int trainId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
+            QSqlQuery query;
+            query.prepare("SELECT train_number, train_name FROM trains WHERE train_id = :id");
+            query.bindValue(":id", trainId);
+            if (query.exec() && query.next()) {
+                QString trainNumber = query.value(0).toString();
+                QString trainName = query.value(1).toString();
+                return QString("%1 (%2)").arg(trainNumber).arg(trainName);
+            } else {
+                qDebug() << "Failed to retrieve train data: " << query.lastError().text();
+            }
         }
-
         /*
         } else if (idx.column() == fieldIndex("station_id")) {
             int stationId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();

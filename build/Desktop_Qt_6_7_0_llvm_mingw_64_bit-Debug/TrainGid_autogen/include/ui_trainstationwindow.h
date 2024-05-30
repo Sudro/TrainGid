@@ -41,7 +41,7 @@ public:
         label = new QLabel(TrainStationWindow);
         label->setObjectName("label");
         label->setGeometry(QRect(0, 0, 982, 628));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/trainstationFrame.png")));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/trainstationFrameNew.png")));
         pushButton_7 = new QPushButton(TrainStationWindow);
         pushButton_7->setObjectName("pushButton_7");
         pushButton_7->setGeometry(QRect(356, 22, 126, 37));

@@ -34,6 +34,7 @@ public:
     QPushButton *pushButton_10;
     QPushButton *pushButton_9;
     QTableView *tableView;
+    QPushButton *pushButton_12;
 
     void setupUi(QWidget *RouteAdminWindow)
     {
@@ -43,7 +44,7 @@ public:
         label = new QLabel(RouteAdminWindow);
         label->setObjectName("label");
         label->setGeometry(QRect(0, 0, 982, 628));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/routeFrame.png")));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/routeFrameNew.png")));
         pushButton_2 = new QPushButton(RouteAdminWindow);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(958, 14, 17, 17));
@@ -213,6 +214,14 @@ public:
 "    height: 0px;\n"
 "}"));
         tableView->setShowGrid(true);
+        pushButton_12 = new QPushButton(RouteAdminWindow);
+        pushButton_12->setObjectName("pushButton_12");
+        pushButton_12->setGeometry(QRect(222, 22, 126, 37));
+        pushButton_12->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
+        QIcon icon9;
+        icon9.addFile(QString::fromUtf8(":/trainStationButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_12->setIcon(icon9);
+        pushButton_12->setIconSize(QSize(126, 37));
 
         retranslateUi(RouteAdminWindow);
 
@@ -232,6 +241,7 @@ public:
         pushButton_11->setText(QString());
         pushButton_10->setText(QString());
         pushButton_9->setText(QString());
+        pushButton_12->setText(QString());
     } // retranslateUi
 
 };

@@ -31,6 +31,7 @@ public:
     QPushButton *pushButton_4;
     QPushButton *pushButton_2;
     QTableView *tableView;
+    QPushButton *pushButton_9;
 
     void setupUi(QWidget *RouteWindow)
     {
@@ -40,7 +41,7 @@ public:
         label = new QLabel(RouteWindow);
         label->setObjectName("label");
         label->setGeometry(QRect(0, 0, 982, 628));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/routeFrame.png")));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/routeFrameNew.png")));
         pushButton_8 = new QPushButton(RouteWindow);
         pushButton_8->setObjectName("pushButton_8");
         pushButton_8->setGeometry(QRect(364, 22, 126, 37));
@@ -179,6 +180,14 @@ public:
 "    background: white; /* \320\255\321\202\320\276 \320\270\320\267\320\274\320\265\320\275\320\270\321\202 \321\206\320\262\320\265\321\202 \321\204\320\276\320\275\320\260 \320\275\320\265\320\260\320\272\321\202\320\270\320\262\320\275\321\213\321\205 \321\207\320\260\321\201\321\202\320\265\320\271 \320\277\320\276\320\273\320\267\321\203\320\275\320\272\320\260 */\n"
 "}"));
         tableView->setShowGrid(true);
+        pushButton_9 = new QPushButton(RouteWindow);
+        pushButton_9->setObjectName("pushButton_9");
+        pushButton_9->setGeometry(QRect(222, 22, 126, 37));
+        pushButton_9->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/trainStationButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_9->setIcon(icon6);
+        pushButton_9->setIconSize(QSize(126, 37));
 
         retranslateUi(RouteWindow);
 
@@ -195,6 +204,7 @@ public:
         pushButton_7->setText(QString());
         pushButton_4->setText(QString());
         pushButton_2->setText(QString());
+        pushButton_9->setText(QString());
     } // retranslateUi
 
 };

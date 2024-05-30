@@ -984,6 +984,7 @@ CMakeFiles/TrainGid.dir/routeuserwindow.cpp.obj: \
   D:/qt/projects/TrainGid/tariffuserwindow.h \
   D:/qt/projects/TrainGid/stationuserwindow.h \
   D:/qt/projects/TrainGid/trainuserwindow.h \
+  D:/qt/projects/TrainGid/trainstationwindow.h \
   D:/qt/projects/TrainGid/mainwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmainwindow.h \

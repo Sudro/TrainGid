@@ -58,5 +58,10 @@
         <file>trainStationButton.png</file>
         <file>trainStationButton2.png</file>
         <file>trainStationButton3.png</file>
+        <file>trainFrameNew.png</file>
+        <file>routeFrameNew.png</file>
+        <file>stationFrameNew.png</file>
+        <file>tariffFrameNew.png</file>
+        <file>trainstationFrameNew.png</file>
     </qresource>
 </RCC>

@@ -6,6 +6,7 @@
 #include "trainaddwindow.h"
 //#include "traindeletewindow.h"
 #include "trainchangewindow.h"
+#include "trainstationadminwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -84,6 +85,7 @@ TrainAdminWindow::TrainAdminWindow(QWidget *parent)
     ui->pushButton_9->installEventFilter(this);
     ui->pushButton_10->installEventFilter(this);
     ui->pushButton_11->installEventFilter(this);
+    ui->pushButton_12->installEventFilter(this);
 
     // Соединение сигнала о выборе элемента с методом открытия окна изменения
     //connect(ui->tableView->selectionModel(), &QItemSelectionModel::selectionChanged, this, &TrainAdminWindow::on_pushButton_10_clicked);
@@ -237,6 +239,8 @@ bool TrainAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/changeAdminButton2.png");
                 } else if (button == ui->pushButton_11) {
                     updateButtonIcon(button, ":/removeAdminNewButton2.png");
+                } else if (button == ui->pushButton_12) {
+                    updateButtonIcon(button, ":/trainStationButton3.png");
                 }
             } else if (event->type() == QEvent::Leave) {
                 // Здесь можно вернуть исходную иконку кнопки
@@ -258,6 +262,8 @@ bool TrainAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/changeAdminButton.png");
                 } else if (button == ui->pushButton_11) {
                     updateButtonIcon(button, ":/removeAdminNewButton.png");
+                } else if (button == ui->pushButton_12) {
+                    updateButtonIcon(button, ":/trainStationButton2.png");
                 }
             }
         }
@@ -362,5 +368,15 @@ void TrainAdminWindow::on_pushButton_11_clicked()
             QMessageBox::warning(this, "Ошибка", "Такого поезда не существует.");
         }
     }
+}
+
+
+void TrainAdminWindow::on_pushButton_12_clicked()
+{
+    TrainStationAdminWindow *trainStationAdminWindow = TrainStationAdminWindow::getInstance();
+    trainStationAdminWindow->raise();
+    trainStationAdminWindow->activateWindow();
+    trainStationAdminWindow->show();
+    this->close();
 }
 
