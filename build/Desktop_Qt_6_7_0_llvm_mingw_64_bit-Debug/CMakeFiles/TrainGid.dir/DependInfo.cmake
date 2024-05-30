@@ -34,8 +34,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/qt/projects/TrainGid/trainadminwindow.cpp" "CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainadminwindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/trainchangewindow.cpp" "CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/traindeletewindow.cpp" "CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/traindeletewindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/trainstationadminwindow.cpp" "CMakeFiles/TrainGid.dir/trainstationadminwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainstationadminwindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/trainstationconnectwindow.cpp" "CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/trainstationdeletewindow.cpp" "CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.obj.d"
+  "D:/qt/projects/TrainGid/trainstationwindow.cpp" "CMakeFiles/TrainGid.dir/trainstationwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainstationwindow.cpp.obj.d"
   "D:/qt/projects/TrainGid/trainuserwindow.cpp" "CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj" "gcc" "CMakeFiles/TrainGid.dir/trainuserwindow.cpp.obj.d"
   )
 

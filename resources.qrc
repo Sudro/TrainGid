@@ -54,5 +54,9 @@
         <file>removeAdminNewButton2.png</file>
         <file>appendAdminButton_1.png</file>
         <file>DownArrow3.png</file>
+        <file>trainstationFrame.png</file>
+        <file>trainStationButton.png</file>
+        <file>trainStationButton2.png</file>
+        <file>trainStationButton3.png</file>
     </qresource>
 </RCC>

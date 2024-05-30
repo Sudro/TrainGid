@@ -46,6 +46,8 @@ private slots:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
 
+    void on_pushButton_9_clicked();
+
 private:
     Ui::MainWindow *ui;
     ChoiceWindow *choiceWindow; // Добавьте указатель на ChoiceWindow

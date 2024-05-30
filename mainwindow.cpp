@@ -5,6 +5,7 @@
 #include "stationuserwindow.h" // Добавляем заголовочный файл для StationUserWindow
 #include "routeuserwindow.h" // Включаем заголовочный файл для RouteUserwindow
 #include "trainuserwindow.h" // Включаем заголовочный файл для TrainUserwindow
+#include "trainstationwindow.h"
 #include <QMouseEvent>
 
 MainWindow* MainWindow::instance = nullptr; //
@@ -44,6 +45,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->pushButton_6->installEventFilter(this);
     ui->pushButton_7->installEventFilter(this);
     ui->pushButton_8->installEventFilter(this);
+    ui->pushButton_9->installEventFilter(this);
 
 }
 
@@ -73,6 +75,8 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton2New.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton2New.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/trainStationButton2.png");
                 } else if (button == ui->pushButton) {
                     updateButtonIcon(button, ":/mainButtonFrame2.png");
                 }
@@ -90,6 +94,8 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/trainStationButton.png");
                 } else if (button == ui->pushButton) {
                     updateButtonIcon(button, ":/mainButtonFrame.png");
                 }
@@ -198,4 +204,15 @@ void MainWindow::on_pushButton_5_clicked()
     this->close();
 }
 
+
+
+void MainWindow::on_pushButton_9_clicked()
+{
+    // Создаем экземпляр окна TrainStationWindow
+    TrainStationWindow *trainStationUserWindow = new TrainStationWindow();
+    // Показываем окно trainStationUserWindow
+    trainStationUserWindow->show();
+    // Закрываем текущее окно (MainWindow)
+    this->close();
+}
 

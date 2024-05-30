@@ -79,13 +79,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 93,
+				"line" : 96,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 76,
+				"line" : 79,
 				"parent" : 0
 			},
 			{
@@ -458,7 +458,10 @@
 				69,
 				72,
 				75,
-				101
+				78,
+				80,
+				83,
+				111
 			]
 		}
 	],
@@ -613,7 +616,10 @@
 				69,
 				72,
 				75,
-				101
+				78,
+				80,
+				83,
+				111
 			]
 		},
 		{
@@ -646,13 +652,8 @@
 				71,
 				74,
 				77,
-				78,
 				79,
-				80,
-				81,
 				82,
-				83,
-				84,
 				85,
 				86,
 				87,
@@ -668,7 +669,17 @@
 				97,
 				98,
 				99,
-				100
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110
 			]
 		},
 		{
@@ -699,14 +710,16 @@
 				67,
 				70,
 				73,
-				76
+				76,
+				81,
+				84
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				102
+				112
 			]
 		}
 	],
@@ -1126,6 +1139,49 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "customsqltablemodel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "customsqltablemodel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "trainstationwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "trainstationwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "trainstationwindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "trainstationadminwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "trainstationadminwindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "trainstationadminwindow.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/ui_mainwindow.h",
@@ -1267,6 +1323,18 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/ui_trainstationdeletewindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/ui_trainstationwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/include/ui_trainstationadminwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{

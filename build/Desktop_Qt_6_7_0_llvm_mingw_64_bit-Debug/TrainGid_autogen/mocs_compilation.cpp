@@ -21,6 +21,8 @@
 #include "EWIEGA46WW/moc_trainadminwindow.cpp"
 #include "EWIEGA46WW/moc_trainchangewindow.cpp"
 #include "EWIEGA46WW/moc_traindeletewindow.cpp"
+#include "EWIEGA46WW/moc_trainstationadminwindow.cpp"
 #include "EWIEGA46WW/moc_trainstationconnectwindow.cpp"
 #include "EWIEGA46WW/moc_trainstationdeletewindow.cpp"
+#include "EWIEGA46WW/moc_trainstationwindow.cpp"
 #include "EWIEGA46WW/moc_trainuserwindow.cpp"

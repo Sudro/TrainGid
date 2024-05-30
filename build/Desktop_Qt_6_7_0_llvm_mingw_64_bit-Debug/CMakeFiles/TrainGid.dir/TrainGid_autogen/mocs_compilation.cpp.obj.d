@@ -1003,9 +1003,13 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainchangewindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_traindeletewindow.cpp \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../traindeletewindow.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainstationadminwindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainstationadminwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainstationconnectwindow.cpp \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainstationconnectwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainstationdeletewindow.cpp \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainstationdeletewindow.h \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainstationwindow.cpp \
+  D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainstationwindow.h \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/moc_trainuserwindow.cpp \
   D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_autogen/EWIEGA46WW/../../../../trainuserwindow.h

@@ -810,6 +810,30 @@ traindeletewindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/traindeletewindow.cpp.s
 .PHONY : traindeletewindow.cpp.s
 
+trainstationadminwindow.obj: trainstationadminwindow.cpp.obj
+.PHONY : trainstationadminwindow.obj
+
+# target to build an object file
+trainstationadminwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainstationadminwindow.cpp.obj
+.PHONY : trainstationadminwindow.cpp.obj
+
+trainstationadminwindow.i: trainstationadminwindow.cpp.i
+.PHONY : trainstationadminwindow.i
+
+# target to preprocess a source file
+trainstationadminwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainstationadminwindow.cpp.i
+.PHONY : trainstationadminwindow.cpp.i
+
+trainstationadminwindow.s: trainstationadminwindow.cpp.s
+.PHONY : trainstationadminwindow.s
+
+# target to generate assembly for a file
+trainstationadminwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainstationadminwindow.cpp.s
+.PHONY : trainstationadminwindow.cpp.s
+
 trainstationconnectwindow.obj: trainstationconnectwindow.cpp.obj
 .PHONY : trainstationconnectwindow.obj
 
@@ -857,6 +881,30 @@ trainstationdeletewindow.s: trainstationdeletewindow.cpp.s
 trainstationdeletewindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainstationdeletewindow.cpp.s
 .PHONY : trainstationdeletewindow.cpp.s
+
+trainstationwindow.obj: trainstationwindow.cpp.obj
+.PHONY : trainstationwindow.obj
+
+# target to build an object file
+trainstationwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainstationwindow.cpp.obj
+.PHONY : trainstationwindow.cpp.obj
+
+trainstationwindow.i: trainstationwindow.cpp.i
+.PHONY : trainstationwindow.i
+
+# target to preprocess a source file
+trainstationwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainstationwindow.cpp.i
+.PHONY : trainstationwindow.cpp.i
+
+trainstationwindow.s: trainstationwindow.cpp.s
+.PHONY : trainstationwindow.s
+
+# target to generate assembly for a file
+trainstationwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TrainGid.dir\build.make CMakeFiles/TrainGid.dir/trainstationwindow.cpp.s
+.PHONY : trainstationwindow.cpp.s
 
 trainuserwindow.obj: trainuserwindow.cpp.obj
 .PHONY : trainuserwindow.obj
@@ -974,12 +1022,18 @@ help:
 	@echo ... traindeletewindow.obj
 	@echo ... traindeletewindow.i
 	@echo ... traindeletewindow.s
+	@echo ... trainstationadminwindow.obj
+	@echo ... trainstationadminwindow.i
+	@echo ... trainstationadminwindow.s
 	@echo ... trainstationconnectwindow.obj
 	@echo ... trainstationconnectwindow.i
 	@echo ... trainstationconnectwindow.s
 	@echo ... trainstationdeletewindow.obj
 	@echo ... trainstationdeletewindow.i
 	@echo ... trainstationdeletewindow.s
+	@echo ... trainstationwindow.obj
+	@echo ... trainstationwindow.i
+	@echo ... trainstationwindow.s
 	@echo ... trainuserwindow.obj
 	@echo ... trainuserwindow.i
 	@echo ... trainuserwindow.s

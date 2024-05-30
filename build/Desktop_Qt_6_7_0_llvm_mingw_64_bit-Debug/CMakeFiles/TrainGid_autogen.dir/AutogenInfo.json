@@ -467,6 +467,12 @@
 			null
 		],
 		[
+			"D:/qt/projects/TrainGid/trainstationadminwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_trainstationadminwindow.cpp",
+			null
+		],
+		[
 			"D:/qt/projects/TrainGid/trainstationconnectwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_trainstationconnectwindow.cpp",
@@ -476,6 +482,12 @@
 			"D:/qt/projects/TrainGid/trainstationdeletewindow.h",
 			"MU",
 			"EWIEGA46WW/moc_trainstationdeletewindow.cpp",
+			null
+		],
+		[
+			"D:/qt/projects/TrainGid/trainstationwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_trainstationwindow.cpp",
 			null
 		],
 		[
@@ -580,8 +592,10 @@
 		[ "D:/qt/projects/TrainGid/trainadminwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainchangewindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/traindeletewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/trainstationadminwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainstationconnectwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainstationdeletewindow.cpp", "MU", null ],
+		[ "D:/qt/projects/TrainGid/trainstationwindow.cpp", "MU", null ],
 		[ "D:/qt/projects/TrainGid/trainuserwindow.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

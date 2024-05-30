@@ -31,6 +31,7 @@ public:
     QPushButton *pushButton_6;
     QPushButton *pushButton_7;
     QPushButton *pushButton_8;
+    QPushButton *pushButton_9;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -100,6 +101,14 @@ public:
         icon6.addFile(QString::fromUtf8(":/tariffsButton.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_8->setIcon(icon6);
         pushButton_8->setIconSize(QSize(126, 37));
+        pushButton_9 = new QPushButton(centralwidget);
+        pushButton_9->setObjectName("pushButton_9");
+        pushButton_9->setGeometry(QRect(213, 22, 126, 37));
+        pushButton_9->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8(":/trainStationButton.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_9->setIcon(icon7);
+        pushButton_9->setIconSize(QSize(126, 37));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -118,6 +127,7 @@ public:
         pushButton_6->setText(QString());
         pushButton_7->setText(QString());
         pushButton_8->setText(QString());
+        pushButton_9->setText(QString());
     } // retranslateUi
 
 };

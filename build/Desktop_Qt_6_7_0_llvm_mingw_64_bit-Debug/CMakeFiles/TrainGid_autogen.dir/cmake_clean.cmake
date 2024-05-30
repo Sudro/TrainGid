@@ -21,8 +21,10 @@ file(REMOVE_RECURSE
   "TrainGid_autogen/include/ui_trainadminwindow.h"
   "TrainGid_autogen/include/ui_trainchangewindow.h"
   "TrainGid_autogen/include/ui_traindeletewindow.h"
+  "TrainGid_autogen/include/ui_trainstationadminwindow.h"
   "TrainGid_autogen/include/ui_trainstationconnectwindow.h"
   "TrainGid_autogen/include/ui_trainstationdeletewindow.h"
+  "TrainGid_autogen/include/ui_trainstationwindow.h"
   "TrainGid_autogen/include/ui_trainuserwindow.h"
   "TrainGid_autogen/mocs_compilation.cpp"
 )

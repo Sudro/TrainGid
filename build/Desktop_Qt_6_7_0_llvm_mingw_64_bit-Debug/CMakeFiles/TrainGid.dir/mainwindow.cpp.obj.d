@@ -970,6 +970,7 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: \
   D:/qt/projects/TrainGid/stationuserwindow.h \
   D:/qt/projects/TrainGid/routeuserwindow.h \
   D:/qt/projects/TrainGid/trainuserwindow.h \
+  D:/qt/projects/TrainGid/trainstationwindow.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \
