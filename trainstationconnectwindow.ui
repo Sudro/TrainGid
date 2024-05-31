@@ -118,12 +118,16 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QComboBox {
-	border: 3px solid #F4C64D;
-    border-radius: 9px;
-    padding: 5px 10px;
-    min-width: 6em;
-	background-color: white;	
+    border: 3px solid #F4C64D;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
 }
+
 QComboBox::drop-down {
 	subcontrol-origin: padding;
     subcontrol-position: top right;
@@ -133,12 +137,16 @@ QComboBox::drop-down {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
+
 QComboBox::down-arrow {
 	image: url(:/DownArrow.png);
 }
+
 QComboBox::drop-down:hover {
 	background-color: lightgray;
-}</string>
+}
+
+</string>
    </property>
   </widget>
   <widget class="QComboBox" name="comboBox_2">
@@ -152,12 +160,16 @@ QComboBox::drop-down:hover {
    </property>
    <property name="styleSheet">
     <string notr="true">QComboBox {
-	border: 3px solid #F4C64D;
-    border-radius: 9px;
-    padding: 5px 10px;
-    min-width: 6em;
-	background-color: white;	
+    border: 3px solid #F4C64D;
+    border-radius: 8px;
+    gridline-color: #6D55FF;
+    background-color: white;	
+	color: black;
+	font-size: 16pt;
+	padding-left: 10px;
+	font-family: Karla;
 }
+
 QComboBox::drop-down {
 	subcontrol-origin: padding;
     subcontrol-position: top right;
@@ -167,12 +179,16 @@ QComboBox::drop-down {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
+
 QComboBox::down-arrow {
 	image: url(:/DownArrow.png);
 }
+
 QComboBox::drop-down:hover {
 	background-color: lightgray;
-}</string>
+}
+
+</string>
    </property>
   </widget>
  </widget>

@@ -117,6 +117,7 @@ TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/appendAdm
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/removeAdminButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/appendAdminButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/choiceFrame.png
+TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/connectTrainStationButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/userButton2.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/tariffsButton.png
 TrainGid_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/projects/TrainGid/homeButton2_New.png

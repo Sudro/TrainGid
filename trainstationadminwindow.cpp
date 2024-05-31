@@ -4,6 +4,7 @@
 #include "stationadminwindow.h"
 #include "routeadminwindow.h"
 #include "trainadminwindow.h"
+#include "trainstationconnectwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -203,6 +204,8 @@ bool TrainStationAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton3.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton3.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton2.png");
                 }
             } else if (event->type() == QEvent::Leave) {
                 // Здесь можно вернуть исходную иконку кнопки
@@ -220,6 +223,8 @@ bool TrainStationAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/stationsButton2New.png");
                 } else if (button == ui->pushButton_8) {
                     updateButtonIcon(button, ":/tariffsButton2New.png");
+                } else if (button == ui->pushButton_9) {
+                    updateButtonIcon(button, ":/appendAdminButton_1.png");
                 }
             }
         }
@@ -240,5 +245,13 @@ void TrainStationAdminWindow::updateModel() {
     }
 }
 
-
+void TrainStationAdminWindow::on_pushButton_9_clicked()
+{
+    TrainStationConnectWindow *trainStationConnectWindow = TrainStationConnectWindow::getInstance();
+    trainStationConnectWindow->raise();
+    trainStationConnectWindow->activateWindow();
+    connect(trainStationConnectWindow, &TrainStationConnectWindow::dataChanged, this, &TrainStationAdminWindow::updateModel); //
+    trainStationConnectWindow->show();
+    this->close();
+}
 

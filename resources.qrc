@@ -63,5 +63,6 @@
         <file>stationFrameNew.png</file>
         <file>tariffFrameNew.png</file>
         <file>trainstationFrameNew.png</file>
+        <file>connectTrainStationButton2.png</file>
     </qresource>
 </RCC>

@@ -66,12 +66,16 @@ public:
         comboBox->setObjectName("comboBox");
         comboBox->setGeometry(QRect(43, 164, 895, 66));
         comboBox->setStyleSheet(QString::fromUtf8("QComboBox {\n"
-"	border: 3px solid #F4C64D;\n"
-"    border-radius: 9px;\n"
-"    padding: 5px 10px;\n"
-"    min-width: 6em;\n"
-"	background-color: white;	\n"
+"    border: 3px solid #F4C64D;\n"
+"    border-radius: 8px;\n"
+"    gridline-color: #6D55FF;\n"
+"    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
 "}\n"
+"\n"
 "QComboBox::drop-down {\n"
 "	subcontrol-origin: padding;\n"
 "    subcontrol-position: top right;\n"
@@ -81,22 +85,30 @@ public:
 "    border-top-right-radius: 3px;\n"
 "    border-bottom-right-radius: 3px;\n"
 "}\n"
+"\n"
 "QComboBox::down-arrow {\n"
 "	image: url(:/DownArrow.png);\n"
 "}\n"
+"\n"
 "QComboBox::drop-down:hover {\n"
 "	background-color: lightgray;\n"
-"}"));
+"}\n"
+"\n"
+""));
         comboBox_2 = new QComboBox(TrainStationConnectWindow);
         comboBox_2->setObjectName("comboBox_2");
         comboBox_2->setGeometry(QRect(43, 256, 895, 66));
         comboBox_2->setStyleSheet(QString::fromUtf8("QComboBox {\n"
-"	border: 3px solid #F4C64D;\n"
-"    border-radius: 9px;\n"
-"    padding: 5px 10px;\n"
-"    min-width: 6em;\n"
-"	background-color: white;	\n"
+"    border: 3px solid #F4C64D;\n"
+"    border-radius: 8px;\n"
+"    gridline-color: #6D55FF;\n"
+"    background-color: white;	\n"
+"	color: black;\n"
+"	font-size: 16pt;\n"
+"	padding-left: 10px;\n"
+"	font-family: Karla;\n"
 "}\n"
+"\n"
 "QComboBox::drop-down {\n"
 "	subcontrol-origin: padding;\n"
 "    subcontrol-position: top right;\n"
@@ -106,12 +118,16 @@ public:
 "    border-top-right-radius: 3px;\n"
 "    border-bottom-right-radius: 3px;\n"
 "}\n"
+"\n"
 "QComboBox::down-arrow {\n"
 "	image: url(:/DownArrow.png);\n"
 "}\n"
+"\n"
 "QComboBox::drop-down:hover {\n"
 "	background-color: lightgray;\n"
-"}"));
+"}\n"
+"\n"
+""));
 
         retranslateUi(TrainStationConnectWindow);
 

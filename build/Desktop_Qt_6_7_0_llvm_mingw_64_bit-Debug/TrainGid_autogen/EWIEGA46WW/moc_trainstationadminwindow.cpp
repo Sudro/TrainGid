@@ -50,7 +50,8 @@ constexpr auto qt_meta_stringdata_CLASSTrainStationAdminWindowENDCLASS = QtMocHe
     "on_pushButton_5_clicked",
     "on_pushButton_6_clicked",
     "on_pushButton_7_clicked",
-    "on_pushButton_8_clicked"
+    "on_pushButton_8_clicked",
+    "on_pushButton_9_clicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -63,7 +64,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTrainStationAdminWindowENDCLASS[
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      12,   14, // methods
+      13,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -71,20 +72,21 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTrainStationAdminWindowENDCLASS[
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   86,    2, 0x06,    1 /* Public */,
+       1,    0,   92,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    1,   87,    2, 0x08,    2 /* Private */,
-       6,    1,   90,    2, 0x08,    4 /* Private */,
-       7,    1,   93,    2, 0x08,    6 /* Private */,
-       8,    0,   96,    2, 0x08,    8 /* Private */,
-       9,    0,   97,    2, 0x08,    9 /* Private */,
-      10,    0,   98,    2, 0x08,   10 /* Private */,
-      11,    0,   99,    2, 0x08,   11 /* Private */,
-      12,    0,  100,    2, 0x08,   12 /* Private */,
-      13,    0,  101,    2, 0x08,   13 /* Private */,
-      14,    0,  102,    2, 0x08,   14 /* Private */,
-      15,    0,  103,    2, 0x08,   15 /* Private */,
+       3,    1,   93,    2, 0x08,    2 /* Private */,
+       6,    1,   96,    2, 0x08,    4 /* Private */,
+       7,    1,   99,    2, 0x08,    6 /* Private */,
+       8,    0,  102,    2, 0x08,    8 /* Private */,
+       9,    0,  103,    2, 0x08,    9 /* Private */,
+      10,    0,  104,    2, 0x08,   10 /* Private */,
+      11,    0,  105,    2, 0x08,   11 /* Private */,
+      12,    0,  106,    2, 0x08,   12 /* Private */,
+      13,    0,  107,    2, 0x08,   13 /* Private */,
+      14,    0,  108,    2, 0x08,   14 /* Private */,
+      15,    0,  109,    2, 0x08,   15 /* Private */,
+      16,    0,  110,    2, 0x08,   16 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -93,6 +95,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTrainStationAdminWindowENDCLASS[
     QMetaType::Void, 0x80000000 | 4,    5,
     QMetaType::Void, 0x80000000 | 4,    5,
     QMetaType::Void, 0x80000000 | 4,    5,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -140,6 +143,8 @@ Q_CONSTINIT const QMetaObject TrainStationAdminWindow::staticMetaObject = { {
         // method 'on_pushButton_7_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_8_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_9_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -163,6 +168,7 @@ void TrainStationAdminWindow::qt_static_metacall(QObject *_o, QMetaObject::Call 
         case 9: _t->on_pushButton_6_clicked(); break;
         case 10: _t->on_pushButton_7_clicked(); break;
         case 11: _t->on_pushButton_8_clicked(); break;
+        case 12: _t->on_pushButton_9_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -196,13 +202,13 @@ int TrainStationAdminWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 13;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 13)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 12;
+        _id -= 13;
     }
     return _id;
 }
