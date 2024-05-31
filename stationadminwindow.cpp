@@ -6,6 +6,7 @@
 #include "trainadminwindow.h"
 #include "stationchangewindow.h"
 #include "stationadminwindow.h"
+#include "trainstationadminwindow.h"
 #include "mainwindow.h"
 #include <QMouseEvent>
 #include <QSqlDatabase>
@@ -84,6 +85,7 @@ StationAdminWIndow::StationAdminWIndow(QWidget *parent)
     ui->pushButton_9->installEventFilter(this);
     ui->pushButton_10->installEventFilter(this);
     ui->pushButton_11->installEventFilter(this);
+    ui->pushButton_12->installEventFilter(this);
 
     ui->pushButton_10->disconnect(); // Отключаем все сигналы, связанные с этой кнопкой
     connect(ui->pushButton_10, &QPushButton::clicked, this, &StationAdminWIndow::on_pushButton_10_clicked);
@@ -238,6 +240,8 @@ bool StationAdminWIndow::eventFilter(QObject *obj, QEvent *event)
                 updateButtonIcon(button, ":/changeAdminButton2.png");
             } else if (button == ui->pushButton_11) {
                 updateButtonIcon(button, ":/removeAdminNewButton2.png");
+            } else if (button == ui->pushButton_12) {
+                updateButtonIcon(button, ":/trainStationButton3.png");
             }
         } else if (event->type() == QEvent::Leave) {
             // Здесь можно вернуть исходную иконку кнопки
@@ -259,6 +263,8 @@ bool StationAdminWIndow::eventFilter(QObject *obj, QEvent *event)
                 updateButtonIcon(button, ":/changeAdminButton.png");
             } else if (button == ui->pushButton_11) {
                 updateButtonIcon(button, ":/removeAdminNewButton.png");
+            } else if (button == ui->pushButton_12) {
+                updateButtonIcon(button, ":/trainStationButton2.png");
             }
         }
         return true;
@@ -364,3 +370,13 @@ void StationAdminWIndow::on_pushButton_11_clicked()
         }
     }
 }
+
+void StationAdminWIndow::on_pushButton_12_clicked()
+{
+    TrainStationAdminWindow *trainStationAdminWindow = TrainStationAdminWindow::getInstance();
+    trainStationAdminWindow->raise();
+    trainStationAdminWindow->activateWindow();
+    trainStationAdminWindow->show();
+    this->close();
+}
+

@@ -12841,7 +12841,8 @@ CMakeFiles/TrainGid.dir/stationadminwindow.cpp.obj: D:/qt/projects/TrainGid/stat
   D:/qt/projects/TrainGid/stationadminwindow.h \
   D:/qt/projects/TrainGid/stationchangewindow.h \
   D:/qt/projects/TrainGid/tariffadminwindow.h \
-  D:/qt/projects/TrainGid/trainadminwindow.h
+  D:/qt/projects/TrainGid/trainadminwindow.h \
+  D:/qt/projects/TrainGid/trainstationadminwindow.h
 
 CMakeFiles/TrainGid.dir/stationchangewindow.cpp.obj: D:/qt/projects/TrainGid/stationchangewindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
@@ -17885,7 +17886,8 @@ CMakeFiles/TrainGid.dir/tariffadminwindow.cpp.obj: D:/qt/projects/TrainGid/tarif
   D:/qt/projects/TrainGid/tariffaddwindow.h \
   D:/qt/projects/TrainGid/tariffadminwindow.h \
   D:/qt/projects/TrainGid/tariffchangewindow.h \
-  D:/qt/projects/TrainGid/trainadminwindow.h
+  D:/qt/projects/TrainGid/trainadminwindow.h \
+  D:/qt/projects/TrainGid/trainstationadminwindow.h
 
 CMakeFiles/TrainGid.dir/tariffchangewindow.cpp.obj: D:/qt/projects/TrainGid/tariffchangewindow.cpp \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
@@ -25933,6 +25935,7 @@ CMakeFiles/TrainGid.dir/trainstationadminwindow.cpp.obj: D:/qt/projects/TrainGid
   D:/qt/projects/TrainGid/databasemanager.h \
   TrainGid_autogen/include/ui_trainstationadminwindow.h \
   D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/projects/TrainGid/customsqltablemodel.h \
   D:/qt/projects/TrainGid/mainwindow.h \
   D:/qt/projects/TrainGid/routeadminwindow.h \
   D:/qt/projects/TrainGid/stationadminwindow.h \
