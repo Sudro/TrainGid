@@ -21,6 +21,8 @@ public:
 
     static TrainStationAdminWindow* getInstance(QWidget *parent = nullptr); //
 
+    void updateModel();
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
@@ -29,7 +31,7 @@ private slots:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
 
-    void updateModel();
+    //void updateModel();
 
     void on_pushButton_2_clicked();
 
@@ -46,6 +48,8 @@ private slots:
     void on_pushButton_8_clicked();
 
     void on_pushButton_9_clicked();
+
+    void on_pushButton_11_clicked();
 
 signals:
     void dataAdded();

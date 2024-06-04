@@ -17,6 +17,7 @@ public:
 
     int getRouteId(const QModelIndex &idx) const;
     int getStationId(const QModelIndex &idx) const;
+    int getTrainId(const QModelIndex &idx) const;
 };
 
 #endif // CUSTOMSQLTABLEMODEL_H

@@ -20,6 +20,8 @@ public:
 
     static TariffAdminWindow* getInstance(QWidget *parent = nullptr);
 
+    void updateModel();
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 
@@ -40,7 +42,7 @@ private slots:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
 
-    void updateModel();
+    //void updateModel();
 
     void on_pushButton_9_clicked();
 

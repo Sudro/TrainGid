@@ -206,6 +206,8 @@ bool TrainStationAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/tariffsButton3.png");
                 } else if (button == ui->pushButton_9) {
                     updateButtonIcon(button, ":/appendAdminButton2.png");
+                } else if (button == ui->pushButton_11) {
+                    updateButtonIcon(button, ":/removeAdminNewButton2.png");
                 }
             } else if (event->type() == QEvent::Leave) {
                 // Здесь можно вернуть исходную иконку кнопки
@@ -225,6 +227,8 @@ bool TrainStationAdminWindow::eventFilter(QObject *obj, QEvent *event)
                     updateButtonIcon(button, ":/tariffsButton2New.png");
                 } else if (button == ui->pushButton_9) {
                     updateButtonIcon(button, ":/appendAdminButton_1.png");
+                } else if (button == ui->pushButton_11) {
+                    updateButtonIcon(button, ":/removeAdminNewButton.png");
                 }
             }
         }
@@ -253,5 +257,53 @@ void TrainStationAdminWindow::on_pushButton_9_clicked()
     connect(trainStationConnectWindow, &TrainStationConnectWindow::dataChanged, this, &TrainStationAdminWindow::updateModel); //
     trainStationConnectWindow->show();
     this->close();
+}
+
+
+void TrainStationAdminWindow::on_pushButton_11_clicked()
+{
+    QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
+    if (selected.isEmpty()) {
+        QMessageBox::warning(this, "Предупреждение", "Не выбрана ни одна связь!");
+        return;
+    }
+
+    int row = selected.first().row();
+    QModelIndex index = ui->tableView->model()->index(row, 0);
+
+    CustomSqlTableModel *model = qobject_cast<CustomSqlTableModel*>(ui->tableView->model());
+    if (!model) {
+        QMessageBox::critical(this, "Ошибка", "Не удалось получить модель данных.");
+        return;
+    }
+
+    int trainId = model->getTrainId(index);
+    int stationId = model->getStationId(index);
+    //QString tariffName = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
+
+
+
+    // Чекаем для отладки
+    //qDebug() << "Route ID: " << routeId;
+    //qDebug() << "Station ID: " << stationId;
+    //qDebug() << "Tariff Name: " << tariffName;
+
+    // Удаляем запись на основе route_id, station_id и tariff_name
+    QSqlQuery deleteQuery(DatabaseManager::instance().database());
+    deleteQuery.prepare("SELECT delete_trainstation(:train_id, :station_id)");
+    deleteQuery.bindValue(":train_id", trainId);
+    deleteQuery.bindValue(":station_id", stationId);
+
+    if (!deleteQuery.exec()) {
+        QMessageBox::critical(this, "Ошибка базы данных", "Не удалось выполнить запрос: " + deleteQuery.lastError().text());
+    } else {
+        deleteQuery.next();
+        if (deleteQuery.value(0).toBool()) {
+            QMessageBox::information(this, "Успех", "Cвязь успешно удалена.");
+            updateModel();  // Обновляем модель после удаления
+        } else {
+            QMessageBox::warning(this, "Ошибка", "Такой связи не существует.");
+        }
+    }
 }
 

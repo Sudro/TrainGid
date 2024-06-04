@@ -482,6 +482,7 @@ void RouteAdminWindow::on_pushButton_11_clicked()
         if (query.value(0).toBool()) {
             QMessageBox::information(this, "Успех", "Маршрут успешно удалён.");
             updateModel();  // Обновляем модель после удаления
+            TariffAdminWindow::getInstance()->updateModel(); //
         } else {
             QMessageBox::warning(this, "Ошибка", "Такого маршрута не существует.");
         }

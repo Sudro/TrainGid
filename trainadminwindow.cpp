@@ -364,6 +364,7 @@ void TrainAdminWindow::on_pushButton_11_clicked()
         if (query.value(0).toBool()) {
             QMessageBox::information(this, "Успех", "Поезд успешно удален.");
             updateModel();  // Обновляем модель после удаления
+            TrainStationAdminWindow::getInstance()->updateModel(); //
         } else {
             QMessageBox::warning(this, "Ошибка", "Такого поезда не существует.");
         }

@@ -365,6 +365,8 @@ void StationAdminWIndow::on_pushButton_11_clicked()
         if (query.value(0).toBool()) {
             QMessageBox::information(this, "Успех", "Станция успешно удалена.");
             updateModel();  // Обновляем модель после удаления
+            TrainStationAdminWindow::getInstance()->updateModel(); //
+            TariffAdminWindow::getInstance()->updateModel(); //
         } else {
             QMessageBox::warning(this, "Ошибка", "Такой станции не существует.");
         }

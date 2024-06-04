@@ -43,7 +43,6 @@ constexpr auto qt_meta_stringdata_CLASSTrainStationAdminWindowENDCLASS = QtMocHe
     "event",
     "mouseMoveEvent",
     "mouseReleaseEvent",
-    "updateModel",
     "on_pushButton_2_clicked",
     "on_pushButton_3_clicked",
     "on_pushButton_4_clicked",
@@ -51,7 +50,8 @@ constexpr auto qt_meta_stringdata_CLASSTrainStationAdminWindowENDCLASS = QtMocHe
     "on_pushButton_6_clicked",
     "on_pushButton_7_clicked",
     "on_pushButton_8_clicked",
-    "on_pushButton_9_clicked"
+    "on_pushButton_9_clicked",
+    "on_pushButton_11_clicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -128,8 +128,6 @@ Q_CONSTINIT const QMetaObject TrainStationAdminWindow::staticMetaObject = { {
         // method 'mouseReleaseEvent'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QMouseEvent *, std::false_type>,
-        // method 'updateModel'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_2_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_3_clicked'
@@ -145,6 +143,8 @@ Q_CONSTINIT const QMetaObject TrainStationAdminWindow::staticMetaObject = { {
         // method 'on_pushButton_8_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_9_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_11_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -160,15 +160,15 @@ void TrainStationAdminWindow::qt_static_metacall(QObject *_o, QMetaObject::Call 
         case 1: _t->mousePressEvent((*reinterpret_cast< std::add_pointer_t<QMouseEvent*>>(_a[1]))); break;
         case 2: _t->mouseMoveEvent((*reinterpret_cast< std::add_pointer_t<QMouseEvent*>>(_a[1]))); break;
         case 3: _t->mouseReleaseEvent((*reinterpret_cast< std::add_pointer_t<QMouseEvent*>>(_a[1]))); break;
-        case 4: _t->updateModel(); break;
-        case 5: _t->on_pushButton_2_clicked(); break;
-        case 6: _t->on_pushButton_3_clicked(); break;
-        case 7: _t->on_pushButton_4_clicked(); break;
-        case 8: _t->on_pushButton_5_clicked(); break;
-        case 9: _t->on_pushButton_6_clicked(); break;
-        case 10: _t->on_pushButton_7_clicked(); break;
-        case 11: _t->on_pushButton_8_clicked(); break;
-        case 12: _t->on_pushButton_9_clicked(); break;
+        case 4: _t->on_pushButton_2_clicked(); break;
+        case 5: _t->on_pushButton_3_clicked(); break;
+        case 6: _t->on_pushButton_4_clicked(); break;
+        case 7: _t->on_pushButton_5_clicked(); break;
+        case 8: _t->on_pushButton_6_clicked(); break;
+        case 9: _t->on_pushButton_7_clicked(); break;
+        case 10: _t->on_pushButton_8_clicked(); break;
+        case 11: _t->on_pushButton_9_clicked(); break;
+        case 12: _t->on_pushButton_11_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

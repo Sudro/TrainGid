@@ -137,3 +137,8 @@ int CustomSqlTableModel::getStationId(const QModelIndex &idx) const
 {
     return QSqlTableModel::data(idx.siblingAtColumn(fieldIndex("station_id")), Qt::DisplayRole).toInt();
 }
+
+int CustomSqlTableModel::getTrainId(const QModelIndex &idx) const
+{
+    return QSqlTableModel::data(idx.siblingAtColumn(fieldIndex("train_id")), Qt::DisplayRole).toInt();
+}
