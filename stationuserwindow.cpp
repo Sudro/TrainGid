@@ -127,6 +127,7 @@ void StationUserWindow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем обработчик для кнопки pushButton_8
 void StationUserWindow::on_pushButton_8_clicked()
 {
+    qDebug() << "Opening TariffUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TariffUserWindow
     TariffUserWindow *tariffUserWindow = new TariffUserWindow();
     // Показываем окно TariffUserWindow
@@ -137,6 +138,7 @@ void StationUserWindow::on_pushButton_8_clicked()
 
 void StationUserWindow::on_pushButton_5_clicked()
 {
+    qDebug() << "Opening TrainUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TrainUserWindow
     TrainUserWindow *trainUserWindow = new TrainUserWindow();
     // Показываем окно TrainUserWindow
@@ -147,6 +149,7 @@ void StationUserWindow::on_pushButton_5_clicked()
 
 void StationUserWindow::on_pushButton_4_clicked()
 {
+    qDebug() << "Opening MainWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна MainWindow
     MainWindow *mainWindow = new MainWindow();
     // Показываем окно MainWindow
@@ -158,6 +161,7 @@ void StationUserWindow::on_pushButton_4_clicked()
 
 void StationUserWindow::on_pushButton_6_clicked()
 {
+    qDebug() << "Opening RouteUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна StationUserWindow
     RouteWindow *routeWindow = new RouteWindow();
     // Показываем окно StationUserWindow
@@ -217,6 +221,7 @@ void StationUserWindow::updateButtonIcon(QPushButton *button, const QString &ico
 
 void StationUserWindow::on_pushButton_9_clicked()
 {
+    qDebug() << "Opening TrainStationWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TrainStationWindow
     TrainStationWindow *trainStationWindow = new TrainStationWindow();
     // Показываем окно TrainStationWindow

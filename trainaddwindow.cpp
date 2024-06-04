@@ -1,6 +1,7 @@
 #include "trainaddwindow.h"
 #include "trainadminwindow.h"
 #include "ui_trainaddwindow.h"
+#include "databasemanager.h"
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -155,6 +156,7 @@ void TrainAddWindow::on_pushButton_9_clicked()
             ui->lineEdit->clear();
             ui->lineEdit_2->clear();
             ui->lineEdit_3->clear();
+            qDebug() << "Adding TrainAdminWindow as" << DatabaseManager::instance().currentUserName();
         }
     }
 }

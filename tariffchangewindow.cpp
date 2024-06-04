@@ -136,6 +136,8 @@ void TariffChangeWindow::on_pushButton_10_clicked() {
             ui->lineEdit_5->clear();
             emit dataChanged();
             this->close();
+
+            qDebug() << "Changing TariffAdminWindow as" << DatabaseManager::instance().currentUserName();
         }
     }
 }

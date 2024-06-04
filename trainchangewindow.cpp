@@ -142,6 +142,8 @@ void TrainChangeWindow::on_pushButton_10_clicked() {
 
         emit dataChanged();  // Сигнал, который нужно определить в TrainChangeWindow
         this->close();
+
+        qDebug() << "Changing TrainAdminWindow as" << DatabaseManager::instance().currentUserName();
     }
 }
 

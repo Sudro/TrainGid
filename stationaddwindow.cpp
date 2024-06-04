@@ -1,6 +1,7 @@
 #include "stationaddwindow.h"
 #include "stationadminwindow.h"
 #include "ui_stationaddwindow.h"
+#include "databasemanager.h"
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -159,6 +160,7 @@ void StationAddWindow::on_pushButton_9_clicked()
             ui->lineEdit_2->clear();
             ui->lineEdit_3->clear();
             ui->lineEdit_4->clear();
+            qDebug() << "Adding StationAdminWIndow as" << DatabaseManager::instance().currentUserName();
         }
     }
 }

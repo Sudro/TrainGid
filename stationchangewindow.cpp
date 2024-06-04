@@ -138,6 +138,7 @@ void StationChangeWindow::on_pushButton_10_clicked() {
 
             emit dataChanged();  // Сигнал, который нужно определить в StationChangeWindow
             this->close();
+            qDebug() << "Changing StationAdminWIndow as" << DatabaseManager::instance().currentUserName();
         }
     }
 

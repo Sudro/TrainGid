@@ -1,6 +1,7 @@
 #include "routeaddwindow.h"
 #include "routeadminwindow.h"
 #include "ui_routeaddwindow.h"
+#include "databasemanager.h"
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -240,6 +241,7 @@ void RouteAddWindow::on_pushButton_9_clicked()
             ui->lineEdit_2->clear();
             ui->lineEdit_3->clear();
             ui->comboBox->setCurrentIndex(-1); // очистка выбора
+            qDebug() << "Adding RouteAdminWindow as" << DatabaseManager::instance().currentUserName();
         }
     }
 

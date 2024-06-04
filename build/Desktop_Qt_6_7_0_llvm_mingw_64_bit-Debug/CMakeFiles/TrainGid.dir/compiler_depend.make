@@ -1019,6 +1019,7 @@ CMakeFiles/TrainGid.dir/TrainGid_autogen/mocs_compilation.cpp.obj: TrainGid_auto
   TrainGid_autogen/EWIEGA46WW/moc_trainuserwindow.cpp
 
 CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: D:/qt/projects/TrainGid/choicewindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
@@ -1197,6 +1198,13 @@ CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: D:/qt/projects/TrainGid/choicewind
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
@@ -1999,6 +2007,7 @@ CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: D:/qt/projects/TrainGid/choicewind
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_choicewindow.h \
   D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   D:/qt/projects/TrainGid/trainadminwindow.h \
   D:/qt/projects/TrainGid/trainuserwindow.h
 
@@ -4778,6 +4787,7 @@ CMakeFiles/TrainGid.dir/main.cpp.obj: D:/qt/projects/TrainGid/main.cpp \
   D:/qt/projects/TrainGid/mainwindow.h
 
 CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: D:/qt/projects/TrainGid/mainwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
@@ -4953,6 +4963,13 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: D:/qt/projects/TrainGid/mainwindow.c
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QApplication \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QLabel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMainWindow \
@@ -5758,6 +5775,7 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: D:/qt/projects/TrainGid/mainwindow.c
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_mainwindow.h \
   D:/qt/projects/TrainGid/choicewindow.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   D:/qt/projects/TrainGid/mainwindow.h \
   D:/qt/projects/TrainGid/routeuserwindow.h \
   D:/qt/projects/TrainGid/stationuserwindow.h \
@@ -5766,6 +5784,7 @@ CMakeFiles/TrainGid.dir/mainwindow.cpp.obj: D:/qt/projects/TrainGid/mainwindow.c
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeaddwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
@@ -5948,6 +5967,7 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
@@ -6774,6 +6794,7 @@ CMakeFiles/TrainGid.dir/routeaddwindow.cpp.obj: D:/qt/projects/TrainGid/routeadd
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_routeaddwindow.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   D:/qt/projects/TrainGid/routeaddwindow.h \
   D:/qt/projects/TrainGid/routeadminwindow.h
 
@@ -10814,6 +10835,7 @@ CMakeFiles/TrainGid.dir/routeuserwindow.cpp.obj: D:/qt/projects/TrainGid/routeus
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj: D:/qt/projects/TrainGid/stationaddwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
@@ -10993,6 +11015,7 @@ CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj: D:/qt/projects/TrainGid/statio
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
@@ -11808,6 +11831,7 @@ CMakeFiles/TrainGid.dir/stationaddwindow.cpp.obj: D:/qt/projects/TrainGid/statio
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_stationaddwindow.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   D:/qt/projects/TrainGid/stationaddwindow.h \
   D:/qt/projects/TrainGid/stationadminwindow.h
 
@@ -15844,6 +15868,7 @@ CMakeFiles/TrainGid.dir/stationuserwindow.cpp.obj: D:/qt/projects/TrainGid/stati
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: D:/qt/projects/TrainGid/tariffaddwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
@@ -16026,6 +16051,7 @@ CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: D:/qt/projects/TrainGid/tariffa
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
@@ -16852,6 +16878,7 @@ CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: D:/qt/projects/TrainGid/tariffa
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_tariffaddwindow.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   D:/qt/projects/TrainGid/tariffaddwindow.h \
   D:/qt/projects/TrainGid/tariffadminwindow.h
 
@@ -20890,6 +20917,7 @@ CMakeFiles/TrainGid.dir/tariffuserwindow.cpp.obj: D:/qt/projects/TrainGid/tariff
   D:/qt/projects/TrainGid/trainuserwindow.h
 
 CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainaddwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
@@ -21072,6 +21100,7 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
@@ -21887,6 +21916,7 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_trainaddwindow.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   D:/qt/projects/TrainGid/trainaddwindow.h \
   D:/qt/projects/TrainGid/trainadminwindow.h
 
@@ -25945,6 +25975,7 @@ CMakeFiles/TrainGid.dir/trainstationadminwindow.cpp.obj: D:/qt/projects/TrainGid
   D:/qt/projects/TrainGid/trainstationconnectwindow.h
 
 CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj: D:/qt/projects/TrainGid/trainstationconnectwindow.cpp \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QList \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QObject \
@@ -26125,6 +26156,7 @@ CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj: D:/qt/projects/TrainG
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
@@ -26949,6 +26981,7 @@ CMakeFiles/TrainGid.dir/trainstationconnectwindow.cpp.obj: D:/qt/projects/TrainG
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/stdint.h \
   D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/vadefs.h \
   TrainGid_autogen/include/ui_trainstationconnectwindow.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
   D:/qt/projects/TrainGid/trainstationadminwindow.h \
   D:/qt/projects/TrainGid/trainstationconnectwindow.h
 
@@ -31445,11 +31478,11 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__format/buffer.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__compare/weak_order.h:
 
+D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qdeadlinetimer.h:
+
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__concepts/assignable.h:
 
 D:/qt/Tools/llvm-mingw1706_64/lib/clang/17/include/limits.h:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qdeadlinetimer.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__memory/allocation_guard.h:
 
@@ -31552,6 +31585,8 @@ D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__fwd/array.h:
 D:/qt/Tools/llvm-mingw1706_64/include/pthread_time.h:
 
 D:/qt/Tools/llvm-mingw1706_64/include/c++/v1/__fwd/hash.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug:
 
 D:/qt/projects/TrainGid/trainuserwindow.cpp:
 
@@ -32173,13 +32208,11 @@ D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qframe.h:
 
 D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qlabel.h:
 
-D:/qt/projects/TrainGid/databasemanager.cpp:
-
-D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug:
-
 D:/qt/projects/TrainGid/tariffdeletewindow.cpp:
 
 D:/qt/projects/TrainGid/databasemanager.h:
+
+D:/qt/projects/TrainGid/databasemanager.cpp:
 
 D:/qt/projects/TrainGid/main.cpp:
 

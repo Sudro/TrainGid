@@ -2,6 +2,7 @@
 #include "ui_choicewindow.h"
 #include "trainuserwindow.h"
 #include "trainadminwindow.h"
+#include "databasemanager.h"
 #include <QMouseEvent>
 
 ChoiceWindow::ChoiceWindow(QWidget *parent)
@@ -41,6 +42,8 @@ void ChoiceWindow::on_pushButton_3_clicked()
 
 void ChoiceWindow::on_pushButton_5_clicked()
 {
+    DatabaseManager::instance().setUserRole(DatabaseManager::Admin); // Устанавливаем роль пользователя // ???????????????????
+    qDebug() << "Opening TrainUserWindow as" << DatabaseManager::instance().currentUserName();
     // Используем getInstance вместо создания нового экземпляра
     TrainAdminWindow *trainAdminWindow = TrainAdminWindow::getInstance();
     trainAdminWindow->raise();
@@ -61,6 +64,8 @@ void ChoiceWindow::on_pushButton_5_clicked()
 
 void ChoiceWindow::on_pushButton_4_clicked()
 {
+    DatabaseManager::instance().setUserRole(DatabaseManager::User); // Устанавливаем роль пользователя // ???????????????????
+    qDebug() << "Opening TrainUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TrainUserWindow
     TrainUserWindow *trainUserWindow = new TrainUserWindow();
     // Показываем окно TrainUserWindow

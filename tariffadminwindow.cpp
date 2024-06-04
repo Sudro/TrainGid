@@ -151,6 +151,7 @@ void TariffAdminWindow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем обработчик для кнопки pushButton_8
 void TariffAdminWindow::on_pushButton_6_clicked()
 {
+    qDebug() << "Opening RouteAdminWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна RouteAdminWindow
     RouteAdminWindow *routeAdminWindow = RouteAdminWindow::getInstance();
     routeAdminWindow->raise();
@@ -171,6 +172,7 @@ void TariffAdminWindow::on_pushButton_6_clicked()
 
 void TariffAdminWindow::on_pushButton_7_clicked()
 {
+    qDebug() << "Opening StationAdminWIndow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна StationAdminWindow
     StationAdminWIndow *stationAdminWindow = StationAdminWIndow::getInstance();
     stationAdminWindow->raise();
@@ -191,6 +193,7 @@ void TariffAdminWindow::on_pushButton_7_clicked()
 
 void TariffAdminWindow::on_pushButton_5_clicked()
 {
+    qDebug() << "Opening TrainAdminWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TrainAdminWindow
     TrainAdminWindow *trainAdminWindow = TrainAdminWindow::getInstance();
     trainAdminWindow->raise();
@@ -210,6 +213,7 @@ void TariffAdminWindow::on_pushButton_5_clicked()
 
 void TariffAdminWindow::on_pushButton_4_clicked()
 {
+    qDebug() << "Opening MainWindow as" << DatabaseManager::instance().currentUserName();
     MainWindow *mainWindow = MainWindow::getInstance();
     mainWindow->raise();
     mainWindow->activateWindow();
@@ -290,6 +294,7 @@ void TariffAdminWindow::updateButtonIcon(QPushButton *button, const QString &ico
 
 void TariffAdminWindow::on_pushButton_9_clicked()
 {
+    qDebug() << "Opening TariffAddWindow as" << DatabaseManager::instance().currentUserName();
     TariffAddWindow *tariffAddWindow = TariffAddWindow::getInstance();
     tariffAddWindow->raise();
     tariffAddWindow->activateWindow();
@@ -310,6 +315,7 @@ void TariffAdminWindow::updateModel() {
 }
 
 void TariffAdminWindow::on_pushButton_10_clicked() {
+    qDebug() << "Opening TariffChangeWindow as" << DatabaseManager::instance().currentUserName();
     QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
     if (selected.isEmpty()) {
         QMessageBox::warning(this, "Предупреждение", "Не выбран ни один тариф!");
@@ -344,7 +350,7 @@ void TariffAdminWindow::on_pushButton_11_clicked()
 
     int row = selected.first().row();
     QModelIndex index = ui->tableView->model()->index(row, 0);
-
+    //qDebug() << index;
     CustomSqlTableModel *model = qobject_cast<CustomSqlTableModel*>(ui->tableView->model());
     if (!model) {
         QMessageBox::critical(this, "Ошибка", "Не удалось получить модель данных.");
@@ -374,6 +380,7 @@ void TariffAdminWindow::on_pushButton_11_clicked()
         if (deleteQuery.value(0).toBool()) {
             QMessageBox::information(this, "Успех", "Тариф успешно удалён.");
             updateModel();  // Обновляем модель после удаления
+            qDebug() << "Deleting TariffAdminWindow as" << DatabaseManager::instance().currentUserName();
         } else {
             QMessageBox::warning(this, "Ошибка", "Такого тарифа не существует.");
         }
@@ -417,6 +424,7 @@ void TariffAdminWindow::on_pushButton_11_clicked()
 
 void TariffAdminWindow::on_pushButton_12_clicked()
 {
+    qDebug() << "Opening TrainStationAdminWindow as" << DatabaseManager::instance().currentUserName();
     TrainStationAdminWindow *trainStationAdminWindow = TrainStationAdminWindow::getInstance();
     trainStationAdminWindow->raise();
     trainStationAdminWindow->activateWindow();

@@ -1,6 +1,7 @@
 #include "trainstationconnectwindow.h"
 #include "trainstationadminwindow.h"
 #include "ui_trainstationconnectwindow.h"
+#include "databasemanager.h"
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -189,6 +190,8 @@ void TrainStationConnectWindow::on_pushButton_9_clicked()
             emit dataChanged();
             ui->comboBox->setCurrentIndex(-1);
             ui->comboBox_2->setCurrentIndex(-1);
+
+            qDebug() << "Adding TrainStationAdminWindow as" << DatabaseManager::instance().currentUserName();
         }
     }
 }

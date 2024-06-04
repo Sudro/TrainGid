@@ -983,18 +983,21 @@ CMakeFiles/TrainGid.dir/tariffaddwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextformat.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qpen.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtextoption.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QMessageBox \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qmessagebox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialog.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlQuery \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquery.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qevent.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qeventpoint.h \

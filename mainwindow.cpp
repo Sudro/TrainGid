@@ -7,6 +7,7 @@
 #include "trainuserwindow.h" // Включаем заголовочный файл для TrainUserwindow
 #include "trainstationwindow.h"
 #include <QMouseEvent>
+#include "databasemanager.h"
 
 MainWindow* MainWindow::instance = nullptr; //
 
@@ -163,6 +164,8 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем обработчик для кнопки pushButton_8
 void MainWindow::on_pushButton_8_clicked()
 {
+    DatabaseManager::instance().setUserRole(DatabaseManager::User); // Устанавливаем роль пользователя // ???????????????????
+    qDebug() << "Opening TariffUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TariffUserWindow
     TariffUserWindow *tariffUserWindow = new TariffUserWindow();
     // Показываем окно TariffUserWindow
@@ -174,6 +177,8 @@ void MainWindow::on_pushButton_8_clicked()
 
 void MainWindow::on_pushButton_7_clicked()
 {
+    DatabaseManager::instance().setUserRole(DatabaseManager::User); // Устанавливаем роль пользователя // ???????????????????
+    qDebug() << "Opening StationUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна StationUserWindow
     StationUserWindow *stationUserWindow = new StationUserWindow();
     // Показываем окно StationUserWindow
@@ -185,6 +190,8 @@ void MainWindow::on_pushButton_7_clicked()
 
 void MainWindow::on_pushButton_6_clicked()
 {
+    DatabaseManager::instance().setUserRole(DatabaseManager::User); // Устанавливаем роль пользователя // ???????????????????
+    qDebug() << "Opening RouteUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна RouteUserWindow
     RouteWindow *routeUserWindow = new RouteWindow();
     // Показываем окно RouteUserWindow
@@ -196,6 +203,8 @@ void MainWindow::on_pushButton_6_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
+    DatabaseManager::instance().setUserRole(DatabaseManager::User); // Устанавливаем роль пользователя // ???????????????????
+    qDebug() << "Opening TrainUserWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TrainUserWindow
     TrainUserWindow *trainUserWindow = new TrainUserWindow();
     // Показываем окно RouteUserWindow
@@ -208,6 +217,8 @@ void MainWindow::on_pushButton_5_clicked()
 
 void MainWindow::on_pushButton_9_clicked()
 {
+    DatabaseManager::instance().setUserRole(DatabaseManager::User); // Устанавливаем роль пользователя // ???????????????????
+    qDebug() << "Opening TrainStationWindow as" << DatabaseManager::instance().currentUserName();
     // Создаем экземпляр окна TrainStationWindow
     TrainStationWindow *trainStationUserWindow = new TrainStationWindow();
     // Показываем окно trainStationUserWindow

@@ -8,9 +8,16 @@
 class DatabaseManager
 {
 public:
+    enum UserRole {
+        User,
+        Admin
+    };
+
     static DatabaseManager& instance();
     bool openDatabase();
     QSqlDatabase database() const;
+    void setUserRole(UserRole role);
+    QString currentUserName() const; // Новый метод
 
 private:
     DatabaseManager();
@@ -19,6 +26,8 @@ private:
     DatabaseManager& operator=(const DatabaseManager&) = delete;
 
     QSqlDatabase m_db;
+    UserRole currentRole;
+    QString currentUser;
 };
 
 #endif // DATABASEMANAGER_H

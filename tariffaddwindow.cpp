@@ -1,6 +1,7 @@
 #include "tariffaddwindow.h"
 #include "tariffadminwindow.h"
 #include "ui_tariffaddwindow.h"
+#include "databasemanager.h"
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -215,6 +216,7 @@ void TariffAddWindow::on_pushButton_9_clicked()
             ui->comboBox_2->setCurrentIndex(-1);
             ui->lineEdit_5->clear();
             ui->lineEdit_6->clear();
+            qDebug() << "Adding TariffAdminWindow as" << DatabaseManager::instance().currentUserName();
         }
     }
 }

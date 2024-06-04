@@ -148,6 +148,7 @@ void StationAdminWIndow::mouseReleaseEvent(QMouseEvent *event)
 // Определяем обработчик для кнопки pushButton_8
 void StationAdminWIndow::on_pushButton_8_clicked()
 {
+    qDebug() << "Opening TariffAdminWindow as" << DatabaseManager::instance().currentUserName();
     TariffAdminWindow *tariffAdminWindow = TariffAdminWindow::getInstance();
     tariffAdminWindow->raise();
     tariffAdminWindow->activateWindow();
@@ -166,6 +167,7 @@ void StationAdminWIndow::on_pushButton_8_clicked()
 
 void StationAdminWIndow::on_pushButton_5_clicked()
 {
+    qDebug() << "Opening TrainAdminWindow as" << DatabaseManager::instance().currentUserName();
     TrainAdminWindow *trainAdminWindow = TrainAdminWindow::getInstance();
     trainAdminWindow->raise();
     trainAdminWindow->activateWindow();
@@ -186,6 +188,7 @@ void StationAdminWIndow::on_pushButton_5_clicked()
 
 void StationAdminWIndow::on_pushButton_4_clicked()
 {
+    qDebug() << "Opening MainWindow as" << DatabaseManager::instance().currentUserName();
     MainWindow *mainWindow = MainWindow::getInstance();
     mainWindow->raise();
     mainWindow->activateWindow();
@@ -207,6 +210,7 @@ void StationAdminWIndow::on_pushButton_4_clicked()
 
 void StationAdminWIndow::on_pushButton_6_clicked()
 {
+    qDebug() << "Opening RouteAdminWindow as" << DatabaseManager::instance().currentUserName();
     RouteAdminWindow *routeAdminWindow = RouteAdminWindow::getInstance();
     routeAdminWindow->raise();
     routeAdminWindow->activateWindow();
@@ -286,6 +290,7 @@ void StationAdminWIndow::updateButtonIcon(QPushButton *button, const QString &ic
 
 void StationAdminWIndow::on_pushButton_9_clicked()
 {
+    qDebug() << "Opening StationAddWindow as" << DatabaseManager::instance().currentUserName();
     StationAddWindow *stationAddWindow = StationAddWindow::getInstance();
     stationAddWindow->raise();
     stationAddWindow->activateWindow();
@@ -311,7 +316,7 @@ void StationAdminWIndow::updateModel() {
 }
 
 void StationAdminWIndow::on_pushButton_10_clicked() {
-
+    qDebug() << "Opening StationChangeWindow as" << DatabaseManager::instance().currentUserName();
     QModelIndexList selected = ui->tableView->selectionModel()->selectedRows();
     if (selected.isEmpty()) {
         QMessageBox::warning(this, "Предупреждение", "Не выбрана ни одна станция!");
@@ -373,6 +378,7 @@ void StationAdminWIndow::on_pushButton_11_clicked()
             updateModel();  // Обновляем модель после удаления
             TrainStationAdminWindow::getInstance()->updateModel(); //
             TariffAdminWindow::getInstance()->updateModel(); //
+            qDebug() << "Deleting StationAdminWIndow as" << DatabaseManager::instance().currentUserName();
         } else {
             QMessageBox::warning(this, "Ошибка", "Такой станции не существует.");
         }
@@ -381,6 +387,7 @@ void StationAdminWIndow::on_pushButton_11_clicked()
 
 void StationAdminWIndow::on_pushButton_12_clicked()
 {
+    qDebug() << "Opening TrainStationAdminWindow as" << DatabaseManager::instance().currentUserName();
     TrainStationAdminWindow *trainStationAdminWindow = TrainStationAdminWindow::getInstance();
     trainStationAdminWindow->raise();
     trainStationAdminWindow->activateWindow();
