@@ -21005,6 +21005,7 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qprocessordetection.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qrect.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qrefcount.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qscopedpointer.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qscopeguard.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qset.h \
@@ -21055,6 +21056,7 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QRegularExpressionValidator \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
@@ -21096,6 +21098,7 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: D:/qt/projects/TrainGid/trainadd
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
@@ -23042,6 +23045,7 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qprocessordetection.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qrect.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qrefcount.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qscopedpointer.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qscopeguard.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qset.h \
@@ -23092,6 +23096,7 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qyieldcpu.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QIcon \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QMouseEvent \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QRegularExpressionValidator \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qaction.h \
@@ -23133,6 +23138,7 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: D:/qt/projects/TrainGid/train
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiexports.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtguiglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvector2d.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvectornd.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
@@ -32293,6 +32299,8 @@ TrainGid_autogen/include/ui_tariffdeletewindow.h:
 D:/qt/projects/TrainGid/tariffuserwindow.cpp:
 
 TrainGid_autogen/include/ui_tariffuserwindow.h:
+
+D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QRegularExpressionValidator:
 
 TrainGid_autogen/include/ui_traindeletewindow.h:
 

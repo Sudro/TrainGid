@@ -1001,4 +1001,7 @@ CMakeFiles/TrainGid.dir/trainaddwindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSize \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QSizeF \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QTransform \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QRegularExpressionValidator \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h

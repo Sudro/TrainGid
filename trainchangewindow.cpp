@@ -8,6 +8,7 @@
 #include <QMouseEvent>
 #include <QWidget>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+#include <QRegularExpressionValidator>
 
 TrainChangeWindow* TrainChangeWindow::instance = nullptr; //
 
@@ -32,6 +33,11 @@ TrainChangeWindow::TrainChangeWindow(QWidget *parent)
     ui->pushButton_2->installEventFilter(this);
     ui->pushButton_3->installEventFilter(this);
     ui->pushButton_10->installEventFilter(this);
+
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    //connect(ui->lineEdit_2, &QLineEdit::textChanged, this, &TrainChangeWindow::validateInput);
+    //connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &TrainChangeWindow::validateInput);
 }
 
 void TrainChangeWindow::setTrainData(int trainId, const QString &trainNumber) {
@@ -43,6 +49,10 @@ void TrainChangeWindow::setTrainData(int trainId, const QString &trainNumber) {
 
     ui->lineEdit_2->setPlaceholderText("Введите новое название поезда");
     ui->lineEdit_3->setPlaceholderText("Введите новый тип поезда");
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    connect(ui->lineEdit_2, &QLineEdit::textChanged, this, &TrainChangeWindow::validateInput);
+    connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &TrainChangeWindow::validateInput);
 }
 
 TrainChangeWindow::~TrainChangeWindow()
@@ -123,6 +133,32 @@ void TrainChangeWindow::on_pushButton_10_clicked() {
     QString trainNumber = ui->lineEdit->text().remove("Номер поезда: "); //
     */
 
+    // Проверяем, что поля прошли валидацию
+    bool valid = true;
+    QString errorMessage;
+
+    if (!newName.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$"))) {
+        valid = false;
+        errorMessage += "Название поезда может содержать только буквы и цифры!\n";
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!newType.contains(QRegularExpression("^[A-Za-zА-Яа-я]+$"))) {
+        valid = false;
+        errorMessage += "Тип поезда может содержать только буквы!\n";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!valid) {
+        QMessageBox::warning(this, "Ошибка", errorMessage.trimmed());
+        return;
+    }
+
+
     QSqlQuery query(DatabaseManager::instance().database());
     query.prepare("SELECT update_train(:train_id, :train_number, :new_name, :new_type)");
     query.bindValue(":train_id", trainId);
@@ -195,6 +231,22 @@ void TrainChangeWindow::on_pushButton_2_clicked()
     }
     this->close();  // Закрывает текущее окно изменения
     */
+}
+
+void TrainChangeWindow::validateInput()
+{
+    // Проверка ввода и установка соответствующего стиля
+    if (!ui->lineEdit_2->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$")) && !ui->lineEdit_2->text().isEmpty()) {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я]+$")) && !ui->lineEdit_3->text().isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
 }
 
 // Определяем слот для сворачивания текущего окна

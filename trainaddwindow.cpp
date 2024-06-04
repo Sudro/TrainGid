@@ -7,6 +7,7 @@
 #include <QSqlError>
 #include <QVariant>
 #include <QMouseEvent>
+#include <QRegularExpressionValidator>
 
 TrainAddWindow* TrainAddWindow::instance = nullptr; //
 
@@ -34,6 +35,25 @@ TrainAddWindow::TrainAddWindow(QWidget *parent)
     ui->lineEdit_3->setPlaceholderText("Введите тип поезда");
 
     ui->lineEdit->setFocus(); // Установка фокуса на первый lineEdit
+
+
+
+    /*
+    // Создаем валидаторы
+    numberValidator = new QRegularExpressionValidator(QRegularExpression("\\d+"), this); // Только текст (цифры и буквы)
+    textValidator = new QRegularExpressionValidator(QRegularExpression("\\w+"), this); // Только цифры
+    letterValidator = new QRegularExpressionValidator(QRegularExpression("[A-Za-zА-Яа-я]+"), this); // Только буквы
+
+    // Присоединяем валидаторы к полям ввода
+    ui->lineEdit->setValidator(numberValidator);
+    ui->lineEdit_2->setValidator(textValidator);
+    ui->lineEdit_3->setValidator(letterValidator);
+    */
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    connect(ui->lineEdit, &QLineEdit::textChanged, this, &TrainAddWindow::validateInput);
+    connect(ui->lineEdit_2, &QLineEdit::textChanged, this, &TrainAddWindow::validateInput);
+    connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &TrainAddWindow::validateInput);
 }
 
 TrainAddWindow::~TrainAddWindow()
@@ -135,6 +155,56 @@ void TrainAddWindow::on_pushButton_9_clicked()
         return;
     }
 
+    /*
+    // Проверяем, что поля прошли валидацию
+    if (!ui->lineEdit->hasAcceptableInput()) {
+        QMessageBox::warning(this, "Ошибка", "Номер поезда может состоять только из цифр!");
+        return;
+    }
+    if (!ui->lineEdit_2->hasAcceptableInput()) {
+        QMessageBox::warning(this, "Ошибка", "Название поезда может содержать только буквы и цифры!");
+        return;
+    }
+    if (!ui->lineEdit_3->hasAcceptableInput()) {
+        QMessageBox::warning(this, "Ошибка", "Тип поезда может содержать только буквы!");
+        return;
+    }
+    */
+
+    // Проверяем, что поля прошли валидацию
+    bool valid = true;
+    QString errorMessage;
+
+    if (!trainNumber.contains(QRegularExpression("^\\d+$"))) {
+        valid = false;
+        errorMessage += "Номер поезда может состоять только из цифр!\n";
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!trainName.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$"))) {
+        valid = false;
+        errorMessage += "Название поезда может содержать только буквы и цифры!\n";
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!trainType.contains(QRegularExpression("^[A-Za-zА-Яа-я]+$"))) {
+        valid = false;
+        errorMessage += "Тип поезда может содержать только буквы!\n";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!valid) {
+        QMessageBox::warning(this, "Ошибка", errorMessage.trimmed());
+        return;
+    }
+
+
     QSqlQuery query;
     query.prepare("SELECT add_train(:p_train_number, :p_train_name, :p_train_type)");
     query.bindValue(":p_train_number", trainNumber);
@@ -158,6 +228,50 @@ void TrainAddWindow::on_pushButton_9_clicked()
             ui->lineEdit_3->clear();
             qDebug() << "Adding TrainAdminWindow as" << DatabaseManager::instance().currentUserName();
         }
+    }
+}
+/*
+void TrainAddWindow::validateInput()
+{
+    // Дополнительно изменяем стиль полей ввода при неправильных данных (красим границы)
+    if (!ui->lineEdit->hasAcceptableInput() && !ui->lineEdit->text().isEmpty()) {
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_2->hasAcceptableInput() && !ui->lineEdit_2->text().isEmpty()) {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_3->hasAcceptableInput() && !ui->lineEdit_3->text().isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+}*/
+
+void TrainAddWindow::validateInput()
+{
+    // Проверка ввода и установка соответствующего стиля
+    if (!ui->lineEdit->text().contains(QRegularExpression("^\\d+$")) && !ui->lineEdit->text().isEmpty()) {
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_2->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$")) && !ui->lineEdit_2->text().isEmpty()) {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я]+$")) && !ui->lineEdit_3->text().isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     }
 }
 

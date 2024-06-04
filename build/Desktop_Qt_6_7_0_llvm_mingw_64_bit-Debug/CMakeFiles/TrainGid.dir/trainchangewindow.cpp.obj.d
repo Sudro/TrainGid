@@ -1001,4 +1001,7 @@ CMakeFiles/TrainGid.dir/trainchangewindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qscreen_platform.h \
   D:/qt/projects/TrainGid/DatabaseManager.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QRegularExpressionValidator \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qvalidator.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qregularexpression.h

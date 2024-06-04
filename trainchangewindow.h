@@ -38,6 +38,8 @@ private slots:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
 
+    void validateInput(); // Слот для проверки ввода
+
 private:
     Ui::TrainChangeWindow *ui;
 

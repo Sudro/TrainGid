@@ -5,6 +5,7 @@
 #include <QEvent>
 #include <QPushButton>
 #include <QIcon>
+//#include <QValidator>
 
 namespace Ui {
 class TrainAddWindow;
@@ -36,6 +37,8 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void validateInput(); // Слот для проверки ввода
+
 private:
     Ui::TrainAddWindow *ui;
 
@@ -44,6 +47,10 @@ private:
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
 
     static TrainAddWindow* instance; // Статическая переменная для хранения экземпляра
+
+    //QValidator *numberValidator; // для проверки ввода на то, что есть только цифры
+    //QValidator *textValidator; // для проверки ввода на то, что есть только текст с цифрами
+    //QValidator *letterValidator; // для проверки ввода на то, что есть только текст
 
 signals:
     void dataChanged();
