@@ -49,6 +49,13 @@ TariffAdminWindow::TariffAdminWindow(QWidget *parent)
         model->setTable("tariffs");
         model->select();
 
+        // Устанавливаем пользовательские заголовки
+        model->setHeaderData(model->fieldIndex("route_id"), Qt::Horizontal, "Маршрут"); // "Маршрут (Время)"
+        model->setHeaderData(model->fieldIndex("station_id"), Qt::Horizontal, "Название станции"); // "Название станции (Город)"
+        model->setHeaderData(model->fieldIndex("tariff_name"), Qt::Horizontal, "Название тарифа"); //
+        model->setHeaderData(model->fieldIndex("tariff_details"), Qt::Horizontal, "Описание тарифа"); //
+        model->setHeaderData(model->fieldIndex("price"), Qt::Horizontal, "Цена тарифа"); //
+
         // Устанавливаем режим растягивания столбцов
         //ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 

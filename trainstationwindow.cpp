@@ -37,6 +37,10 @@ TrainStationWindow::TrainStationWindow(QWidget *parent)
         model->setTable("trainstation");
         model->select();
 
+        // Устанавливаем пользовательские заголовки
+        model->setHeaderData(model->fieldIndex("train_id"), Qt::Horizontal, "Номер поезда (Название поезда)"); //
+        model->setHeaderData(model->fieldIndex("station_id"), Qt::Horizontal, "Название станции (Название города)"); //
+
         // Устанавливаем режим растягивания столбцов
         ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 

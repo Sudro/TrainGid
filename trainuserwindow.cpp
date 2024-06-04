@@ -35,6 +35,11 @@ TrainUserWindow::TrainUserWindow(QWidget *parent)
         model->setTable("trains");
         model->select();
 
+        // Устанавливаем пользовательские заголовки
+        model->setHeaderData(model->fieldIndex("train_number"), Qt::Horizontal, "Номер поезда"); //
+        model->setHeaderData(model->fieldIndex("train_name"), Qt::Horizontal, "Название поезда"); //
+        model->setHeaderData(model->fieldIndex("train_type"), Qt::Horizontal, "Тип поезда"); //
+
         // Устанавливаем режим растягивания столбцов
         ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 

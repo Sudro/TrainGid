@@ -37,6 +37,12 @@ RouteWindow::RouteWindow(QWidget *parent)
         model->setTable("routes");
         model->select();
 
+        // Устанавливаем пользовательские заголовки
+        model->setHeaderData(model->fieldIndex("departure_point"), Qt::Horizontal, "Город отправления"); // "Маршрут (Время)"
+        model->setHeaderData(model->fieldIndex("destination"), Qt::Horizontal, "Город прибытия"); // "Название станции (Город)"
+        model->setHeaderData(model->fieldIndex("trip_duration"), Qt::Horizontal, "Время поездки"); //
+        model->setHeaderData(model->fieldIndex("parent_route_id"), Qt::Horizontal, "Основной маршрут"); //
+
         // Устанавливаем режим растягивания столбцов
         //ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 

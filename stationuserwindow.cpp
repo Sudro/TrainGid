@@ -35,6 +35,13 @@ StationUserWindow::StationUserWindow(QWidget *parent)
         model->setTable("stations");
         model->select();
 
+        // Устанавливаем пользовательские заголовки
+        model->setHeaderData(model->fieldIndex("station_name"), Qt::Horizontal, "Название станции"); // "Маршрут (Время)"
+        model->setHeaderData(model->fieldIndex("city"), Qt::Horizontal, "Город станции"); // "Название станции (Город)"
+        model->setHeaderData(model->fieldIndex("station_address"), Qt::Horizontal, "Адрес станции"); //
+        model->setHeaderData(model->fieldIndex("platforms_count"), Qt::Horizontal, "Количество платформ"); //
+        //model->setHeaderData(model->fieldIndex("price"), Qt::Horizontal, "Цена тарифа"); //
+
         // Устанавливаем режим растягивания столбцов
         ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 

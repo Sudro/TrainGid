@@ -47,6 +47,13 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
         CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
         model->setTable("routes");
         model->select();
+
+        // Устанавливаем пользовательские заголовки
+        model->setHeaderData(model->fieldIndex("departure_point"), Qt::Horizontal, "Город отправления"); // "Маршрут (Время)"
+        model->setHeaderData(model->fieldIndex("destination"), Qt::Horizontal, "Город прибытия"); // "Название станции (Город)"
+        model->setHeaderData(model->fieldIndex("trip_duration"), Qt::Horizontal, "Время поездки"); //
+        model->setHeaderData(model->fieldIndex("parent_route_id"), Qt::Horizontal, "Основной маршрут"); //
+
         //qDebug() << "CustomSqlTableModel - fieldIndex for route_id:" << model->fieldIndex("route_id");
 
         /*
