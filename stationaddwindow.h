@@ -39,6 +39,8 @@ private slots:
 
     void validateInput(); // Слот для проверки ввода
 
+    //void validateLineEdit3(); // Слот для проверки lineEdit_3
+
 private:
     Ui::StationAddWindow *ui;
 

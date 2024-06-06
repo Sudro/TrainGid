@@ -203,12 +203,65 @@ QComboBox::drop-down {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
+
 QComboBox::down-arrow {
 	image: url(:/DownArrow3.png);
 }
+
 QComboBox::drop-down:hover {
 	background-color: lightgray;
-}</string>
+}
+
+QComboBox QAbstractItemView {
+    border: 3px solid #4DB8FF;
+    color: black; /* Text color in the dropdown - purple */
+    background-color: #93D4FF;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: white; /* Можно изменить на цвет фона таблицы или окна */
+    width: 7px; /* Уменьшенная ширина */
+    margin: 0px; /* Если не нужно отступление от краев */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::handle:vertical {
+    background:  #4DB8FF;
+    min-height: 7px; /* Уменьшенная минимальная длина */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: white; /* Это изменит цвет фона неактивных частей ползунка */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: white; /* Можно изменить на цвет фона таблицы или окна */
+    height: 7px; /* Уменьшенная высота */
+    margin: 0px; /* Если не нужно отступление от краев */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::handle:horizontal {
+    background:  #4DB8FF;
+    min-width: 10px; /* Уменьшенная минимальная длина */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: white; /* Это изменит цвет фона неактивных частей ползунка */
+}
+
+</string>
    </property>
   </widget>
   <widget class="QComboBox" name="comboBox_2">
@@ -241,11 +294,62 @@ QComboBox::drop-down {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
+
 QComboBox::down-arrow {
 	image: url(:/DownArrow3.png);
 }
+
 QComboBox::drop-down:hover {
 	background-color: lightgray;
+}
+
+QComboBox QAbstractItemView {
+    border: 3px solid #4DB8FF;
+    color: black; /* Text color in the dropdown - purple */
+    background-color: #93D4FF;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: white; /* Можно изменить на цвет фона таблицы или окна */
+    width: 7px; /* Уменьшенная ширина */
+    margin: 0px; /* Если не нужно отступление от краев */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::handle:vertical {
+    background:  #4DB8FF;
+    min-height: 7px; /* Уменьшенная минимальная длина */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: white; /* Это изменит цвет фона неактивных частей ползунка */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: white; /* Можно изменить на цвет фона таблицы или окна */
+    height: 7px; /* Уменьшенная высота */
+    margin: 0px; /* Если не нужно отступление от краев */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::handle:horizontal {
+    background:  #4DB8FF;
+    min-width: 10px; /* Уменьшенная минимальная длина */
+    /*border-radius: 5px; /* Уменьшенное закругление */
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: white; /* Это изменит цвет фона неактивных частей ползунка */
 }</string>
    </property>
   </widget>

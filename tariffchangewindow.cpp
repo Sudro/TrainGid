@@ -117,7 +117,10 @@ void TariffChangeWindow::on_pushButton_10_clicked() {
     QString newDetails = ui->lineEdit_4->text();
     QString newPrice = ui->lineEdit_5->text();
 
-    if (newDetails.isEmpty() || newPrice.isEmpty()) {
+    QString cleanedDetails = newDetails; // .remove(" "); // Удаляем все пробелы для проверки
+    cleanedDetails.remove(" ");
+
+    if (newDetails.isEmpty() || newPrice.isEmpty() || cleanedDetails.isEmpty()) {
         QMessageBox::warning(this, "Ошибка", "Все поля должны быть заполнены!");
         return;
     }
@@ -126,13 +129,25 @@ void TariffChangeWindow::on_pushButton_10_clicked() {
     bool valid = true;
     QString errorMessage;
 
+    /*
     if (!newDetails.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ]+$"))) { // "^[A-Za-zА-Яа-я0-9]+$"
         valid = false;
         errorMessage += "Описание тарифа может содержать только буквы и цифры!\n";
         ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     } else {
         ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
-    }
+    }*/
+
+    // !ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && !ui->lineEdit_3->text().isEmpty()
+    if (!newDetails.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) ) {//&& ui->lineEdit_3->hasFocus()) { // || cleanedAddress.replace(" ", "").isEmpty() && ui->lineEdit_3->hasFocus()) {
+        valid = false;
+        errorMessage += "Описание тарифа может содержать только буквы и цифры!\n";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (newDetails.isEmpty() && ui->lineEdit_4->hasFocus()) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } /*else if  (ui->lineEdit_3->hasFocus()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
 
     /*
     if (!newPrice.contains(QRegularExpression("^\\d+$"))) {
@@ -227,12 +242,23 @@ void TariffChangeWindow::validateInput()
     QString newDetails = ui->lineEdit_4->text();
     QString newPrice = ui->lineEdit_5->text();
 
+    if (!newDetails.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && ui->lineEdit_4->hasFocus() ) { //&& ui->lineEdit_3->hasFocus()) {// || cleanedAddress.replace(" ", "").isEmpty() && ui->lineEdit_3->hasFocus()) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (newDetails.isEmpty() && ui->lineEdit_4->hasFocus()) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if  (ui->lineEdit_4->hasFocus()) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
     // Проверка ввода и установка соответствующего стиля
     if (!newDetails.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ]+$")) && !ui->lineEdit_4->text().isEmpty()) {
         ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     } else {
         ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
-    }
+    }*/
 
     if (!newPrice.contains(QRegularExpression("^\\d+$")) && !ui->lineEdit_5->text().isEmpty()) {
         ui->lineEdit_5->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");

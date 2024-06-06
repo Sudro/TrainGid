@@ -42,6 +42,7 @@ StationAddWindow::StationAddWindow(QWidget *parent)
     connect(ui->lineEdit, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
     connect(ui->lineEdit_2, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
     connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
+    //connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &StationAddWindow::validateLineEdit3);
     connect(ui->lineEdit_4, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
 }
 
@@ -179,13 +180,15 @@ void StationAddWindow::on_pushButton_9_clicked()
     } */
 
     // !ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && !ui->lineEdit_3->text().isEmpty()
-    if (!addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) || cleanedAddress.replace(" ", "").isEmpty()) {
+    if (!addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) ) {//&& ui->lineEdit_3->hasFocus()) { // || cleanedAddress.replace(" ", "").isEmpty() && ui->lineEdit_3->hasFocus()) {
         valid = false;
         errorMessage += "Адрес станции может содержать только буквы и цифры!\n";
         ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
-    } else {
+    } else if (addressType.isEmpty() && ui->lineEdit_3->hasFocus()) {
         ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
-    }
+    } /*else if  (ui->lineEdit_3->hasFocus()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
 
     /*
     if (!countPlatforms.contains(QRegularExpression("^\\d+$"))) {
@@ -270,9 +273,11 @@ void StationAddWindow::validateInput()
         ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     }*/
 
-    if (!addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) || cleanedAddress.replace(" ", "").isEmpty()) {
+    if (!addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && ui->lineEdit_3->hasFocus() ) { //&& ui->lineEdit_3->hasFocus()) {// || cleanedAddress.replace(" ", "").isEmpty() && ui->lineEdit_3->hasFocus()) {
         ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
-    } else if (addressType.isEmpty()) {
+    } else if (addressType.isEmpty() && ui->lineEdit_3->hasFocus()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if  (ui->lineEdit_3->hasFocus()) {
         ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     } else {
         ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
@@ -303,6 +308,15 @@ void StationAddWindow::validateInput()
         ui->lineEdit_4->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     }
 }
+
+/*
+void StationAddWindow::validateLineEdit3() {
+    if (ui->lineEdit_3->text().isEmpty() && ui->lineEdit_3->hasFocus()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+}*/
 
 // Определяем слот для сворачивания текущего окна
 void StationAddWindow::on_pushButton_3_clicked()

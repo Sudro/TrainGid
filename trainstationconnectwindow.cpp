@@ -202,3 +202,9 @@ void TrainStationConnectWindow::on_pushButton_3_clicked()
     // Сворачиваем текущее окно (TrainStationConnectWindow)
     this->showMinimized();
 }
+
+void TrainStationConnectWindow::on_comboBox_activated(int index)
+{
+
+}
+

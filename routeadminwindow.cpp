@@ -117,6 +117,8 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
         // Устанавливаем модель в tableView
         ui->tableView->setModel(model);
 
+        ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
         // Скрываем столбец route_id
         ui->tableView->hideColumn(0);
 

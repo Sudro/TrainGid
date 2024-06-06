@@ -60,7 +60,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
                 return QVariant();  // Вернуть пустое значение, если stationId равен 0
             }
             //qDebug() << "CustomSqlTableModel::data - stationId:" << stationId << "index:" << idx;
-            qDebug() << "Station ID:" << stationId; // Отладка
+            //qDebug() << "Station ID:" << stationId; // Отладка
             QSqlQuery query;
             query.prepare("SELECT station_name, city FROM stations WHERE station_id = :id");
             query.bindValue(":id", stationId);
@@ -77,7 +77,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
             //if (trainId == 0) {
             //    return QVariant();  // Вернуть пустое значение, если trainId равен 0
             //}
-            qDebug() << "Train ID:" << trainId; // Отладка
+            //qDebug() << "Train ID:" << trainId; // Отладка
             QSqlQuery query;
             query.prepare("SELECT train_number, train_name FROM trains WHERE train_id = :id");
             query.bindValue(":id", trainId);

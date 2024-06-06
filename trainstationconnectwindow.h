@@ -37,6 +37,8 @@ private slots:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
 
+    void on_comboBox_activated(int index);
+
 private:
     Ui::TrainStationConnectWindow *ui;
 
