@@ -75,6 +75,17 @@ StationAdminWIndow::StationAdminWIndow(QWidget *parent)
         for (int i = 0; i < columnCount; ++i) {
             ui->tableView->setColumnWidth(i, columnWidth);
         }
+
+        /*
+        // Устанавливаем флаги, чтобы сделать таблицу нередактируемой
+        for (int row = 0; row < model->rowCount(); ++row) {
+            for (int column = 0; column < model->columnCount(); ++column) {
+                QModelIndex index = model->index(row, column);
+                model->setData(index, QVariant(), Qt::EditRole); // Отключаем редактирование
+            }
+        }*/
+
+        //setTableNonEditable(model); //
     }
     else
     {
@@ -306,12 +317,25 @@ void StationAdminWIndow::on_pushButton_9_clicked()
     // Закрываем текущее окно (StationAdminWIndow)
     this->close();
     */
+
 }
 
 void StationAdminWIndow::updateModel() {
     QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
     if (model) {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+
+        //setTableNonEditable(model); //
+    }
+}
+
+void StationAdminWIndow::setTableNonEditable(QSqlTableModel *model) //
+{
+    for (int row = 0; row < model->rowCount(); ++row) {
+        for (int column = 0; column < model->columnCount(); ++column) {
+            QModelIndex index = model->index(row, column);
+            model->setData(index, Qt::ItemIsEditable, Qt::EditRole);
+        }
     }
 }
 

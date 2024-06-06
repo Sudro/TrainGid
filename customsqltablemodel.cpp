@@ -56,7 +56,11 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
 
         } else if (idx.column() == fieldIndex("station_id")) {
             int stationId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
+            if (stationId == 0) {
+                return QVariant();  // Вернуть пустое значение, если stationId равен 0
+            }
             //qDebug() << "CustomSqlTableModel::data - stationId:" << stationId << "index:" << idx;
+            qDebug() << "Station ID:" << stationId; // Отладка
             QSqlQuery query;
             query.prepare("SELECT station_name, city FROM stations WHERE station_id = :id");
             query.bindValue(":id", stationId);
@@ -66,9 +70,14 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
                 return QString("%1 (%2)").arg(stationName).arg(city);
             } else {
                 qDebug() << "Failed to retrieve station data: " << query.lastError().text();
+                //return QSqlTableModel::data(idx, role);
             }
         } else if (idx.column() == fieldIndex("train_id")) {
             int trainId = QSqlTableModel::data(idx, Qt::DisplayRole).toInt();
+            //if (trainId == 0) {
+            //    return QVariant();  // Вернуть пустое значение, если trainId равен 0
+            //}
+            qDebug() << "Train ID:" << trainId; // Отладка
             QSqlQuery query;
             query.prepare("SELECT train_number, train_name FROM trains WHERE train_id = :id");
             query.bindValue(":id", trainId);
@@ -78,6 +87,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role) const
                 return QString("%1 (%2)").arg(trainNumber).arg(trainName);
             } else {
                 qDebug() << "Failed to retrieve train data: " << query.lastError().text();
+                //return QSqlTableModel::data(idx, role);
             }
         }
         /*

@@ -8,6 +8,7 @@
 #include <QMouseEvent>
 #include <QWidget>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+#include <QRegularExpressionValidator>
 
 StationChangeWindow* StationChangeWindow::instance = nullptr; //
 
@@ -43,6 +44,11 @@ void StationChangeWindow::setStationData(int stationId, const QString &stationNa
     ui->lineEdit_2->setPlaceholderText("Введите новый город станции");
     ui->lineEdit_3->setPlaceholderText("Введите новый адрес станции");
     ui->lineEdit_4->setPlaceholderText("Введите новое количество платформ");
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    connect(ui->lineEdit_2, &QLineEdit::textChanged, this, &StationChangeWindow::validateInput);
+    connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &StationChangeWindow::validateInput);
+    connect(ui->lineEdit_4, &QLineEdit::textChanged, this, &StationChangeWindow::validateInput);
 }
 
 StationChangeWindow::~StationChangeWindow()
@@ -110,6 +116,52 @@ void StationChangeWindow::on_pushButton_10_clicked() {
 
     // Удаляем надпись ""Станция: " перед сохранением
     QString stationName = ui->lineEdit->text().remove("Станция: ");
+
+    // Проверяем, что поля прошли валидацию
+    bool valid = true;
+    QString errorMessage;
+
+    if (!newCity.contains(QRegularExpression("^[A-Za-zА-Яа-я]+$"))) {
+        valid = false;
+        errorMessage += "Город станции может содержать только буквы!\n";
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!newStationAddress.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$"))) {
+        valid = false;
+        errorMessage += "Адрес станции может содержать только буквы и цифры!\n";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    if (!newPlatformsCount.contains(QRegularExpression("^\\d+$"))) {
+        valid = false;
+        errorMessage += "Количество платформ может состоять только из цифр!\n";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
+
+    // Проверка на ввод "0" в количестве платформ
+    if (newPlatformsCount == "0") {
+        newPlatformsCount = "Нет платформ";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (newPlatformsCount.contains(QRegularExpression("^\\d+$"))) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        valid = false;
+        errorMessage += "Количество платформ может состоять только из цифр!\n";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!valid) {
+        QMessageBox::warning(this, "Ошибка", errorMessage.trimmed());
+        return;
+    }
 
     QSqlQuery query(DatabaseManager::instance().database());
     query.prepare("SELECT update_station(:station_id, :station_name, :new_city, :new_station_address, :new_platforms_count)");
@@ -200,6 +252,32 @@ void StationChangeWindow::on_pushButton_2_clicked()
     }
     this->close();  // Закрывает текущее окно изменения
     */
+}
+
+void StationChangeWindow::validateInput()
+{
+    QString newCityStation = ui->lineEdit_2->text();
+    QString newAddressType = ui->lineEdit_3->text();
+    QString newCountPlatforms = ui->lineEdit_4->text();
+
+    // Проверка ввода и установка соответствующего стиля
+    if (!ui->lineEdit_2->text().contains(QRegularExpression("^[A-Za-zА-Яа-я]+$")) && !ui->lineEdit_2->text().isEmpty()) {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && !ui->lineEdit_3->text().isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!newCountPlatforms.contains(QRegularExpression("^\\d+$")) && !newCountPlatforms.isEmpty()) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
 }
 
 // Определяем слот для сворачивания текущего окна

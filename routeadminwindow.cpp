@@ -135,6 +135,8 @@ RouteAdminWindow::RouteAdminWindow(QWidget *parent)
             ui->tableView->setColumnWidth(i, columnWidth);
         }
 
+        //setTableNonEditable(model); //
+
     }
     else
     {
@@ -368,6 +370,8 @@ void RouteAdminWindow::updateModel() {
 
     if (model) {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+
+        //setTableNonEditable(model); //
     }
 
     /*
@@ -401,6 +405,16 @@ void RouteAdminWindow::updateModel() {
         }
     }
     */
+}
+
+void RouteAdminWindow::setTableNonEditable(QSqlTableModel *model) //
+{
+    for (int row = 0; row < model->rowCount(); ++row) {
+        for (int column = 0; column < model->columnCount(); ++column) {
+            QModelIndex index = model->index(row, column);
+            model->setData(index, Qt::ItemIsEditable, Qt::EditRole);
+        }
+    }
 }
 
 void RouteAdminWindow::on_pushButton_10_clicked() {

@@ -43,8 +43,8 @@ TrainStationAdminWindow::TrainStationAdminWindow(QWidget *parent)
     if (dbManager.openDatabase())
     {
         // Создаем модель для отображения данных
-        //QSqlTableModel *model = new QSqlTableModel(this, dbManager.database());
         CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
+        //CustomSqlTableModel *model = new CustomSqlTableModel(this, dbManager.database());
         model->setTable("trainstation");
         model->select();
 
@@ -73,11 +73,15 @@ TrainStationAdminWindow::TrainStationAdminWindow(QWidget *parent)
         for (int i = 0; i < columnCount; ++i) {
             ui->tableView->setColumnWidth(i, columnWidth);
         }
+
+        //setTableNonEditable(model); //
     }
     else
     {
         qDebug() << "Failed to open database";
     }
+
+    //initModel();
 
     // Устанавливаем фильтр событий для кнопок
     ui->pushButton_2->installEventFilter(this);
@@ -252,9 +256,31 @@ void TrainStationAdminWindow::updateButtonIcon(QPushButton *button, const QStrin
 }
 
 void TrainStationAdminWindow::updateModel() {
-    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
+    CustomSqlTableModel *model = static_cast<CustomSqlTableModel*>(ui->tableView->model());
     if (model) {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+
+        //setTableNonEditable(model);
+    }
+}
+/*
+void TrainStationAdminWindow::updateModel() {
+    //CustomSqlTableModel *model = static_cast<CustomSqlTableModel*>(ui->tableView->model()); //
+    QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model()); //
+    if (model) {
+        model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+
+        setTableNonEditable(model); //
+    }
+}*/
+
+void TrainStationAdminWindow::setTableNonEditable(QSqlTableModel *model) //
+{
+    for (int row = 0; row < model->rowCount(); ++row) {
+        for (int column = 0; column < model->columnCount(); ++column) {
+            QModelIndex index = model->index(row, column);
+            model->setData(index, QVariant(Qt::ItemIsSelectable | Qt::ItemIsEnabled), Qt::EditRole);
+        }
     }
 }
 
@@ -281,14 +307,19 @@ void TrainStationAdminWindow::on_pushButton_11_clicked()
     int row = selected.first().row();
     QModelIndex index = ui->tableView->model()->index(row, 0);
 
+    //CustomSqlTableModel *model = qobject_cast<CustomSqlTableModel*>(ui->tableView->model());
     CustomSqlTableModel *model = qobject_cast<CustomSqlTableModel*>(ui->tableView->model());
     if (!model) {
         QMessageBox::critical(this, "Ошибка", "Не удалось получить модель данных.");
         return;
     }
 
+    //int trainId = model->data(model->index(row, model->fieldIndex("train_id"))).toInt();
+    //int stationId = model->data(model->index(row, model->fieldIndex("station_id"))).toInt();
+
     int trainId = model->getTrainId(index);
     int stationId = model->getStationId(index);
+
     //QString tariffName = ui->tableView->model()->data(ui->tableView->model()->index(row, 3)).toString();
 
 

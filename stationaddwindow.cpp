@@ -7,6 +7,7 @@
 #include <QSqlError>
 #include <QVariant>
 #include <QMouseEvent>
+#include <QRegularExpressionValidator>
 
 StationAddWindow* StationAddWindow::instance = nullptr; //
 
@@ -36,6 +37,12 @@ StationAddWindow::StationAddWindow(QWidget *parent)
     ui->lineEdit_4->setPlaceholderText("Введите количество платформ");
 
     ui->lineEdit->setFocus(); // Установка фокуса на первый lineEdit
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    connect(ui->lineEdit, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
+    connect(ui->lineEdit_2, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
+    connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
+    connect(ui->lineEdit_4, &QLineEdit::textChanged, this, &StationAddWindow::validateInput);
 }
 
 StationAddWindow::~StationAddWindow()
@@ -129,12 +136,81 @@ void StationAddWindow::on_pushButton_9_clicked()
 {
     QString stationName = ui->lineEdit->text();
     QString cityStation = ui->lineEdit_2->text();
-    QString addressType = ui->lineEdit_3->text();
+    QString addressType = ui->lineEdit_3->text().trimmed();
     QString countPlatforms = ui->lineEdit_4->text();
 
+    QString cleanedAddress = addressType; // .remove(" "); // Удаляем все пробелы для проверки
+    cleanedAddress.remove(" ");
+
     // Проверяем, что все поля заполнены
-    if (stationName.isEmpty() || cityStation.isEmpty() || addressType.isEmpty() || countPlatforms.isEmpty()) {
+    if (stationName.isEmpty() || cityStation.isEmpty() || addressType.isEmpty() || countPlatforms.isEmpty() || cleanedAddress.isEmpty()) { // cleanedAddress.replace(" ", "").isEmpty()) {
         QMessageBox::warning(this, "Ошибка", "Все поля должны быть заполнены!");
+        return;
+    }
+
+    // Проверяем, что поля прошли валидацию
+    bool valid = true;
+    QString errorMessage;
+
+    if (!stationName.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$"))) {
+        valid = false;
+        errorMessage += "Название станции может содержать только буквы и цифры!\n";
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!cityStation.contains(QRegularExpression("^[A-Za-zА-Яа-я]+$"))) {
+        valid = false;
+        errorMessage += "Город станции может содержать только буквы!\n";
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    // !addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && !addressType.isEmpty() && addressType.replace(" ", "").isEmpty()
+    if (!addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$"))) {
+        valid = false;
+        errorMessage += "Адрес станции может содержать только буквы и цифры!\n";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } */
+
+    // !ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && !ui->lineEdit_3->text().isEmpty()
+    if (!addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) || cleanedAddress.replace(" ", "").isEmpty()) {
+        valid = false;
+        errorMessage += "Адрес станции может содержать только буквы и цифры!\n";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    if (!countPlatforms.contains(QRegularExpression("^\\d+$"))) {
+        valid = false;
+        errorMessage += "Количество платформ может состоять только из цифр!\n";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
+
+    // Проверка на ввод "0" в количестве платформ
+    if (countPlatforms == "0") {
+        countPlatforms = "Нет платформ";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (countPlatforms.contains(QRegularExpression("^\\d+$"))) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        valid = false;
+        errorMessage += "Количество платформ может состоять только из цифр!\n";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+
+    if (!valid) {
+        QMessageBox::warning(this, "Ошибка", errorMessage.trimmed());
         return;
     }
 
@@ -162,6 +238,69 @@ void StationAddWindow::on_pushButton_9_clicked()
             ui->lineEdit_4->clear();
             qDebug() << "Adding StationAdminWIndow as" << DatabaseManager::instance().currentUserName();
         }
+    }
+}
+
+void StationAddWindow::validateInput()
+{
+    QString stationName = ui->lineEdit->text();
+    QString cityStation = ui->lineEdit_2->text();
+    QString addressType = ui->lineEdit_3->text().trimmed();
+    QString countPlatforms = ui->lineEdit_4->text();
+
+    QString cleanedAddress = addressType; // удаление всех пробелов
+
+    // Проверка ввода и установка соответствующего стиля
+    if (!ui->lineEdit->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$")) && !ui->lineEdit->text().isEmpty()) {
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_2->text().contains(QRegularExpression("^[A-Za-zА-Яа-я]+$")) && !ui->lineEdit_2->text().isEmpty()) {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    if (!ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && !ui->lineEdit_3->text().isEmpty() && ui->lineEdit_3->text().replace(" ", "").isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
+
+    if (!addressType.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) || cleanedAddress.replace(" ", "").isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (addressType.isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    if (!ui->lineEdit_3->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ,]+$")) && !ui->lineEdit_3->text().isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (cleanedAddress.isEmpty() && !ui->lineEdit_3->text().isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px солидный #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*
+
+    /*
+    QString cleanedAddress = addressType.replace(" ", ""); // Удаляем все пробелы для проверки
+    if (cleanedAddress.isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+        //QMessageBox::warning(this, "Ошибка", "Адрес не может состоять только из пробелов!");
+        //return;
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
+
+    if (!countPlatforms.contains(QRegularExpression("^\\d+$")) && !countPlatforms.isEmpty()) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     }
 }
 

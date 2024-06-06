@@ -7,6 +7,7 @@
 #include <QSqlError>
 #include <QVariant>
 #include <QMouseEvent>
+#include <QRegularExpressionValidator>
 
 TariffAddWindow* TariffAddWindow::instance = nullptr; //
 
@@ -40,6 +41,11 @@ TariffAddWindow::TariffAddWindow(QWidget *parent)
 
     loadComboBoxData(); // Загружаем данные в comboBox при инициализации
     loadComboBoxStationsData(); // Загружаем данные в comboBox_2 при инициализации
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    connect(ui->lineEdit, &QLineEdit::textChanged, this, &TariffAddWindow::validateInput);
+    connect(ui->lineEdit_5, &QLineEdit::textChanged, this, &TariffAddWindow::validateInput);
+    connect(ui->lineEdit_6, &QLineEdit::textChanged, this, &TariffAddWindow::validateInput);
 }
 
 TariffAddWindow::~TariffAddWindow()
@@ -194,6 +200,53 @@ void TariffAddWindow::on_pushButton_9_clicked()
         return;
     }
 
+    // Проверяем, что поля прошли валидацию
+    bool valid = true;
+    QString errorMessage;
+
+    if (!tariffName.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$"))) {
+        valid = false;
+        errorMessage += "Название тарифа может содержать только буквы и цифры!\n";
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!tariffDetails.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ]+$"))) {
+        valid = false;
+        errorMessage += "Описание тарифа может содержать только буквы и цифры!\n";
+        ui->lineEdit_5->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_5->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    if (!price.contains(QRegularExpression("^\\d+$"))) {
+        valid = false;
+        errorMessage += "Цена тарифа может содержать только цифры!\n";
+        ui->lineEdit_6->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_6->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
+
+    // Проверка на ввод "0" в продолжительность поездки
+    if (price == "0") {
+        price = "Бесплатно";
+        ui->lineEdit_6->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (price.contains(QRegularExpression("^\\d+$"))) {
+        price += " рублей";
+        ui->lineEdit_6->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        valid = false;
+        errorMessage += "Цена тарифа может состоять только из цифр!\n";
+        ui->lineEdit_6->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!valid) {
+        QMessageBox::warning(this, "Ошибка", errorMessage.trimmed());
+        return;
+    }
+
     QSqlQuery query;
     query.prepare("SELECT add_tariff(:p_route_id, :p_station_id, :p_tariff_name, :p_tariff_details, :p_price)");
     query.bindValue(":p_route_id", routeId);
@@ -218,6 +271,32 @@ void TariffAddWindow::on_pushButton_9_clicked()
             ui->lineEdit_6->clear();
             qDebug() << "Adding TariffAdminWindow as" << DatabaseManager::instance().currentUserName();
         }
+    }
+}
+
+void TariffAddWindow::validateInput()
+{
+    QString tariffName = ui->lineEdit->text();
+    QString tariffDetails = ui->lineEdit_5->text();
+    QString price = ui->lineEdit_6->text();
+
+    // Проверка ввода и установка соответствующего стиля
+    if (!ui->lineEdit->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9]+$")) && !ui->lineEdit->text().isEmpty()) {
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_5->text().contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ]+$")) && !ui->lineEdit_5->text().isEmpty()) {
+        ui->lineEdit_5->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_5->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!price.contains(QRegularExpression("^\\d+$")) && !price.isEmpty()) {
+        ui->lineEdit_6->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_6->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
     }
 }
 

@@ -74,6 +74,8 @@ TrainAdminWindow::TrainAdminWindow(QWidget *parent)
         for (int i = 0; i < columnCount; ++i) {
             ui->tableView->setColumnWidth(i, columnWidth);
         }
+
+        //setTableNonEditable(model); //
     }
     else
     {
@@ -310,6 +312,18 @@ void TrainAdminWindow::updateModel() {
     QSqlTableModel *model = static_cast<QSqlTableModel*>(ui->tableView->model());
     if (model) {
         model->select();  // Перезагружает данные из базы данных, обновляя таблицу
+
+        //setTableNonEditable(model); //
+    }
+}
+
+void TrainAdminWindow::setTableNonEditable(QSqlTableModel *model) //
+{
+    for (int row = 0; row < model->rowCount(); ++row) {
+        for (int column = 0; column < model->columnCount(); ++column) {
+            QModelIndex index = model->index(row, column);
+            model->setData(index, Qt::ItemIsEditable, Qt::EditRole);
+        }
     }
 }
 

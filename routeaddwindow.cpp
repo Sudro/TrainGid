@@ -7,6 +7,7 @@
 #include <QSqlError>
 #include <QVariant>
 #include <QMouseEvent>
+#include <QRegularExpressionValidator>
 
 RouteAddWindow* RouteAddWindow::instance = nullptr; //
 
@@ -38,6 +39,11 @@ RouteAddWindow::RouteAddWindow(QWidget *parent)
     ui->lineEdit->setFocus(); // Установка фокуса на первый lineEdit
 
     loadComboBoxData(); // Загружаем данные в comboBox при инициализации
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    connect(ui->lineEdit, &QLineEdit::textChanged, this, &RouteAddWindow::validateInput);
+    connect(ui->lineEdit_2, &QLineEdit::textChanged, this, &RouteAddWindow::validateInput);
+    connect(ui->lineEdit_3, &QLineEdit::textChanged, this, &RouteAddWindow::validateInput);
 }
 
 RouteAddWindow::~RouteAddWindow()
@@ -188,9 +194,8 @@ void RouteAddWindow::on_pushButton_9_clicked()
     QString trip_duration = ui->lineEdit_3->text();
     //QString parent_route_id = ui->comboBox->currentText();
 
-    if (!trip_duration.contains("час")) {
-        trip_duration += " часа";
-    }
+    // Удалить " часа" для валидации, если оно присутствует
+    //trip_duration.remove(" часа");
 
     QVariant parentRouteId = ui->comboBox->currentData();
 
@@ -198,6 +203,57 @@ void RouteAddWindow::on_pushButton_9_clicked()
         QMessageBox::warning(this, "Ошибка", "Верхние три поля должны быть заполнены!");
         return;
     }
+
+    // Проверяем, что поля прошли валидацию
+    bool valid = true;
+    QString errorMessage;
+
+    if (!departurePoint.contains(QRegularExpression("^[A-Za-zА-Яа-я]+$"))) {
+        valid = false;
+        errorMessage += "Город отправления может содержать только буквы!\n";
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!destination.contains(QRegularExpression("^[A-Za-zА-Яа-я]+$"))) {
+        valid = false;
+        errorMessage += "Город прибытия может содержать только буквы!\n";
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    if (!trip_duration.contains(QRegularExpression("^\\d+$"))) {
+        valid = false;
+        errorMessage += "Время поездки может состоять только из цифр!\n";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
+
+    // Проверка на ввод "0" в продолжительность поездки
+    if (trip_duration == "0") {
+        trip_duration = "Не задано";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (trip_duration.contains(QRegularExpression("^\\d+$"))) {
+        trip_duration += " часа";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        valid = false;
+        errorMessage += "Время поездки может состоять только из цифр!\n";
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!valid) {
+        QMessageBox::warning(this, "Ошибка", errorMessage.trimmed());
+        return;
+    }
+
+    //if (!trip_duration.contains("час")) {
+    //    trip_duration += " часа";
+    //}
 
     QSqlQuery query;
     query.prepare("SELECT add_route(:p_departure_point, :p_destination, :p_trip_duration, :p_parent_route_id)");
@@ -310,6 +366,35 @@ void RouteAddWindow::on_pushButton_9_clicked()
     }
     */
 
+}
+
+void RouteAddWindow::validateInput()
+{
+    QString departurePoint = ui->lineEdit->text();
+    QString destination = ui->lineEdit_2->text();
+    QString tripDuration = ui->lineEdit_3->text();
+
+    // Удаляем " часа", если оно есть, для корректной валидации
+    //tripDuration.remove(" часа");
+
+    // Проверка ввода и установка соответствующего стиля
+    if (!ui->lineEdit->text().contains(QRegularExpression("^[A-Za-zА-Яа-я]+$")) && !ui->lineEdit->text().isEmpty()) {
+        ui->lineEdit->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!ui->lineEdit_2->text().contains(QRegularExpression("^[A-Za-zА-Яа-я]+$")) && !ui->lineEdit_2->text().isEmpty()) {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_2->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!tripDuration.contains(QRegularExpression("^\\d+$")) && !tripDuration.isEmpty()) {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_3->setStyleSheet("border: 3px solid #4DB8FF; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
 }
 
 // Определяем слот для сворачивания текущего окна

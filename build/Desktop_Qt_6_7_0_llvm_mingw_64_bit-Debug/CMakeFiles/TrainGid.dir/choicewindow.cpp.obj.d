@@ -967,12 +967,15 @@ CMakeFiles/TrainGid.dir/choicewindow.cpp.obj: \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/QStandardItemModel \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qstandarditemmodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/qabstractitemmodel.h \
-  D:/qt/projects/TrainGid/databasemanager.h \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
-  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqltablemodel.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h \
+  D:/qt/projects/TrainGid/databasemanager.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlDatabase \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlError \
   D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlerror.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtCore/QDebug \

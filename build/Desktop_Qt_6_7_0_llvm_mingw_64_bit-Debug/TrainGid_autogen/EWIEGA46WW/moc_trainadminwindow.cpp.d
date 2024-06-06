@@ -148,6 +148,13 @@ D:/qt/projects/TrainGid/build/Desktop_Qt_6_7_0_llvm_mingw_64_bit-Debug/TrainGid_
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qtransform.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/QSqlTableModel \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqldatabase.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqlquerymodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qsqltablemodel.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsql-config.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlexports.h \
+  D:/qt/6.7.0/llvm-mingw_64/include/QtSql/qtsqlglobal.h \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QPushButton \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/QWidget \
   D:/qt/6.7.0/llvm-mingw_64/include/QtWidgets/qabstractbutton.h \

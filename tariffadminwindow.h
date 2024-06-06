@@ -5,6 +5,7 @@
 #include <QEvent>
 #include <QPushButton>
 #include <QIcon>
+#include <QSqlTableModel>
 
 namespace Ui {
 class TariffAdminWindow;
@@ -63,6 +64,8 @@ private:
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
 
     static TariffAdminWindow* instance; // Статическая переменная для хранения экземпляра
+
+    void setTableNonEditable(QSqlTableModel *model);
 };
 
 #endif // TARIFFADMINWINDOW_H

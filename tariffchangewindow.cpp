@@ -8,6 +8,7 @@
 #include <QMouseEvent>
 #include <QWidget>
 #include "DatabaseManager.h" // Включаем заголовочный файл для DatabaseManager
+#include <QRegularExpressionValidator>
 
 TariffChangeWindow* TariffChangeWindow::instance = nullptr; //
 
@@ -54,6 +55,10 @@ void TariffChangeWindow::setTariffData(int tariffId, const QString &tariffName, 
 
     //ui->lineEdit_5->setText(price); // ???????????????????????????????????????????????????????????????????????????????????
     ui->lineEdit_5->setPlaceholderText("Введите новую цену тарифа");
+
+    // Подключаем сигнал изменения текста к слоту проверки ввода
+    connect(ui->lineEdit_4, &QLineEdit::textChanged, this, &TariffChangeWindow::validateInput);
+    connect(ui->lineEdit_5, &QLineEdit::textChanged, this, &TariffChangeWindow::validateInput);
 }
 
 TariffChangeWindow::~TariffChangeWindow()
@@ -117,6 +122,45 @@ void TariffChangeWindow::on_pushButton_10_clicked() {
         return;
     }
 
+    // Проверяем, что поля прошли валидацию
+    bool valid = true;
+    QString errorMessage;
+
+    if (!newDetails.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ]+$"))) { // "^[A-Za-zА-Яа-я0-9]+$"
+        valid = false;
+        errorMessage += "Описание тарифа может содержать только буквы и цифры!\n";
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    /*
+    if (!newPrice.contains(QRegularExpression("^\\d+$"))) {
+        valid = false;
+        errorMessage += "Цена тарифа может содержать только цифры!\n";
+        ui->lineEdit_5->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_5->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }*/
+
+    // Проверка на ввод "0" в цене тарифа
+    if (newPrice == "0") {
+        newPrice = "Бесплатно";
+        ui->lineEdit_5->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else if (newPrice.contains(QRegularExpression("^\\d+$"))) {
+        newPrice += " рублей";
+        ui->lineEdit_5->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        valid = false;
+        errorMessage += "Цена тарифа может содержать только цифры!\n";
+        ui->lineEdit_5->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!valid) {
+        QMessageBox::warning(this, "Ошибка", errorMessage.trimmed());
+        return;
+    }
+
     QSqlQuery query(DatabaseManager::instance().database());
     query.prepare("SELECT update_tariff(:p_tariff_id, :p_tariff_details, :p_price)");
     query.bindValue(":p_tariff_id", tariffId);
@@ -176,6 +220,25 @@ void TariffChangeWindow::on_pushButton_2_clicked()
         existingWindow->activateWindow();
     }
     this->close();
+}
+
+void TariffChangeWindow::validateInput()
+{
+    QString newDetails = ui->lineEdit_4->text();
+    QString newPrice = ui->lineEdit_5->text();
+
+    // Проверка ввода и установка соответствующего стиля
+    if (!newDetails.contains(QRegularExpression("^[A-Za-zА-Яа-я0-9 ]+$")) && !ui->lineEdit_4->text().isEmpty()) {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_4->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
+
+    if (!newPrice.contains(QRegularExpression("^\\d+$")) && !ui->lineEdit_5->text().isEmpty()) {
+        ui->lineEdit_5->setStyleSheet("border: 3px solid red; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    } else {
+        ui->lineEdit_5->setStyleSheet("border: 3px solid #F0B78E; border-radius: 8px; gridline-color: #6D55FF; background-color: white; color: black; font-size: 16pt; padding-left: 10px; font-family: Karla;");
+    }
 }
 
 // Определяем слот для сворачивания текущего окна

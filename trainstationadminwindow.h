@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QIcon>
 #include <QStandardItemModel>
+#include <QSqlTableModel>
 
 namespace Ui {
 class TrainStationAdminWindow;
@@ -62,6 +63,9 @@ private:
     void updateButtonIcon(QPushButton *button, const QString &iconPath);
 
     static TrainStationAdminWindow* instance; // Статическая переменная для хранения экземпляра //
+
+    void setTableNonEditable(QSqlTableModel *model);
+    //void initModel();
 };
 
 #endif // TRAINSTATIONADMINWINDOW_H
